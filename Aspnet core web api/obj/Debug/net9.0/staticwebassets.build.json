@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "x3DDglX2tr0moBHPqS3pdThy0I8+bBykL9g5ofrz4E0=",
+  "Source": "Aspnet core web api",
+  "BasePath": "_content/Aspnet core web api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

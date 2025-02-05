@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC", "WebMVC\WebMVC.csproj", "{37CE5F98-422C-4946-AB39-C83749996C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonConsoleWorld", "PokemonConsoleWorld\PokemonConsoleWorld.csproj", "{0BAAC14B-84CB-49C6-9148-9805530D05F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspnet core web api", "Aspnet core web api\Aspnet core web api.csproj", "{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37CE5F98-422C-4946-AB39-C83749996C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CE5F98-422C-4946-AB39-C83749996C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CE5F98-422C-4946-AB39-C83749996C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CE5F98-422C-4946-AB39-C83749996C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAAC14B-84CB-49C6-9148-9805530D05F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAAC14B-84CB-49C6-9148-9805530D05F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAAC14B-84CB-49C6-9148-9805530D05F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAAC14B-84CB-49C6-9148-9805530D05F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
