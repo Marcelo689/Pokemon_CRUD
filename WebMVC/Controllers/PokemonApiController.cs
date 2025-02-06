@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using System.Text.Json;
 using WebMVC.ApiModels;
 using WebMVC.Models;
@@ -71,8 +70,8 @@ namespace WebMVC.Controllers
                 };
 
                 _pokeApiService.SavePokemonAsync(pokemonEntity);
-                var detailsEntity = await GetDetailsPokemonFromApiSaveInDB(pokemon.Name, null);
-                _pokeApiService.SavePokemonDetailsAsync(detailsEntity);
+                //var detailsEntity = await GetDetailsPokemonFromApiSaveInDB(pokemon.Name, null);
+                //_pokeApiService.SavePokemonDetailsAsync(detailsEntity);
             }
 
             _pokeApiService.SaveChanges();
