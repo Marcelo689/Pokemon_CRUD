@@ -14,6 +14,9 @@ namespace WebMVC.Data
         public DbSet<PokemonAbility> PokemonAbility{ get; set; }
         public DbSet<PokemonType> PokemonType{ get; set; }
 
+        public DbSet<PokemonApi> PokemonApi { get; set; }
+        public DbSet<PokemonApiDetails> PokemonApiDetails { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Pokemon>().ToTable("Pokemon");

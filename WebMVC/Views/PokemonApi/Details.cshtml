@@ -1,0 +1,43 @@
+﻿<div class="row">
+    <div class="col-md-4">
+        <img src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
+    </div>
+    <div class="col-md-8">
+        <h4>Informações Gerais</h4>
+        <p><strong>ID:</strong> @Model.Id</p>
+
+        <h5>Tipos:</h5>
+        <ul>
+            @foreach (var type in Model.Types)
+            {
+                <li>@type.Type.Name.ToUpper()</li>
+            }
+        </ul>
+
+        <h5>Habilidades:</h5>
+        <ul>
+            @foreach (var ability in Model.Abilities)
+            {
+                <li>
+                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = ability.Ability.Name})">
+                        @ability.Ability.Name
+                    </a>
+                </li>
+            }
+        </ul>
+
+        <h5>Estatísticas:</h5>
+        @foreach (var stat in Model.Stats)
+        {
+            if(stat is null){
+                continue;
+            }
+            <div class="mb-2">
+                <span><strong>@stat.Stat.Name.ToUpper():</strong> @stat.BaseStat</span>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: @stat.BaseStat%;" aria-valuenow="@stat.BaseStat" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

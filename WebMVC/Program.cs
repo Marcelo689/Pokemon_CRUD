@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebMVC.Data;
+using WebMVC.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<PokemonContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddScoped<PokeApiService>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddHttpClient<PokeApiService>();
 
 var app = builder.Build();
 DbInitializer.CreateDbIfNotExists(app);

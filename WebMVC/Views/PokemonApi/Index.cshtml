@@ -1,0 +1,91 @@
+﻿@using WebMVC.ApiModels
+@model List<PokemonViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Pokémon";
+    var currentPage = ViewBag.CurrentPage ?? 1;
+    var pageSize = ViewBag.PageSize ?? 20;
+    var totalCount = ViewBag.TotalCount ?? 1000;
+    var totalPages = ViewBag.TotalPages ?? 1;
+    var maxPagesToShow = 3;
+    var searchQuery = ViewBag.SearchQuery as string ?? "";
+}
+
+<h2>Lista de Pokémon</h2>
+
+<!-- Barra de Busca -->
+<form method="get" action="@Url.Action("Index")" class="mb-3">
+    <div class="input-group">
+        <input type="text" class="form-control" name="search" placeholder="Buscar Pokémon..." value="@searchQuery">
+        <input type="hidden" name="page" value="1"> <!-- Reseta para a primeira página -->
+        <input type="hidden" name="pageSize" value="@pageSize">
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+<!-- Lista de Pokémon -->
+<div class="row">
+    @foreach (var pokemon in Model)
+    {
+        <div class="col-md-3">
+            <div class="card mb-3">
+                <!-- Link para os detalhes do Pokémon -->
+                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
+                    <img src="@pokemon.ImageUrl" class="card-img-top" alt="@pokemon.Name">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">@pokemon.Name.ToUpper()</h5>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Paginação -->
+@if (totalPages > 1)
+{
+    <nav aria-label="Navegação de página">
+        <ul class="pagination justify-content-center flex-wrap">
+
+            <!-- Botão "Anterior" -->
+            <li class="page-item @(currentPage <= 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = currentPage - 1, pageSize, search = searchQuery })">Anterior</a>
+            </li>
+
+            <!-- Exibir Primeira Página e Reticências -->
+            @if (currentPage > maxPagesToShow + 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("Index", new { page = 1, pageSize, search = searchQuery })">1</a>
+                </li>
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+            }
+
+            <!-- Números Vizinhos da Página Atual -->
+            @for (var i = Math.Max(1, currentPage - maxPagesToShow); i <= Math.Min(totalPages, currentPage + maxPagesToShow); i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize, search = searchQuery })">@i</a>
+                </li>
+            }
+
+            <!-- Exibir Última Página e Reticências -->
+            @if (currentPage < totalPages - maxPagesToShow)
+            {
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("Index", new { page = totalPages, pageSize, search = searchQuery })">@totalPages</a>
+                </li>
+            }
+
+            <!-- Botão "Próximo" -->
+            <li class="page-item @(currentPage >= totalPages ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = currentPage + 1, pageSize, search = searchQuery })">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+}

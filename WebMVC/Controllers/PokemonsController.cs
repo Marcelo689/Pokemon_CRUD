@@ -102,7 +102,7 @@ namespace WebMVC.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (pokemon.IsValid())
             {
                 try
                 {
@@ -125,7 +125,15 @@ namespace WebMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            GetPokemonAbilityAndTypes(pokemon);
             return View(pokemon);
+        }
+
+        private void GetPokemonAbilityAndTypes(PokemonViewModel pokemon)
+        {
+            PokemonViewModel pokemonAbilityType = _context.GetTypeAndAbilities(_context);
+            pokemon.PokemonAbilities = pokemonAbilityType.PokemonAbilities;
+            pokemon.PokemonTypes = pokemonAbilityType.PokemonTypes;
         }
 
         private void SetAbilityAndTypes(PokemonViewModel pokemon, Pokemon pokemonModel)
