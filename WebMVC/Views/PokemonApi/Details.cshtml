@@ -1,4 +1,7 @@
-﻿<div class="row">
+﻿@using WebMVC.ApiModels
+@model PokemonDetailsResponse
+
+<div class="row">
     <div class="col-md-4">
         <img src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
     </div>

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using WebMVC.ApiModels;
 using WebMVC.Data;
@@ -24,7 +25,7 @@ namespace WebMVC.Service
             _context = context;
         }
 
-        public async Task<ViewModel> GetAllPokemonAsync()
+        public async Task<ViewModel> ConsultAllPokemonAsync()
         {
             int limit = 1000;
             string url = $"https://pokeapi.co/api/v2/pokemon?limit={limit}";
@@ -62,18 +63,21 @@ namespace WebMVC.Service
         public async Task SavePokemonAsync(PokemonApi pokemon)
         {
             _context.PokemonApi.Add(pokemon);
-            await _context.SaveChangesAsync();
         }
 
         public async Task SavePokemonDetailsAsync(PokemonApiDetails details)
         {
             _context.PokemonApiDetails.Add(details);
-            await _context.SaveChangesAsync();
         }
 
         public bool AlreadyHasPokemonDetails(int id)
         {
             return _context.PokemonApiDetails.Where(e => e.PokemonId != id).Any();
+        }
+
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
         }
     }
 
