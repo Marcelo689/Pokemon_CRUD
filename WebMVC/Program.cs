@@ -9,6 +9,7 @@ builder.Services.AddControllersWithViews();
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<PokemonContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<PokeApiService>();
+builder.Services.AddScoped<TreinadorService>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddHttpClient<PokeApiService>();
 

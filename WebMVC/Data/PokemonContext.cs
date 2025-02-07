@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebMVC.Models;
-using WebMVC.ViewModels;
 
 namespace WebMVC.Data
 {
@@ -10,26 +9,23 @@ namespace WebMVC.Data
         {
             
         }
-        public DbSet<Pokemon> Pokemon{ get; set; }
-        public DbSet<PokemonAbility> PokemonAbility{ get; set; }
-        public DbSet<PokemonType> PokemonType{ get; set; }
-
-        public DbSet<PokemonApi> PokemonApi { get; set; }
-        public DbSet<PokemonApiDetails> PokemonApiDetails { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Pokemon>().ToTable("Pokemon");
-            modelBuilder.Entity<PokemonAbility>().ToTable("PokemonAbility");
-            modelBuilder.Entity<PokemonType>().ToTable("PokemonType");
+            // Configuração para PokemonTreinador e relação com Treinador
+            modelBuilder.Entity<PokemonTreinadorRelacionado>()
+                .HasOne(p => p.Treinador)
+                .WithMany(t => t.Pokemons)
+                .HasForeignKey(p => p.TreinadorId)
+                .OnDelete(DeleteBehavior.Restrict); // Restringir deleção em cascata
         }
 
-        public PokemonViewModel GetTypeAndAbilities(PokemonContext context)
-        {
-            PokemonViewModel model = new PokemonViewModel();
-            model.PokemonAbilities = context.PokemonAbility.ToList();
-            model.PokemonTypes = context.PokemonType.ToList();
-            return model;
-        }
+        public DbSet<PokemonAbility> PokemonAbility{ get; set; }
+        public DbSet<PokemonType> PokemonType{ get; set; }
+        public DbSet<Move> Move{ get; set; }
+        public DbSet<Pokemon> Pokemon { get; set; }
+        public DbSet<Treinador> Treinador{ get; set; }
+        public DbSet<PokemonTreinadorRelacionado> PokemonTreinador{ get; set; }
+        public DbSet<PokemonDetails> PokemonStatsDetails { get; set; }
+
     }
 }

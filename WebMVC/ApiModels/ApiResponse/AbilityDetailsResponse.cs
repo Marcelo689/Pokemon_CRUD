@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace WebMVC.ApiModels
+namespace WebMVC.ApiModels.ApiResponse
 {
     public class AbilityDetailsResponse
     {
@@ -8,7 +8,7 @@ namespace WebMVC.ApiModels
         public string Name { get; set; }
 
         [JsonPropertyName("effect_entries")]
-        public List<EffectEntries> EffectEntries{ get; set; }
+        public List<EffectEntries> EffectEntries { get; set; }
 
         [JsonPropertyName("pokemon")]
         public List<PokemonWhoHas> Pokemon { get; set; }

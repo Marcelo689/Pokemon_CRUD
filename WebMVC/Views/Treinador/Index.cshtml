@@ -1,0 +1,32 @@
+﻿@using WebMVC.ViewModels
+@model List<PokemonTreinadorViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Treinadores";
+}
+
+<h2>Lista de Treinadores</h2>
+
+<a asp-action="Create" class="btn btn-success mb-3">Adicionar Novo Treinador</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Localização</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var treinador in Model)
+        {
+            <tr>
+                <td>@treinador.Name</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@treinador.Id" class="btn btn-info btn-sm">Detalhes</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

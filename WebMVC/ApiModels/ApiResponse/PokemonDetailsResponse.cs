@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace WebMVC.ApiModels
+namespace WebMVC.ApiModels.ApiResponse
 {
 
     public class PokemonDetailsResponse

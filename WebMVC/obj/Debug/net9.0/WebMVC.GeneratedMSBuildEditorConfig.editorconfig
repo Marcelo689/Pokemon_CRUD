@@ -48,46 +48,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbkFwaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Pokemons/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Pokemons/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Pokemons/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Pokemons/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Pokemons/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonTypes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblR5cGVzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonTypes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblR5cGVzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonTypes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblR5cGVzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonTypes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblR5cGVzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonTypes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblR5cGVzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Shared/EditorTemplates/Type.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xUeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/_ViewImports.cshtml]

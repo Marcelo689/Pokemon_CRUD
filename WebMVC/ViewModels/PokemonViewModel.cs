@@ -7,25 +7,25 @@ namespace WebMVC.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public PokemonType? PokemonType1 { get; set; }
+        public string Url { get; set; }
+        public PokemonTypeViewModel? PokemonType1 { get; set; }
         public int PokemonIntType1 { get; set; }
-        public PokemonType? PokemonType2 { get; set; }
+        public PokemonTypeViewModel? PokemonType2 { get; set; }
         public int PokemonIntType2 { get; set; }
-        public PokemonAbility? PokemonAbility { get; set; }
+        public PokemonAbilityViewModel? PokemonAbility { get; set; }
         public int PokemonIntAbility { get; set; }
-        public List<PokemonAbility> PokemonAbilities { get; set; } = new List<PokemonAbility>();
+        public List<PokemonAbilityViewModel> PokemonAbilities { get; set; } = new List<PokemonAbilityViewModel>();
         public List<PokemonType> PokemonTypes { get; set; } = new List<PokemonType>();
 
-        public Pokemon ToModel(PokemonViewModel pokemon)
+        public PokemonTreinadorRelacionado ToModel(PokemonViewModel pokemon)
         {
-            return new Pokemon
+            return new PokemonTreinadorRelacionado
             {
                 Id = pokemon.Id,
-                Ability = pokemon.PokemonAbility,
                 Name = pokemon.Name,
-                Type = pokemon.PokemonType1,
-                SecondType = pokemon.PokemonType2,
-
+                AbilityId = pokemon.PokemonAbility.Id ,
+                TypeId = pokemon.PokemonType1.Id,
+                SecondTypeId = pokemon.PokemonType2.Id,
             };
         }
 

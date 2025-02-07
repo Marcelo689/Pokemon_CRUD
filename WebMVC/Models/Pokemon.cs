@@ -1,31 +1,32 @@
-﻿using WebMVC.ViewModels;
-
-namespace WebMVC.Models
+﻿namespace WebMVC.Models
 {
     public class Pokemon
     {
-        public int Id { get; set; } 
+        public int Id { get; set; }  // Primary Key
         public string Name { get; set; }
-        public PokemonType? Type { get; set; }
-        public PokemonType? SecondType { get; set; }
-        public PokemonAbility? Ability { get; set; }
-
-        public PokemonViewModel ToViewModel(Pokemon pokemon)
-        {
-            return new PokemonViewModel
-            {
-                Id = pokemon.Id,
-                Name = pokemon.Name,
-                PokemonType1 = pokemon.Type,
-                PokemonType2 = pokemon.SecondType,
-                PokemonAbility = pokemon.Ability,
-            };
-        }
+        public string Url { get; set; } // URL to fetc
+        public List<PokemonTreinadorRelacionado> Pokemons { get; set; }
     }
-
-    public class PokemonType
+    public class PokemonStatsDetails
+    {
+        public int Id { get; set; } // Primary Key
+        public Pokemon Pokemon { get; set; }
+        public int PokemonId { get; set; } // Foreign Key to Pokemon
+        public string Type { get; set; }
+        public string Abilities { get; set; }
+        public int Height { get; set; }
+        public int Weight { get; set; }
+        public PokemonApiStat Stats { get; set; }
+    }
+    public class PokemonApiStat
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int Stat_HP{ get; set; }
+        public int Stat_ATTACK { get; set; }
+        public int Stat_SP_ATTACK { get; set; }
+        public int Stat_DEFENSE { get; set; }
+        public int Stat__SP_DEFENSE { get; set; }
+        public int Stat_SPEED { get; set; }
     }
+
 }

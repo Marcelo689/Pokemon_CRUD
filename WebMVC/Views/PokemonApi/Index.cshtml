@@ -1,4 +1,4 @@
-﻿@using WebMVC.ApiModels
+﻿@using WebMVC.ViewModels
 @model List<PokemonViewModel>
 
 @{
@@ -31,7 +31,7 @@
             <div class="card mb-3">
                 <!-- Link para os detalhes do Pokémon -->
                 <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
-                    <img src="@pokemon.ImageUrl" class="card-img-top" alt="@pokemon.Name">
+                    <img src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
                 </a>
                 <div class="card-body text-center">
                     <h5 class="card-title">@pokemon.Name.ToUpper()</h5>

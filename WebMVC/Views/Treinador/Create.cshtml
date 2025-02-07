@@ -1,0 +1,28 @@
+﻿@using WebMVC.ViewModels
+@model TreinadorViewModel
+
+@{
+    ViewData["Title"] = "Adicionar Treinador";
+}
+
+<h2>Adicionar Treinador</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Nome</label>
+        <input asp-for="Name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ImagePath" class="form-label">Imagem (URL)</label>
+        <input asp-for="ImagePath" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Location" class="form-label">Localização</label>
+        <input asp-for="Location" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
