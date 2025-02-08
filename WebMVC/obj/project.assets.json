@@ -2765,6 +2765,45 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "DB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.1",
+          "ModelsResponse": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DB.dll": {}
+        }
+      },
+      "ModelsResponse/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ModelsResponse.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModelsResponse.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DB": "1.0.0",
+          "ModelsResponse": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
       }
     }
   },
@@ -7326,17 +7365,35 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DB/1.0.0": {
+      "type": "project",
+      "path": "../DB/DB.csproj",
+      "msbuildProject": "../DB/DB.csproj"
+    },
+    "ModelsResponse/1.0.0": {
+      "type": "project",
+      "path": "../ApiModelsResponse/ModelsResponse.csproj",
+      "msbuildProject": "../ApiModelsResponse/ModelsResponse.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "DB >= 1.0.0",
       "Dapper >= 2.1.35",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 9.0.1",
       "Microsoft.Data.SqlClient >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0",
+      "ModelsResponse >= 1.0.0",
+      "Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7371,7 +7428,17 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj": {
+              "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj"
+            },
+            "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj": {
+              "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj"
+            },
+            "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

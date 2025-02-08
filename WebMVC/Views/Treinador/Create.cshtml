@@ -1,4 +1,4 @@
-﻿@using WebMVC.ViewModels
+﻿@using ApiModelsResponse.ViewModels
 @model TreinadorViewModel
 
 @{
@@ -7,15 +7,16 @@
 
 <h2>Adicionar Treinador</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Nome</label>
         <input asp-for="Name" class="form-control" required>
     </div>
 
     <div class="mb-3">
-        <label asp-for="ImagePath" class="form-label">Imagem (URL)</label>
-        <input asp-for="ImagePath" class="form-control">
+        <label asp-for="ImagePath" class="form-label">Imagem</label>
+        <input type="file" class="form-control" id="imageUpload" accept="image/*">
+        <input type="hidden" asp-for="ImagePath" id="imagePath">
     </div>
 
     <div class="mb-3">
@@ -23,6 +24,123 @@
         <input asp-for="Location" class="form-control" required>
     </div>
 
+    <h4>Pokémons</h4>
+    <div id="pokemonContainer">
+        @for (int i = 0; i < 6; i++)
+        {
+            <div class="pokemon-slot border p-3 mb-2">
+                <h5>Pokémon @(i + 1)</h5>
+                <div class="mb-2">
+                    <label class="form-label">Filtrar Pokémon</label>
+                    <input type="text" class="form-control pokemon-filter" data-index="@i" placeholder="Digite para buscar...">
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Selecionar Pokémon</label>
+                    <select name="Pokemons[@i].Name" class="form-control pokemon-select" data-index="@i">
+                        <option value="">Selecione um Pokémon</option>
+                        @foreach (var pokemon in Model.Pokemons)
+                        {
+                            <option value="@pokemon.Name" 
+                                type1="@pokemon.PokemonType1?.Name"
+                                type2="@pokemon.PokemonType2?.Name"
+                                ability1="@pokemon.Ability1?.Name"
+                                ability2="@pokemon.Ability2?.Name"
+                                ability3="@pokemon.Ability3?.Name"
+                            >@pokemon.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Tipo Primário</label>
+                    <input type="text" name="Pokemons[@i].Type.Name" class="form-control" readonly>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Tipo Secundário</label>
+                    <input type="text" name="Pokemons[@i].SecondType.Name" class="form-control" readonly>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Habilidade</label>
+                    <select name="Pokemons[@i].Ability.Name" class="form-control ability-select">
+                        <option value="">Selecione uma habilidade</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Level</label>
+                    <input type="number" name="Pokemons[@i].Level" class="form-control" min="1" max="100">
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Movimentos</label>
+                    <input type="text" name="Pokemons[@i].Move1" class="form-control" placeholder="Movimento 1">
+                    <input type="text" name="Pokemons[@i].Move2" class="form-control mt-1" placeholder="Movimento 2">
+                    <input type="text" name="Pokemons[@i].Move3" class="form-control mt-1" placeholder="Movimento 3">
+                    <input type="text" name="Pokemons[@i].Move4" class="form-control mt-1" placeholder="Movimento 4">
+                </div>
+            </div>
+        }
+    </div>
+
     <button type="submit" class="btn btn-primary">Salvar</button>
     <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
 </form>
+
+<script>
+    document.getElementById('imageUpload').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('imagePath').value = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    document.querySelectorAll('.pokemon-filter').forEach(input => {
+        input.addEventListener('input', function() {
+            const index = this.getAttribute('data-index');
+            const filterValue = this.value.toLowerCase();
+            const select = document.querySelector(`.pokemon-select[data-index='${index}']`);
+
+            Array.from(select.options).forEach(option => {
+                if (option.value.toLowerCase().includes(filterValue) || option.value === "") {
+                    option.hidden = false;
+                } else {
+                    option.hidden = true;
+                }
+            });
+        });
+    });
+
+    document.querySelectorAll('.pokemon-select').forEach(select => {
+        select.addEventListener('change', function() {
+            const index = this.getAttribute('data-index');
+            const selectedOption = this.selectedOptions[0]; // Obtem a opção selecionada
+
+            // Recupera os atributos da opção selecionada
+            const type1 = selectedOption.getAttribute('type1') || "";
+            const type2 = selectedOption.getAttribute('type2') || "";
+            const ability1 = selectedOption.getAttribute('ability1') || "";
+            const ability2 = selectedOption.getAttribute('ability2') || "";
+            const ability3 = selectedOption.getAttribute('ability3') || "";
+
+            // Preenche os tipos
+            document.querySelector(`[name='Pokemons[${index}].Type.Name']`).value = type1;
+            document.querySelector(`[name='Pokemons[${index}].SecondType.Name']`).value = type2;
+
+            // Atualiza as habilidades disponíveis no select
+            const abilitySelect = document.querySelector(`[name='Pokemons[${index}].Ability.Name']`);
+            abilitySelect.innerHTML = "<option value=''>Selecione uma habilidade</option>";
+
+            if (ability1) {
+                abilitySelect.innerHTML += `<option value='${ability1}'>${ability1}</option>`;
+            }
+            if (ability2) {
+                abilitySelect.innerHTML += `<option value='${ability2}'>${ability2}</option>`;
+            }
+            if (ability3) {
+                abilitySelect.innerHTML += `<option value='${ability3}'>${ability3}</option>`;
+            }
+        });
+    });
+
+</script>

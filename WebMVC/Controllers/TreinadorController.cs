@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebMVC.Models;
+﻿using ApiModelsResponse.ViewModels;
+using DB.Models;
+using Microsoft.AspNetCore.Mvc;
 using WebMVC.Service;
-using WebMVC.ViewModels;
 
 namespace WebMVC.Controllers
 {
@@ -21,20 +21,33 @@ namespace WebMVC.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var treinadorViewModel = new TreinadorViewModel();
+            _treinadorService.FillTreinadorViewModel(treinadorViewModel);
+            return View(treinadorViewModel);
+        }
+
+        public static Treinador Convert(TreinadorViewModel treinadorViewModel)
+        {
+            return new Treinador
+            {
+                Id = treinadorViewModel.Id,
+                Name = treinadorViewModel.Name,
+                ImagePath = treinadorViewModel.ImagePath,
+                Location = treinadorViewModel.Location,
+            };
         }
 
         [HttpPost]
         public IActionResult Create(TreinadorViewModel treinador, IFormFile image)
         {
-            if (ModelState.IsValid)
+            if (treinador.IsValid())
             {
                 if(image is not null && image.Length > 0)
                     AdicionaImagem(treinador, image);
                 else
                     treinador.ImagePath = "/images/default.png";
 
-                Treinador treinadorModel = (Treinador) treinador;
+                Treinador treinadorModel = Convert(treinador);
                 _treinadorService.AddTreinador(treinadorModel);
                 return RedirectToAction("Index");
             }

@@ -1,7 +1,8 @@
-﻿using System.Text.Json;
-using WebMVC.ApiModels;
-using WebMVC.ApiModels.ApiResponse;
-using WebMVC.Models;
+﻿using ApiModelsResponse.ApiModels;
+using ApiModelsResponse.ApiModels.ApiResponse;
+using DB.Data;
+using DB.Models;
+using System.Text.Json;
 
 namespace WebMVC.Data
 {
@@ -116,7 +117,7 @@ namespace WebMVC.Data
 
                 foreach (var type in typeList.TypeListResponseProp)
                 {
-                    var newType = new Models.PokemonType
+                    var newType = new DB.Models.PokemonType
                     {
                         Name = type.Name,
                         Url = type.Url,
@@ -195,7 +196,7 @@ namespace WebMVC.Data
                     var abilityDetailsResponse = await httpClient.GetStringAsync(ability.Url);
                     var abilityDetails = JsonSerializer.Deserialize<AbilityDetailsResponse>(abilityDetailsResponse);
 
-                    var newAbilityEntity = new Models.PokemonAbility
+                    var newAbilityEntity = new DB.Models.PokemonAbility
                     {
                         Name = abilityDetails.Name,
                         Description = abilityDetails.EffectEntries.Last()?.Effect ?? "Sem descrição"

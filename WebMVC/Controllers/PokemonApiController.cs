@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ApiModelsResponse.ViewModels;
+using DB.Models;
+using Microsoft.AspNetCore.Mvc;
 using WebMVC.Service;
-using WebMVC.ViewModels;
 
 namespace WebMVC.Controllers
 {
@@ -55,6 +56,28 @@ namespace WebMVC.Controllers
             return View(abilityDetails);
         }
 
+        public static PokemonDetailsViewModel Convert(PokemonDetails v)
+        {
+            return new PokemonDetailsViewModel
+            {
+                Id = v.Id,
+                HP = v.HP,
+                ATTACK = v.ATTACK,
+                DEFENSE = v.DEFENSE,
+                SP_ATTACK = v.SP_ATTACK,
+                SP_DEFENSE = v.SP_DEFENSE,
+                SPEED = v.SPEED,
+                height = v.height,
+                weight = v.weight,
+                Ability1Id = v.Ability1Id,
+                Ability2Id = v.Ability2Id,
+                Ability3Id = v.Ability3Id,
+                ImageUrl = v.ImageUrl,
+                Name = v.Name,
+                PokemonTypeId1 = v.PokemonTypeId1,
+                PokemonTypeId2 = v.PokemonTypeId2
+            };
+        }
         public async Task<ActionResult> Details(string pokemonName)
         {
             if (string.IsNullOrEmpty(pokemonName))
@@ -63,7 +86,7 @@ namespace WebMVC.Controllers
             }
 
             var pokemonDetails = _pokeApiService.GetPokemonDetailsByName(pokemonName);
-            var pokemonDetailsViewModel = (PokemonDetailsViewModel) pokemonDetails;
+            var pokemonDetailsViewModel = Convert(pokemonDetails);
             pokemonDetailsViewModel =  _pokeApiService.AddClassesToPokemonDetailsViewModel(pokemonDetailsViewModel);
 
             return View(pokemonDetailsViewModel);

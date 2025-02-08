@@ -1,5 +1,5 @@
-﻿@using WebMVC.ViewModels
-@model List<PokemonTreinadorViewModel>
+﻿@using ApiModelsResponse.ViewModels
+@model List<TreinadorViewModel>
 
 @{
     ViewData["Title"] = "Lista de Treinadores";
@@ -12,9 +12,9 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Imagem</th>
-            <th>Nome</th>
-            <th>Localização</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Location</th>
             <th>Ações</th>
         </tr>
     </thead>
@@ -22,7 +22,9 @@
         @foreach (var treinador in Model)
         {
             <tr>
+                <td><img src="@treinador.ImagePath"/></td>
                 <td>@treinador.Name</td>
+                <td>@treinador.Location</td>
                 <td>
                     <a asp-action="Details" asp-route-id="@treinador.Id" class="btn btn-info btn-sm">Detalhes</a>
                 </td>

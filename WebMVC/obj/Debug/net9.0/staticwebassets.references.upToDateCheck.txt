@@ -1,0 +1,2 @@
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.build.json
