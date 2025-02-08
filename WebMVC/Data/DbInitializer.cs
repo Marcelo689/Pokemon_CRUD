@@ -12,7 +12,6 @@ namespace WebMVC.Data
         const string Special = "special";
         public static async Task CreateDbIfNotExists(IHost host)
         {
-            
             using var scope = host.Services.CreateScope();
             var services = scope.ServiceProvider;
 
@@ -33,6 +32,7 @@ namespace WebMVC.Data
 
                 await context.SaveChangesAsync();
                 await DbInitializer.SavePokemonDetails(context, httpClient);
+                await context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -43,17 +43,15 @@ namespace WebMVC.Data
         private static async Task SavePokemonDetails(PokemonContext context, HttpClient httpClient)
         {
             var pokemons = context.Pokemon.ToList();
-            PokemonDetailsResponse pokemonDetails = null;
+            var allPokemonTypes = context.PokemonType.ToList(); // Pré-carrega tipos no cliente
+            var allAbilities = context.PokemonAbility.ToList(); // Pré-carrega habilidades no cliente
 
             foreach (var pokemon in pokemons)
             {
                 string url = $"https://pokeapi.co/api/v2/pokemon/{pokemon.Name.ToLower()}";
 
-                using (HttpClient client = new HttpClient())
-                {
-                    var response = await client.GetStringAsync(url);
-                    pokemonDetails = JsonSerializer.Deserialize<PokemonDetailsResponse>(response);
-                }
+                var response = await httpClient.GetStringAsync(url);
+                var pokemonDetails = JsonSerializer.Deserialize<PokemonDetailsResponse>(response);
 
                 var entidade = new PokemonDetails
                 {
@@ -67,31 +65,45 @@ namespace WebMVC.Data
                     SPEED = pokemonDetails.Stats[5].BaseStat,
                     height = pokemonDetails.height,
                     weight = pokemonDetails.weight,
-                    PokemonType1 = context.PokemonType.First(e => pokemonDetails.Types.First(f => f.Type.Name == e.Name) != null),
-                    PokemonType2 = context.PokemonType.First(e => pokemonDetails.Types.Last(t => t.Type.Name == e.Name) != null),
+                    PokemonType1 = allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types.Any(f => f.Type.Name == e.Name)),
+                    PokemonType2 = pokemonDetails.Types.Count > 1
+                        ? allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types[1].Type.Name == e.Name)
+                        : null,
                 };
 
-                for(var i = 0; i < pokemonDetails.Abilities.Count; i++)
+                entidade.PokemonTypeId1 = entidade.PokemonType1 != null ? entidade.PokemonType1.Id : (int?)null;
+                entidade.PokemonTypeId2 = entidade.PokemonType2 != null ? entidade.PokemonType2.Id : (int?)null;
+
+                for (var i = 0; i < pokemonDetails.Abilities.Count; i++)
                 {
                     var ability = pokemonDetails.Abilities[i];
                     string abilityName = ability.Ability.Name;
 
-                    switch (i)
+                    var abilityDb = allAbilities.FirstOrDefault(e => e.Name == abilityName);
+                    if (abilityDb != null)
                     {
-                        case 0 :
-                            entidade.Ability1 = context.PokemonAbility.First(e => e.Name == abilityName);
-                            break;
-                        case 1:
-                            entidade.Ability2 = context.PokemonAbility.First(e => e.Equals(abilityName));
-                            break;
-                        case 2:
-                            entidade.Ability3 = context.PokemonAbility.First(e => e.Equals(abilityName));
-                            break;
+                        switch (i)
+                        {
+                            case 0:
+                                entidade.Ability1 = abilityDb;
+                                entidade.Ability1Id = abilityDb.Id;
+                                break;
+                            case 1:
+                                entidade.Ability2 = abilityDb;
+                                entidade.Ability2Id = abilityDb.Id;
+                                break;
+                            case 2:
+                                entidade.Ability3 = abilityDb;
+                                entidade.Ability3Id = abilityDb.Id;
+                                break;
+                        }
                     }
                 }
 
                 context.PokemonStatsDetails.Add(entidade);
             }
+
+            await context.SaveChangesAsync(); // Salva as alterações no banco após processar todos os Pokémon
         }
 
         private static async Task SaveTypesFromApi(PokemonContext context, HttpClient httpClient)
@@ -124,14 +136,12 @@ namespace WebMVC.Data
             {
                 Console.WriteLine("Erro inesperado: " + ex.Message);
             }
-
         }
 
         private static async Task SaveMovesFromApi(PokemonContext context, HttpClient httpClient)
         {
             try
             {
-
                 string url = "https://pokeapi.co/api/v2/move?limit=1000"; // Puxa todos os movimentos
                 var response = await httpClient.GetStringAsync(url);
                 var movesList = JsonSerializer.Deserialize<MoveListReponse>(response);
@@ -144,8 +154,11 @@ namespace WebMVC.Data
                     var newMove = new Move
                     {
                         Name = move.Name,
-                        Description = moveDetails.EffectEntry.First().Effect,
-                        ShortDescription = moveDetails.EffectEntry.First().ShortEffect,
+                        Accuracy = moveDetails.Accuracy,
+                        Power = moveDetails.Power,
+                        PP = moveDetails.PP,
+                        Description = moveDetails.EffectEntry.FirstOrDefault()?.Effect ?? "No Description available",
+                        ShortDescription = moveDetails.EffectEntry.FirstOrDefault()?.ShortEffect ?? "No Description available",
                         isPhysical = moveDetails.DamageClass.Name == Physical,
                         isSpecial = moveDetails.DamageClass.Name == Special,
                         isStatus = moveDetails.DamageClass.Name == Status,

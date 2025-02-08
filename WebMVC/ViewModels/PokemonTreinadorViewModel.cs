@@ -1,4 +1,6 @@
-﻿namespace WebMVC.ViewModels
+﻿using WebMVC.Models;
+
+namespace WebMVC.ViewModels
 {
     public class PokemonTreinadorViewModel
     {
@@ -22,11 +24,21 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public static explicit operator PokemonTypeViewModel(PokemonType v)
+        {
+            return new PokemonTypeViewModel { Id = v.Id, Name = v.Name };
+        }
     }
 
     public class PokemonAbilityViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public static explicit operator PokemonAbilityViewModel(PokemonAbility v)
+        {
+            return new PokemonAbilityViewModel { Id = v.Id, Name = v.Name };
+        }
     }
 }

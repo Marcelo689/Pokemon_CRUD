@@ -3,6 +3,7 @@ using WebMVC.ApiModels;
 using WebMVC.ApiModels.ApiResponse;
 using WebMVC.Data;
 using WebMVC.Models;
+using WebMVC.ViewModels;
 
 namespace WebMVC.Service
 {
@@ -43,8 +44,8 @@ namespace WebMVC.Service
                 });
             }
 
-            return new ViewModel { 
-                 PokemonList = pokemons
+            return new ViewModel {
+                PokemonList = pokemons
             };
         }
 
@@ -67,6 +68,49 @@ namespace WebMVC.Service
         public async Task SavePokemonDetailsAsync(PokemonDetails details)
         {
             _context.PokemonStatsDetails.Add(details);
+        }
+
+        public PokemonDetails GetPokemonDetailsByName(string pokemonName)
+        {
+            return _context.PokemonStatsDetails.First(e => e.Name.Contains(pokemonName.ToLower()));
+        }
+
+        public PokemonDetailsViewModel AddClassesToPokemonDetailsViewModel(PokemonDetailsViewModel pokemonDetailsViewModel)
+        {
+            pokemonDetailsViewModel.Ability1 = (PokemonAbilityViewModel)_context.PokemonAbility.First(e => e.Id == pokemonDetailsViewModel.Ability1Id);
+            if (pokemonDetailsViewModel.Ability2Id != 0)
+                pokemonDetailsViewModel.Ability2 = (PokemonAbilityViewModel)_context.PokemonAbility.First(e => e.Id == pokemonDetailsViewModel.Ability2Id);
+            if(pokemonDetailsViewModel.Ability3Id != 0)
+                pokemonDetailsViewModel.Ability3 = (PokemonAbilityViewModel)_context.PokemonAbility.First(e => e.Id == pokemonDetailsViewModel.Ability3Id);
+
+            pokemonDetailsViewModel.PokemonType1 = (PokemonTypeViewModel)_context.PokemonType.First(e => e.Id == pokemonDetailsViewModel.PokemonTypeId1);
+
+            if (pokemonDetailsViewModel.PokemonTypeId2 is not null)
+                pokemonDetailsViewModel.PokemonType2 = (PokemonTypeViewModel)_context.PokemonType.First(e => e.Id == pokemonDetailsViewModel.PokemonTypeId2);
+
+            return pokemonDetailsViewModel;
+        }
+
+        public AbilityDetailsViewModel GetPokemonAbilityByName(string abilityName)
+        {
+            AbilityDetailsViewModel viewModel = new AbilityDetailsViewModel();
+            var ability = _context.PokemonAbility.First(e => e.Name == abilityName);
+            var pokemonsWithSameAbilty = _context.PokemonStatsDetails.Where(e =>
+                e.Ability1Id == ability.Id ||
+                e.Ability2Id == ability.Id ||
+                e.Ability3Id == ability.Id
+            );
+
+            viewModel.Pokemon = new();
+            foreach (var pokemon in pokemonsWithSameAbilty)
+            {
+                viewModel.Pokemon.Add(pokemon.Name);
+            }
+
+            viewModel.Name = ability.Name;
+            viewModel.EffectEntries = ability.Description;
+            viewModel.Description = ability.Description;
+            return viewModel;
         }
     }
 

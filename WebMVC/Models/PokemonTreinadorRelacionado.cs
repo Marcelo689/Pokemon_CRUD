@@ -23,10 +23,13 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int? Power { get; set; }
         public bool isPhysical { get; set; }
         public bool isSpecial { get; set; }
         public bool isStatus { get; set; }
         public string ShortDescription { get; set; }
-        public string Description { get; set; } 
+        public string Description { get; set; }
+        public int? Accuracy { get; set; }
+        public int? PP { get; set; }
     }
 }

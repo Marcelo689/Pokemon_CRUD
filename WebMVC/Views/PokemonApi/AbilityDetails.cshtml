@@ -1,5 +1,5 @@
-﻿@using WebMVC.ApiModels.ApiResponse
-@model AbilityDetailsResponse
+﻿@using WebMVC.ViewModels
+@model AbilityDetailsViewModel
 
 @{
     Layout = "_Layout"; // Ensure this page uses the layout you already have
@@ -11,14 +11,14 @@
 
         <div class="ability-effect">
             <h3>Effect</h3>
-            <p>@Model.EffectEntries.Last().Effect</p>
+            <p>@Model.EffectEntries</p>
         </div>
         <div>
             <h1>Pokemons who has the ability</h1>
             @foreach (var pokemon in Model.Pokemon)
             {
-                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Pokemon.Name })">
-                    <h4>@pokemon.Pokemon.Name</h4>
+                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon})">
+                    <h4>@pokemon</h4>
                 </a>
             }
         </div>

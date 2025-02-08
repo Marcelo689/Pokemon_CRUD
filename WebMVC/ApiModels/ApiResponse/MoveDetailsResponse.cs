@@ -5,16 +5,16 @@ namespace WebMVC.ApiModels.ApiResponse
     public class MoveDetailsResponse
     {
         [JsonPropertyName("accuracy")]
-        public int Accuracy { get; set; }
+        public int? Accuracy { get; set; }
 
         [JsonPropertyName("type")]
         public MoveTypeResponse Type { get; set; }
 
         [JsonPropertyName("power")]
-        public int Power { get; set; }
+        public int? Power { get; set; }
 
         [JsonPropertyName("pp")]
-        public int PP { get; set; }
+        public int? PP { get; set; }
 
         [JsonPropertyName("priority")]
         public int Priority { get; set; }
@@ -23,10 +23,10 @@ namespace WebMVC.ApiModels.ApiResponse
         public DamageClassResponse DamageClass { get; set; }
 
         [JsonPropertyName("learned_by_pokemon")]
-        public List<PokemonViewModelResponse> LearnedByPokemon { get; set; }
+        public List<PokemonViewModelResponse> LearnedByPokemon { get; set; } = new ();
 
         [JsonPropertyName("effect_entries")]
-        public List<EffectEntriesResponse> EffectEntry { get; set;}
+        public List<EffectEntriesResponse> EffectEntry { get; set; } = new();
     }
     public class DamageClassResponse
     {

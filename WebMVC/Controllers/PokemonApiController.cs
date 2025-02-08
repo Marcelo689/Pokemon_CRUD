@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
-using WebMVC.ApiModels.ApiResponse;
-using WebMVC.Models;
 using WebMVC.Service;
 using WebMVC.ViewModels;
 
@@ -47,36 +44,15 @@ namespace WebMVC.Controllers
             return View(pagedResults);
         }
 
-        private async Task SavingApiDataIntoDB(ViewModel viewModel)
-        {
-            foreach (var pokemon in viewModel.PokemonList)
-            {
-                var pokemonEntity = new Pokemon
-                {
-                    Name = pokemon.Name,
-                    Url = pokemon.Url
-                };
-            }
-        }
-
         public async Task<ActionResult> AbilityDetails(string abilityName)
         {
             if (string.IsNullOrEmpty(abilityName))
             {
                 return RedirectToAction("Index");
             }
+            AbilityDetailsViewModel abilityDetails = _pokeApiService.GetPokemonAbilityByName(abilityName);
 
-            // A URL to fetch detailed information about the ability from the API
-            string url = $"https://pokeapi.co/api/v2/ability/{abilityName.ToLower()}";
-
-            using (HttpClient client = new HttpClient())
-            {
-                var response = await client.GetStringAsync(url);
-                var abilityDetails = JsonSerializer.Deserialize<AbilityDetailsResponse>(response);
-
-                // Pass the ability details to the view
-                return View(abilityDetails);
-            }
+            return View(abilityDetails);
         }
 
         public async Task<ActionResult> Details(string pokemonName)
@@ -86,16 +62,11 @@ namespace WebMVC.Controllers
                 return RedirectToAction("Index");
             }
 
-            PokemonDetailsResponse pokemonDetails = null;
-            string url = $"https://pokeapi.co/api/v2/pokemon/{pokemonName.ToLower()}";
+            var pokemonDetails = _pokeApiService.GetPokemonDetailsByName(pokemonName);
+            var pokemonDetailsViewModel = (PokemonDetailsViewModel) pokemonDetails;
+            pokemonDetailsViewModel =  _pokeApiService.AddClassesToPokemonDetailsViewModel(pokemonDetailsViewModel);
 
-            using (HttpClient client = new HttpClient())
-            {
-                var response = await client.GetStringAsync(url);
-                pokemonDetails = JsonSerializer.Deserialize<PokemonDetailsResponse>(response);
-            }
-
-            return View(pokemonDetails);
+            return View(pokemonDetailsViewModel);
         }
     }
 }

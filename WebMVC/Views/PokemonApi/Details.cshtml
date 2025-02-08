@@ -1,5 +1,5 @@
-﻿@using WebMVC.ApiModels.ApiResponse
-@model PokemonDetailsResponse
+﻿@using WebMVC.ViewModels
+@model PokemonDetailsViewModel
 
 <div class="row">
     <div class="col-md-4">
@@ -11,36 +11,110 @@
 
         <h5>Tipos:</h5>
         <ul>
-            @foreach (var type in Model.Types)
+            <li>@Model.PokemonType1.Name</li>
+            @if (Model.PokemonType2 != null)
             {
-                <li>@type.Type.Name.ToUpper()</li>
+                <li>@Model.PokemonType2.Name</li>
             }
         </ul>
 
         <h5>Habilidades:</h5>
         <ul>
-            @foreach (var ability in Model.Abilities)
+            <li>
+                <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability1.Name})">
+                    @Model.Ability1.Name
+                </a>
+            </li>
+            @if (Model.Ability2 != null)
             {
                 <li>
-                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = ability.Ability.Name})">
-                        @ability.Ability.Name
+                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability2.Name})">
+                        @Model.Ability2.Name
+                    </a>
+                </li>
+            }
+            @if (Model.Ability3 != null)
+            {
+                <li>
+                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability3.Name})">
+                        @Model.Ability3.Name
                     </a>
                 </li>
             }
         </ul>
 
         <h5>Estatísticas:</h5>
-        @foreach (var stat in Model.Stats)
-        {
-            if(stat is null){
-                continue;
-            }
-            <div class="mb-2">
-                <span><strong>@stat.Stat.Name.ToUpper():</strong> @stat.BaseStat</span>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: @stat.BaseStat%;" aria-valuenow="@stat.BaseStat" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="mb-2">
+            <span><strong>HP</strong> @Model.HP</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.HP / 2)%;"
+                     aria-valuenow="@Model.HP"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
                 </div>
             </div>
-        }
+        </div>
+
+        <div class="mb-2">
+            <span><strong>ATTACK</strong> @Model.ATTACK</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.ATTACK / 2)%;"
+                     aria-valuenow="@Model.ATTACK"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>DEFENSE</strong> @Model.DEFENSE</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.DEFENSE / 2)%;"
+                     aria-valuenow="@Model.DEFENSE"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>SPECIAL ATTACK</strong> @Model.SP_ATTACK</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.SP_ATTACK / 2)%;"
+                     aria-valuenow="@Model.SP_ATTACK"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>SPECIAL DEFENSE</strong> @Model.SP_DEFENSE</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.SP_DEFENSE / 2)%;"
+                     aria-valuenow="@Model.SP_DEFENSE"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>SPEED</strong> @Model.SPEED</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.SPEED / 2)%;"
+                     aria-valuenow="@Model.SPEED"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
