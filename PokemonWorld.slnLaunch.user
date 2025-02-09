@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "WebMVC\\WebMVC.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "Aspnet core web api\\PokemonApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

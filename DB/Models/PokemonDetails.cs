@@ -31,5 +31,6 @@ namespace DB.Models
         public string ImageUrl { get; set; }
         public int weight { get; set; }
         public int height { get; set; }
+        public int PokemonId { get; set; }
     }
 }

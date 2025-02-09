@@ -60,6 +60,26 @@ namespace WebMVC.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "PokemonMove",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PokemonName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MoveName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MoveId = table.Column<int>(type: "int", nullable: false),
+                    Power = table.Column<int>(type: "int", nullable: true),
+                    Accuracy = table.Column<int>(type: "int", nullable: true),
+                    PP = table.Column<int>(type: "int", nullable: true),
+                    IsSpecial = table.Column<bool>(type: "bit", nullable: false),
+                    ShortDescription = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PokemonMove", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "PokemonStatsDetails",
                 columns: table => new
                 {
@@ -188,6 +208,9 @@ namespace WebMVC.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Move");
+
+            migrationBuilder.DropTable(
+                name: "PokemonMove");
 
             migrationBuilder.DropTable(
                 name: "PokemonStatsDetails");

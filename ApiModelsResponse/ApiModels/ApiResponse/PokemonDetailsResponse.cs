@@ -14,6 +14,9 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
         [JsonPropertyName("abilities")]
         public List<PokemonAbility> Abilities { get; set; }  // Modificado para refletir o JSON correto
 
+        [JsonPropertyName("moves")]
+        public List<MoveListResponse> MovesListResponse { get; set; }
+
         [JsonPropertyName("types")]
         public List<PokemonType> Types { get; set; }  // Modificado para refletir a estrutura correta
 
@@ -26,6 +29,21 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
         public string ImageUrl => Sprites?.Other?.OfficialArtwork?.FrontDefault;
         public int weight { get; set; }
         public int height { get; set; }
+    }
+
+    public class MoveListResponse
+    {
+        [JsonPropertyName("move")]
+        public MoveResponse Move { get; set; }
+    }
+
+    public class MoveResponse
+    {
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("url")]
+        public string Url { get; set; }
     }
 
     public class PokemonAbility

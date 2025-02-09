@@ -1,33 +1,32 @@
 ﻿using DB.Data;
 using Microsoft.AspNetCore.Mvc;
+using ModelsResponse.ViewModels;
+using WebMVC.Service;
 
 namespace DB.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class PokemonRestApiController : ControllerBase
     {
+        private readonly PokeApiService _pokeApiService;
         private readonly PokemonContext _context;
 
-        public PokemonRestApiController(PokemonContext context)
+        public PokemonRestApiController(PokeApiService pokeApiService, PokemonContext context)
         {
+            _pokeApiService = pokeApiService;
             _context = context;
         }
 
-        //[HttpGet("movimentos/{pokemonId}")]
-        //public IActionResult GetMovimentos(int pokemonId)
-        //{
-        //    var pokemon = _context.Pokemon.First( e => e.Id == pokemonId);
+        [HttpGet("movimentos/{pokemonId}")]
+        public IActionResult GetMovimentos(int pokemonId)
+        {
+            var pokemon = _context.Pokemon.First(e => e.Id == pokemonId);
+            string pokemonName = pokemon.Name;
 
+            List<MoveViewModel> listaMoves = _pokeApiService.GetMovesFromPokemon(pokemonName);
 
-        //    var pokemon = _context.PokemonStatsDetails
-        //        .Include(p => p.Movimentos)  // Supondo que você tenha uma relação com a tabela de movimentos
-        //        .FirstOrDefault(p => p.Id == pokemonId);
-
-        //    if (pokemon == null)
-        //        return NotFound();
-
-        //    return Ok(pokemon.Movimentos);
-        //}
+            return Ok(listaMoves);
+        }
     }
 }

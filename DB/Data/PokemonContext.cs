@@ -25,6 +25,6 @@ namespace DB.Data
         public DbSet<Treinador> Treinador{ get; set; }
         public DbSet<PokemonTreinadorRelacionado> PokemonTreinador{ get; set; }
         public DbSet<PokemonDetails> PokemonStatsDetails { get; set; }
-
+        public DbSet<PokemonMove> PokemonMove { get; set; }
     }
 }

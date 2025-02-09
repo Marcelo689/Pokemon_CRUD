@@ -79,3 +79,5 @@ C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\Po
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\ref\PokemonApi.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.dll
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.pdb

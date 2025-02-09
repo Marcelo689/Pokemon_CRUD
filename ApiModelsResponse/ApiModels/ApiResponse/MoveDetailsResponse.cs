@@ -4,6 +4,9 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
 {
     public class MoveDetailsResponse
     {
+        [JsonPropertyName("id")]
+        public int Id { get; set; } 
+
         [JsonPropertyName("accuracy")]
         public int? Accuracy { get; set; }
 
@@ -23,10 +26,10 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
         public DamageClassResponse DamageClass { get; set; }
 
         [JsonPropertyName("learned_by_pokemon")]
-        public List<PokemonViewModelResponse> LearnedByPokemon { get; set; } = new ();
+        public List<PokemonViewModelResponse> LearnedByPokemonList { get; set; } = new ();
 
         [JsonPropertyName("effect_entries")]
-        public List<EffectEntriesResponse> EffectEntry { get; set; } = new();
+        public List<EffectEntriesResponse> EffectEntryList { get; set; } = new();
     }
     public class DamageClassResponse
     {

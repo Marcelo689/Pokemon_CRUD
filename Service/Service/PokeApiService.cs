@@ -3,6 +3,7 @@ using ApiModelsResponse.ApiModels.ApiResponse;
 using ApiModelsResponse.ViewModels;
 using DB.Data;
 using DB.Models;
+using ModelsResponse.ViewModels;
 using Service.Service;
 using System.Text.Json;
 namespace WebMVC.Service
@@ -111,6 +112,23 @@ namespace WebMVC.Service
             viewModel.EffectEntries = ability.Description;
             viewModel.Description = ability.Description;
             return viewModel;
+        }
+
+        public List<MoveViewModel> GetMovesFromPokemon(string pokemonName)
+        {
+            return _context.PokemonMove.Where(e => e.PokemonName.Equals(pokemonName)).Select( e => new MoveViewModel()
+            {
+                Id = e.MoveId,
+                Name = e.MoveName,
+                PokemonName = e.PokemonName,
+                Power = e.Power,
+                Accuracy = e.Accuracy,
+                IsSpecial = e.IsSpecial,
+                IsPhysical = e.isPhysical,
+                IsStatus = e.isStatus,
+                PP = e.PP,
+                ShortDescription = e.ShortDescription,
+            }).ToList();
         }
     }
 

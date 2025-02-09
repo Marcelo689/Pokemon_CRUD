@@ -11,7 +11,8 @@
           "DB": "1.0.0",
           "Dapper": "2.1.35",
           "Microsoft.AspNetCore.OpenApi": "9.0.1",
-          "Microsoft.Data.SqlClient": "6.0.1"
+          "Microsoft.Data.SqlClient": "6.0.1",
+          "Service": "1.0.0"
         },
         "runtime": {
           "PokemonApi.dll": {}
@@ -472,6 +473,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Service/1.0.0": {
+        "dependencies": {
+          "DB": "1.0.0",
+          "ModelsResponse": "1.0.0"
+        },
+        "runtime": {
+          "Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -816,6 +829,11 @@
       "sha512": ""
     },
     "ModelsResponse/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

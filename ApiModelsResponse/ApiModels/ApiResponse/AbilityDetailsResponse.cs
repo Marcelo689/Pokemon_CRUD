@@ -16,6 +16,8 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
         [JsonPropertyName("description")]
         public string Description { get; set; }  // Description of the ability
 
+        [JsonPropertyName("name")]
+        public int Id { get; set; }
     }
 
     public class EffectEntries

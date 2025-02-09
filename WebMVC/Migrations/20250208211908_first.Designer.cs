@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebMVC.Migrations
 {
     [DbContext(typeof(PokemonContext))]
-    [Migration("20250208173625_first")]
+    [Migration("20250208211908_first")]
     partial class first
     {
         /// <inheritdoc />
@@ -167,6 +167,46 @@ namespace WebMVC.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PokemonStatsDetails");
+                });
+
+            modelBuilder.Entity("DB.Models.PokemonMove", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("Accuracy")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsSpecial")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MoveId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MoveName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PP")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PokemonName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Power")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ShortDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PokemonMove");
                 });
 
             modelBuilder.Entity("DB.Models.PokemonTreinadorRelacionado", b =>

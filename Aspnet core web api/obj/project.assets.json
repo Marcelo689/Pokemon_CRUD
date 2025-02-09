@@ -869,6 +869,20 @@
         "runtime": {
           "bin/placeholder/ModelsResponse.dll": {}
         }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DB": "1.0.0",
+          "ModelsResponse": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
       }
     },
     "net9.0/linux-x64": {
@@ -1696,6 +1710,20 @@
         },
         "runtime": {
           "bin/placeholder/ModelsResponse.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DB": "1.0.0",
+          "ModelsResponse": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
         }
       }
     }
@@ -2992,6 +3020,11 @@
       "type": "project",
       "path": "../ApiModelsResponse/ModelsResponse.csproj",
       "msbuildProject": "../ApiModelsResponse/ModelsResponse.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2999,7 +3032,8 @@
       "DB >= 1.0.0",
       "Dapper >= 2.1.35",
       "Microsoft.AspNetCore.OpenApi >= 9.0.1",
-      "Microsoft.Data.SqlClient >= 6.0.1"
+      "Microsoft.Data.SqlClient >= 6.0.1",
+      "Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3037,6 +3071,9 @@
           "projectReferences": {
             "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj": {
               "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj"
+            },
+            "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service.csproj"
             }
           }
         }

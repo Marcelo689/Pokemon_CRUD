@@ -2,6 +2,7 @@
 using ApiModelsResponse.ApiModels.ApiResponse;
 using DB.Data;
 using DB.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
 namespace WebMVC.Data
@@ -26,14 +27,19 @@ namespace WebMVC.Data
                 var httpClient = services.GetRequiredService<HttpClient>();
                 httpClient.Timeout = TimeSpan.FromSeconds(60);
 
+                await context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT PokemonStatsDetails ON");
+
                 await DbInitializer.SavePokemonsFromApi(context, httpClient);
                 await DbInitializer.SaveTypesFromApi(context, httpClient);
                 await DbInitializer.SaveAbilitiesFromApi(context, httpClient);
                 await DbInitializer.SaveMovesFromApi(context, httpClient);
 
+
                 await context.SaveChangesAsync();
                 await DbInitializer.SavePokemonDetails(context, httpClient);
                 await context.SaveChangesAsync();
+
+                await context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT PokemonStatsDetails OFF");
             }
             catch (Exception ex)
             {
@@ -47,64 +53,71 @@ namespace WebMVC.Data
             var allPokemonTypes = context.PokemonType.ToList(); // Pré-carrega tipos no cliente
             var allAbilities = context.PokemonAbility.ToList(); // Pré-carrega habilidades no cliente
 
-            foreach (var pokemon in pokemons)
+            try
             {
-                string url = $"https://pokeapi.co/api/v2/pokemon/{pokemon.Name.ToLower()}";
-
-                var response = await httpClient.GetStringAsync(url);
-                var pokemonDetails = JsonSerializer.Deserialize<PokemonDetailsResponse>(response);
-
-                var entidade = new PokemonDetails
+                foreach (var pokemon in pokemons)
                 {
-                    Name = pokemon.Name,
-                    ImageUrl = pokemonDetails.ImageUrl,
-                    HP = pokemonDetails.Stats[0].BaseStat,
-                    ATTACK = pokemonDetails.Stats[1].BaseStat,
-                    DEFENSE = pokemonDetails.Stats[2].BaseStat,
-                    SP_ATTACK = pokemonDetails.Stats[3].BaseStat,
-                    SP_DEFENSE = pokemonDetails.Stats[4].BaseStat,
-                    SPEED = pokemonDetails.Stats[5].BaseStat,
-                    height = pokemonDetails.height,
-                    weight = pokemonDetails.weight,
-                    PokemonType1 = allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types.Any(f => f.Type.Name == e.Name)),
-                    PokemonType2 = pokemonDetails.Types.Count > 1
-                        ? allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types[1].Type.Name == e.Name)
-                        : null,
-                };
+                    string url = $"https://pokeapi.co/api/v2/pokemon/{pokemon.Name.ToLower()}";
 
-                entidade.PokemonTypeId1 = entidade.PokemonType1 != null ? entidade.PokemonType1.Id : (int?)null;
-                entidade.PokemonTypeId2 = entidade.PokemonType2 != null ? entidade.PokemonType2.Id : (int?)null;
+                    var response = await httpClient.GetStringAsync(url);
+                    var pokemonDetails = JsonSerializer.Deserialize<PokemonDetailsResponse>(response);
 
-                for (var i = 0; i < pokemonDetails.Abilities.Count; i++)
-                {
-                    var ability = pokemonDetails.Abilities[i];
-                    string abilityName = ability.Ability.Name;
-
-                    var abilityDb = allAbilities.FirstOrDefault(e => e.Name == abilityName);
-                    if (abilityDb != null)
+                    var entidade = new PokemonDetails
                     {
-                        switch (i)
+                        PokemonId = pokemon.Id,
+                        Name = pokemon.Name,
+                        ImageUrl = pokemonDetails.ImageUrl,
+                        HP = pokemonDetails.Stats[0].BaseStat,
+                        ATTACK = pokemonDetails.Stats[1].BaseStat,
+                        DEFENSE = pokemonDetails.Stats[2].BaseStat,
+                        SP_ATTACK = pokemonDetails.Stats[3].BaseStat,
+                        SP_DEFENSE = pokemonDetails.Stats[4].BaseStat,
+                        SPEED = pokemonDetails.Stats[5].BaseStat,
+                        height = pokemonDetails.height,
+                        weight = pokemonDetails.weight,
+                        PokemonType1 = allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types.Any(f => f.Type.Name == e.Name)),
+                        PokemonType2 = pokemonDetails.Types.Count > 1
+                            ? allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types[1].Type.Name == e.Name)
+                            : null,
+                    };
+
+                    entidade.PokemonTypeId1 = entidade.PokemonType1 != null ? entidade.PokemonType1.Id : (int?)null;
+                    entidade.PokemonTypeId2 = entidade.PokemonType2 != null ? entidade.PokemonType2.Id : (int?)null;
+
+                    for (var i = 0; i < pokemonDetails.Abilities.Count; i++)
+                    {
+                        var ability = pokemonDetails.Abilities[i];
+                        string abilityName = ability.Ability.Name;
+
+                        var abilityDb = allAbilities.FirstOrDefault(e => e.Name == abilityName);
+                        if (abilityDb != null)
                         {
-                            case 0:
-                                entidade.Ability1 = abilityDb;
-                                entidade.Ability1Id = abilityDb.Id;
-                                break;
-                            case 1:
-                                entidade.Ability2 = abilityDb;
-                                entidade.Ability2Id = abilityDb.Id;
-                                break;
-                            case 2:
-                                entidade.Ability3 = abilityDb;
-                                entidade.Ability3Id = abilityDb.Id;
-                                break;
+                            switch (i)
+                            {
+                                case 0:
+                                    entidade.Ability1 = abilityDb;
+                                    entidade.Ability1Id = abilityDb.Id;
+                                    break;
+                                case 1:
+                                    entidade.Ability2 = abilityDb;
+                                    entidade.Ability2Id = abilityDb.Id;
+                                    break;
+                                case 2:
+                                    entidade.Ability3 = abilityDb;
+                                    entidade.Ability3Id = abilityDb.Id;
+                                    break;
+                            }
                         }
                     }
-                }
 
-                context.PokemonStatsDetails.Add(entidade);
+                    context.PokemonStatsDetails.Add(entidade);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
 
-            await context.SaveChangesAsync(); // Salva as alterações no banco após processar todos os Pokémon
         }
 
         private static async Task SaveTypesFromApi(PokemonContext context, HttpClient httpClient)
@@ -158,12 +171,29 @@ namespace WebMVC.Data
                         Accuracy = moveDetails.Accuracy,
                         Power = moveDetails.Power,
                         PP = moveDetails.PP,
-                        Description = moveDetails.EffectEntry.FirstOrDefault()?.Effect ?? "No Description available",
-                        ShortDescription = moveDetails.EffectEntry.FirstOrDefault()?.ShortEffect ?? "No Description available",
+                        Description = moveDetails.EffectEntryList.FirstOrDefault()?.Effect ?? "No Description available",
+                        ShortDescription = moveDetails.EffectEntryList.FirstOrDefault()?.ShortEffect ?? "No Description available",
                         isPhysical = moveDetails.DamageClass.Name == Physical,
                         isSpecial = moveDetails.DamageClass.Name == Special,
                         isStatus = moveDetails.DamageClass.Name == Status,
                     };
+
+                    foreach (var pokemon in moveDetails.LearnedByPokemonList)
+                    {
+                        context.PokemonMove.Add(new PokemonMove
+                        {
+                            PokemonName = pokemon.Name,
+                            MoveName = move.Name,
+                            MoveId = moveDetails.Id,
+                            Power = moveDetails.Power,
+                            Accuracy = moveDetails.Accuracy,
+                            PP = moveDetails.PP,
+                            IsSpecial = moveDetails.DamageClass.Name == Special,
+                            isPhysical = moveDetails.DamageClass.Name == Physical,
+                            isStatus = moveDetails.DamageClass.Name == Status,
+                            ShortDescription = moveDetails.EffectEntryList.FirstOrDefault()?.ShortEffect ?? "No Description available",
+                        });
+                    }
 
                     if (!context.Move.Any(m => m.Name == newMove.Name))
                     {
@@ -223,7 +253,6 @@ namespace WebMVC.Data
         {
             try
             {
-
                 int limit = 1000;
                 string url = $"https://pokeapi.co/api/v2/pokemon?limit={limit}";
                 var response = await httpClient.GetStringAsync(url);

@@ -15,5 +15,8 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
 
         [JsonPropertyName("url")]
         public string Url { get; set; }
+
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
     }
 }
