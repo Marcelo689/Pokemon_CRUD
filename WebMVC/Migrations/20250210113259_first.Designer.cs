@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebMVC.Migrations
 {
     [DbContext(typeof(PokemonContext))]
-    [Migration("20250208211908_first")]
+    [Migration("20250210113259_first")]
     partial class first
     {
         /// <inheritdoc />
@@ -142,6 +142,9 @@ namespace WebMVC.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PokemonId")
+                        .HasColumnType("int");
 
                     b.Property<int?>("PokemonTypeId1")
                         .HasColumnType("int");

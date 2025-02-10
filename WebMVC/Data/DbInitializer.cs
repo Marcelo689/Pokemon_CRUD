@@ -34,7 +34,6 @@ namespace WebMVC.Data
                 await DbInitializer.SaveAbilitiesFromApi(context, httpClient);
                 await DbInitializer.SaveMovesFromApi(context, httpClient);
 
-
                 await context.SaveChangesAsync();
                 await DbInitializer.SavePokemonDetails(context, httpClient);
                 await context.SaveChangesAsync();
@@ -75,11 +74,16 @@ namespace WebMVC.Data
                         SPEED = pokemonDetails.Stats[5].BaseStat,
                         height = pokemonDetails.height,
                         weight = pokemonDetails.weight,
-                        PokemonType1 = allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types.Any(f => f.Type.Name == e.Name)),
-                        PokemonType2 = pokemonDetails.Types.Count > 1
-                            ? allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types[1].Type.Name == e.Name)
-                            : null,
                     };
+
+                    if(pokemonDetails.Types is not null)
+                    for(var i =0; i < pokemonDetails.Types.Count;i++)
+                    {
+                        if (i == 0)
+                            entidade.PokemonType1 = allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types[i].Type.Name == e.Name);
+                        else
+                            entidade.PokemonType2 = allPokemonTypes.FirstOrDefault(e => pokemonDetails.Types[i].Type.Name == e.Name);
+                    }
 
                     entidade.PokemonTypeId1 = entidade.PokemonType1 != null ? entidade.PokemonType1.Id : (int?)null;
                     entidade.PokemonTypeId2 = entidade.PokemonType2 != null ? entidade.PokemonType2.Id : (int?)null;
@@ -229,7 +233,7 @@ namespace WebMVC.Data
                     var newAbilityEntity = new DB.Models.PokemonAbility
                     {
                         Name = abilityDetails.Name,
-                        Description = abilityDetails.EffectEntries.Last()?.Effect ?? "Sem descrição"
+                        Description = abilityDetails.EffectEntries.Count == 0 ? "Sem descrição" : abilityDetails.EffectEntries?.Last()?.Effect ?? "Sem descrição"
                     };
 
                     if (!context.PokemonAbility.Any(a => a.Name == newAbilityEntity.Name))

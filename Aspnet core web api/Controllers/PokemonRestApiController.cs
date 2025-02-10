@@ -18,15 +18,24 @@ namespace DB.Controllers
             _context = context;
         }
 
-        [HttpGet("movimentos/{pokemonId}")]
-        public IActionResult GetMovimentos(int pokemonId)
+        [HttpGet("moves/{pokemonName}")]
+        public IActionResult GetMovimentos(string pokemonName)
         {
-            var pokemon = _context.Pokemon.First(e => e.Id == pokemonId);
-            string pokemonName = pokemon.Name;
+            try
+            {
+                var listaMoves = _pokeApiService.GetMovesFromPokemon(pokemonName)?.ToList();
+                if (listaMoves == null || !listaMoves.Any())
+                {
+                    return Ok(new List<MoveViewModel>()); // Retorna uma lista vazia como JSON
+                }
 
-            List<MoveViewModel> listaMoves = _pokeApiService.GetMovesFromPokemon(pokemonName);
-
-            return Ok(listaMoves);
+                return Ok(listaMoves);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message }); // Retorna erro em formato JSON
+            }
         }
+
     }
 }

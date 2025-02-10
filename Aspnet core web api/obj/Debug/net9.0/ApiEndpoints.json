@@ -2,38 +2,17 @@
   {
     "ContainingType": "DB.Controllers.PokemonRestApiController",
     "Method": "GetMovimentos",
-    "RelativePath": "api/PokemonRestApi/movimentos/{pokemonId}",
+    "RelativePath": "api/PokemonRestApi/moves/{pokemonName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pokemonId",
-        "Type": "System.Int32",
+        "Name": "pokemonName",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Aspnet_core_web_api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Aspnet_core_web_api.WeatherForecast, PokemonApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

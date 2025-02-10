@@ -99,7 +99,8 @@ namespace WebMVC.Migrations
                     SPEED = table.Column<int>(type: "int", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     weight = table.Column<int>(type: "int", nullable: false),
-                    height = table.Column<int>(type: "int", nullable: false)
+                    height = table.Column<int>(type: "int", nullable: false),
+                    PokemonId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
