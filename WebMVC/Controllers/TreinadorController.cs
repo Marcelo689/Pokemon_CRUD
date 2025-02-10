@@ -7,7 +7,7 @@ namespace WebMVC.Controllers
 {
     public class TreinadorController : Controller
     {
-        private readonly TreinadorService _treinadorService;
+        public readonly TreinadorService _treinadorService;
         public TreinadorController(TreinadorService treinadorService)
         {
             _treinadorService = treinadorService;
@@ -16,6 +16,7 @@ namespace WebMVC.Controllers
 
         public IActionResult Index()
         {
+            _treinadores = _treinadorService.GetAllTrainers();
             return View(_treinadores);
         }
 
@@ -25,17 +26,45 @@ namespace WebMVC.Controllers
             _treinadorService.FillTreinadorViewModel(treinadorViewModel);
             return View(treinadorViewModel);
         }
-
-        public static Treinador Convert(TreinadorViewModel treinadorViewModel)
+        public void SalvaTreinadorAndPokemons(TreinadorViewModel treinadorViewModel)
         {
-            return new Treinador
+            var treinadorModel = new Treinador
             {
                 Id = treinadorViewModel.Id,
                 Name = treinadorViewModel.Name,
                 ImagePath = treinadorViewModel.ImagePath,
                 Location = treinadorViewModel.Location,
             };
+
+            // Iterando sobre os 6 Pokémon
+            for (int i = 1; i <= 6; i++)
+            {
+                // Acessando as propriedades do treinadorViewModel
+                var pokemonName = treinadorViewModel.GetType().GetProperty($"Pokemon{i}Name")?.GetValue(treinadorViewModel) as string;
+
+                if (!string.IsNullOrEmpty(pokemonName))
+                {
+                    var pokemon = new PokemonTreinadorRelacionado
+                    {
+                        Level = (int)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Level")?.GetValue(treinadorViewModel),
+                        Treinador = treinadorModel,
+                        Move1Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move1")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                        Move2Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move2")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                        Move3Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move3")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                        Move4Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move4")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                        Name = pokemonName,
+                        Ability = _treinadorService.GetAbilityFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Ability")?.GetValue(treinadorViewModel)),
+                        PokemonApiId = _treinadorService.GetPokemonFromName(pokemonName),
+                        Type = _treinadorService.GetPokemonTypeFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}PokemonTypeName1")?.GetValue(treinadorViewModel)),
+                        SecondTypeId = _treinadorService.GetPokemonTypeFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}PokemonTypeName2")?.GetValue(treinadorViewModel)).Id,
+                    };
+
+                    // Adiciona o Pokémon ao treinador
+                    _treinadorService.AddTreinadorAndPokemon(treinadorModel, pokemon);
+                }
+            }
         }
+
 
         [HttpPost]
         public IActionResult Create(TreinadorViewModel treinador, IFormFile image)
@@ -46,9 +75,7 @@ namespace WebMVC.Controllers
                     AdicionaImagem(treinador, image);
                 else
                     treinador.ImagePath = "/images/default.png";
-
-                Treinador treinadorModel = Convert(treinador);
-                _treinadorService.AddTreinador(treinadorModel);
+                SalvaTreinadorAndPokemons(treinador);
                 return RedirectToAction("Index");
             }
             return View(treinador);

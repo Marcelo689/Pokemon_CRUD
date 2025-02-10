@@ -6,7 +6,12 @@
 }
 
 <h2>Lista de Treinadores</h2>
-
+<style>
+    .trainer-image {
+        width: 100px; /* Ajuste conforme necessário */
+        height: 100px; /* Ajuste conforme necessário */
+    }
+</style>
 <a asp-action="Create" class="btn btn-success mb-3">Adicionar Novo Treinador</a>
 
 <table class="table">
@@ -22,7 +27,7 @@
         @foreach (var treinador in Model)
         {
             <tr>
-                <td><img src="@treinador.ImagePath"/></td>
+                <td><img src="@treinador.ImagePath" class="trainer-image"/></td>
                 <td>@treinador.Name</td>
                 <td>@treinador.Location</td>
                 <td>

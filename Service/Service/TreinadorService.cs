@@ -43,5 +43,46 @@ namespace WebMVC.Service
                 AddClassesToPokemonDetailsViewModel(pokemon);
             }
         }
+
+        public Move? GetMoveByName(string pokemon1Move1)
+        {
+            if (pokemon1Move1 is null)
+                return null;
+
+            return _context.Move.First(e => e.Name == pokemon1Move1);
+        }
+
+        public PokemonAbility GetAbilityFromName(string pokemon1Ability)
+        {
+            return _context.PokemonAbility.First(e => e.Name == pokemon1Ability);
+        }
+
+        public Pokemon GetPokemonFromName(string name)
+        {
+            return _context.Pokemon.First(e => e.Name == name);
+        }
+
+        public PokemonType GetPokemonTypeFromName(string pokemon1PokemonTypeName)
+        {
+            return _context.PokemonType.First(e => e.Name == pokemon1PokemonTypeName);
+        }
+
+        public void AddTreinadorAndPokemon(Treinador treinadorModel, PokemonTreinadorRelacionado pokemon1)
+        {
+            _context.Treinador.Add(treinadorModel);
+            _context.PokemonTreinador.Add(pokemon1);
+            _context.SaveChanges();
+        }
+
+        public List<TreinadorViewModel> GetAllTrainers()
+        {
+            return _context.Treinador.Select(e => new TreinadorViewModel
+            {
+                Id = e.Id,
+                Name = e.Name,
+                ImagePath = e.ImagePath,
+                Location = e.Location
+            }).ToList();
+        }
     }
 }

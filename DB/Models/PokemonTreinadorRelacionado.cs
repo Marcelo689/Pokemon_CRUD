@@ -13,10 +13,10 @@
         public PokemonAbility? Ability { get; set; }
         public int AbilityId {  get; set; }    
         public int Level { get; set; }
-        public int Move1Id { get; set; }
-        public int Move2Id { get; set; }
-        public int Move3Id { get; set; }
-        public int Move4Id { get; set; }
+        public int? Move1Id { get; set; }
+        public int? Move2Id { get; set; }
+        public int? Move3Id { get; set; }
+        public int? Move4Id { get; set; }
     }
 
     public class Move

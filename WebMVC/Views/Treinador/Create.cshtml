@@ -26,17 +26,17 @@
 
     <h4>Pokémons</h4>
     <div id="pokemonContainer">
-        @for (int i = 0; i < 6; i++)
+        @for (int i = 1; i <= 6; i++)
         {
             <div class="pokemon-slot border p-3 mb-2">
-                <h5>Pokémon @(i + 1)</h5>
+                <h5>Pokémon @(i)</h5>
                 <div class="mb-2">
                     <label class="form-label">Filtrar Pokémon</label>
                     <input type="text" class="form-control pokemon-filter" data-index="@i" placeholder="Digite para buscar...">
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Selecionar Pokémon</label>
-                    <select name="Pokemons[@i].Name" class="form-control pokemon-select" data-index="@i">
+                    <select name="Pokemon@(i)Name" class="form-control pokemon-select" data-index="@i">
                         <option value="">Selecione um Pokémon</option>
                         @foreach (var pokemon in Model.Pokemons)
                         {
@@ -51,34 +51,34 @@
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Tipo Primário</label>
-                    <input type="text" name="Pokemons[@i].Type.Name" class="form-control" readonly>
+                    <input type="text" name="Pokemon@(i)PokemonTypeName1" class="form-control" readonly>
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Tipo Secundário</label>
-                    <input type="text" name="Pokemons[@i].SecondType.Name" class="form-control" readonly>
+                    <input type="text" name="Pokemon@(i)PokemonTypeName2" class="form-control" readonly>
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Habilidade</label>
-                    <select name="Pokemons[@i].Ability.Name" class="form-control ability-select">
+                    <select name="Pokemon@(i)Ability" class="form-control ability-select">
                         <option value="">Selecione uma habilidade</option>
                     </select>
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Level</label>
-                    <input type="number" name="Pokemons[@i].Level" class="form-control" min="1" max="100">
+                    <input type="number" name="Pokemon@(i)Level" class="form-control" min="1" max="100">
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Movimentos</label>
-                    <select disabled name="Pokemons[@i].Move1" class="form-control" placeholder="Movimento 1">
+                    <select disabled name="Pokemon@(i)Move1" class="form-control" placeholder="Movimento 1">
                         <option value="">Selecione um Movimento</option>
                     </select>
-                    <select disabled name="Pokemons[@i].Move2" class="form-control" placeholder="Movimento 2">
+                    <select disabled name="Pokemon@(i)Move2" class="form-control" placeholder="Movimento 2">
                         <option value="">Selecione um Movimento</option>
                     </select>
-                    <select disabled name="Pokemons[@i].Move3" class="form-control" placeholder="Movimento 3">
+                    <select disabled name="Pokemon@(i)Move3" class="form-control" placeholder="Movimento 3">
                         <option value="">Selecione um Movimento</option>
                     </select>
-                    <select disabled name="Pokemons[@i].Move4" class="form-control" placeholder="Movimento 4">
+                    <select disabled name="Pokemon@(i)Move4" class="form-control" placeholder="Movimento 4">
                         <option value="">Selecione um Movimento</option>
                     </select>
                 </div>
@@ -151,10 +151,10 @@
             try {
                 var moves = await getPokemonMoves(pokemonName);
                     var selectPokemonMoves = [
-                      document.getElementsByName("Pokemons[" + index + "].Move1")[0],
-                      document.getElementsByName("Pokemons[" + index + "].Move2")[0],
-                      document.getElementsByName("Pokemons[" + index + "].Move3")[0],
-                      document.getElementsByName("Pokemons[" + index + "].Move4")[0]
+                      document.getElementsByName("Pokemon" + index + "Move1")[0],
+                      document.getElementsByName("Pokemon" + index + "Move2")[0],
+                      document.getElementsByName("Pokemon" + index + "Move3")[0],
+                      document.getElementsByName("Pokemon" + index + "Move4")[0]
                     ];
 
                     // Adiciona os movimentos como opções para cada select
@@ -186,18 +186,18 @@
             const ability3 = selectedOption.getAttribute('ability3') || "";
 
             // Fill in types if elements exist
-            const typeInput = document.querySelector(`[name='Pokemons[${index}].Type.Name']`);
+            const typeInput = document.querySelector(`[name='Pokemon${index}PokemonTypeName1']`);
             if (typeInput) {
                 typeInput.value = type1;
             }
 
-            const secondTypeInput = document.querySelector(`[name='Pokemons[${index}].SecondType.Name']`);
+            const secondTypeInput = document.querySelector(`[name='Pokemon${index}PokemonTypeName2']`);
             if (secondTypeInput) {
                 secondTypeInput.value = type2;
             }
 
                 /// Update abilities dropdown if element exists
-            const abilitySelect = document.querySelector(`[name='Pokemons[${index}].Ability.Name']`);
+            const abilitySelect = document.querySelector(`[name='Pokemon${index}Ability']`);
             if (abilitySelect) {
                 // Limpar as opções existentes
                 abilitySelect.innerHTML = "<option value=''>Selecione uma habilidade</option>";
