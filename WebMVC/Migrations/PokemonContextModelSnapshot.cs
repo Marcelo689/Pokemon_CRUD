@@ -223,16 +223,16 @@ namespace WebMVC.Migrations
                     b.Property<int>("Level")
                         .HasColumnType("int");
 
-                    b.Property<int>("Move1Id")
+                    b.Property<int?>("Move1Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Move2Id")
+                    b.Property<int?>("Move2Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Move3Id")
+                    b.Property<int?>("Move3Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Move4Id")
+                    b.Property<int?>("Move4Id")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -241,6 +241,12 @@ namespace WebMVC.Migrations
 
                     b.Property<int>("PokemonApiIdId")
                         .HasColumnType("int");
+
+                    b.Property<int>("PokemonIndex")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PokemonNature")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SecondTypeId")
                         .HasColumnType("int");

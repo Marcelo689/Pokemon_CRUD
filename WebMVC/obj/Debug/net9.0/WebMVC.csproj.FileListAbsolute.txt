@@ -329,8 +329,6 @@ C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\bxi9
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\iehhm7hvoy-muycvpuwrr.gz
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\7f43igjgd9-87fc7y1x7t.gz
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\iqixifu3dr-mlv21k5csn.gz
-C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\1nuhgwjc9d-y5n0p3gw3g.gz
-C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\o12tr017x6-y5n0p3gw3g.gz
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -340,10 +338,12 @@ C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebMVC.props
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebMVC.props
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\WebMVC.csproj.Up2Date
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\WebMVC.dll
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\refint\WebMVC.dll
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\WebMVC.pdb
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\WebMVC.genruntimeconfig.cache
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\ref\WebMVC.dll
+C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\1nuhgwjc9d-fvptxd6az6.gz
+C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\o12tr017x6-fvptxd6az6.gz
+C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

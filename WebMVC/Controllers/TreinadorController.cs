@@ -28,51 +28,66 @@ namespace WebMVC.Controllers
         }
         public void SalvaTreinadorAndPokemons(TreinadorViewModel treinadorViewModel)
         {
-            var treinadorModel = new Treinador
-            {
-                Id = treinadorViewModel.Id,
-                Name = treinadorViewModel.Name,
-                ImagePath = treinadorViewModel.ImagePath,
-                Location = treinadorViewModel.Location,
-            };
+            Treinador treinadorModel = null;
+            bool isEdit = treinadorViewModel.Id != 0;
+            if (isEdit)
+            {//Edit
+               treinadorModel = _treinadorService.GetTreinadorById(treinadorViewModel.Id);
+            }
+            else
+            {//Create
+                treinadorModel = new Treinador
+                {
+                    Id = treinadorViewModel.Id,
+                    Name = treinadorViewModel.Name,
+                    ImagePath = treinadorViewModel.ImagePath,
+                    Location = treinadorViewModel.Location,
+                };
+            }
 
-            // Iterando sobre os 6 Pokémon
             for (int i = 1; i <= 6; i++)
             {
-                // Acessando as propriedades do treinadorViewModel
                 var pokemonName = treinadorViewModel.GetType().GetProperty($"Pokemon{i}Name")?.GetValue(treinadorViewModel) as string;
 
-                if (!string.IsNullOrEmpty(pokemonName))
+                bool hasName = !string.IsNullOrEmpty(pokemonName);
+                if (hasName)
                 {
-                    var pokemon = new PokemonTreinadorRelacionado
+                    var pokemon = _treinadorService.GeTreinadorPokemonFromName(treinadorModel, pokemonName, i);
+                    if (isEdit && pokemon is not null){
+                            _treinadorService.UpdatePokemon(pokemon, treinadorViewModel);
+                    }
+                    else
                     {
-                        Level = (int)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Level")?.GetValue(treinadorViewModel),
-                        Treinador = treinadorModel,
-                        Move1Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move1")?.GetValue(treinadorViewModel))?.Id ?? 0,
-                        Move2Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move2")?.GetValue(treinadorViewModel))?.Id ?? 0,
-                        Move3Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move3")?.GetValue(treinadorViewModel))?.Id ?? 0,
-                        Move4Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move4")?.GetValue(treinadorViewModel))?.Id ?? 0,
-                        Name = pokemonName,
-                        Ability = _treinadorService.GetAbilityFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Ability")?.GetValue(treinadorViewModel)),
-                        PokemonApiId = _treinadorService.GetPokemonFromName(pokemonName),
-                        Type = _treinadorService.GetPokemonTypeFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}PokemonTypeName1")?.GetValue(treinadorViewModel)),
-                        SecondTypeId = _treinadorService.GetPokemonTypeFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}PokemonTypeName2")?.GetValue(treinadorViewModel)).Id,
-                    };
+                        pokemon = new PokemonTreinadorRelacionado
+                        {
+                            PokemonIndex = i,
+                            Level = (int)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Level")?.GetValue(treinadorViewModel),
+                            Treinador = treinadorModel,
+                            Move1Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move1")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                            Move2Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move2")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                            Move3Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move3")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                            Move4Id = _treinadorService.GetMoveByName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Move4")?.GetValue(treinadorViewModel))?.Id ?? 0,
+                            Name = pokemonName,
+                            Ability = _treinadorService.GetAbilityFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}Ability")?.GetValue(treinadorViewModel)),
+                            PokemonApiId = _treinadorService.GetPokemonFromName(pokemonName),
+                            Type = _treinadorService.GetPokemonTypeFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}PokemonTypeName1")?.GetValue(treinadorViewModel)),
+                            SecondTypeId = _treinadorService.GetPokemonTypeFromName((string)treinadorViewModel.GetType().GetProperty($"Pokemon{i}PokemonTypeName2")?.GetValue(treinadorViewModel)).Id,
+                        };
 
-                    // Adiciona o Pokémon ao treinador
-                    _treinadorService.AddTreinadorAndPokemon(treinadorModel, pokemon);
+                        // Adiciona o Pokémon ao treinador
+                        _treinadorService.AddTreinadorAndPokemon(treinadorModel, pokemon, isEdit);
+                    }
                 }
             }
         }
 
-
         [HttpPost]
-        public IActionResult Create(TreinadorViewModel treinador, IFormFile image)
+        public IActionResult Create(TreinadorViewModel treinador, IFormFile imagePath,IFormFile imageUpload)
         {
             if (treinador.IsValid())
             {
-                if(image is not null && image.Length > 0)
-                    AdicionaImagem(treinador, image);
+                if(imagePath is not null && imagePath.Length > 0)
+                    AdicionaImagem(treinador, imagePath);
                 else
                     treinador.ImagePath = "/images/default.png";
                 SalvaTreinadorAndPokemons(treinador);
@@ -101,5 +116,29 @@ namespace WebMVC.Controllers
 
             treinador.ImagePath = "/upload/" + uniqueFileName;
         }
+
+        public IActionResult Edit(TreinadorViewModel treinadorViewModel)
+        {
+            treinadorViewModel = _treinadorService.GetTreinadorPokemonsData(treinadorViewModel);
+            treinadorViewModel = _treinadorService.FillTreinadorViewModel(treinadorViewModel);
+            return View(treinadorViewModel);
+        }
+
+
+        [HttpPost]
+        public IActionResult Edit(TreinadorViewModel treinador, IFormFile imagePath, IFormFile imageUpload)
+        {
+            if (treinador.IsValid())
+            {
+                if (imagePath is not null && imagePath.Length > 0)
+                    AdicionaImagem(treinador, imagePath);
+                else
+                    treinador.ImagePath = "/images/default.png";
+                SalvaTreinadorAndPokemons(treinador);
+                return RedirectToAction("Index");
+            }
+            return View(treinador);
+        }
+
     }
 }
