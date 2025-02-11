@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\pokemonapi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\pokemonapi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\treinador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -37,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebMVC\\Views\\Shared\\_Layout.cshtml",
@@ -88,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml",
               "RelativeDocumentMoniker": "WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml*",
+              "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-11T19:58:11.951Z",
               "EditorCaption": ""
