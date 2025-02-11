@@ -70,7 +70,6 @@ C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\st
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.PokemonApi.props
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.PokemonApi.props
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.csproj.Up2Date
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\refint\PokemonApi.dll
@@ -81,3 +80,4 @@ C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Mi
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.pdb
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -32,6 +32,13 @@
                 <td>@treinador.Location</td>
                 <td>
                     <a asp-action="Details" asp-route-id="@treinador.Id" class="btn btn-info btn-sm">Detalhes</a>
+                    <a asp-action="Edit"
+                       asp-route-Id="@treinador.Id"
+                       asp-route-Name="@treinador.Name"
+                       asp-route-Location="@treinador.Location"
+                       asp-route-ImagePath="@treinador.ImagePath"
+                       class="btn btn-danger btn-sm">Edit</a>
+
                 </td>
             </tr>
         }

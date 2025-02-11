@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "5cCX0rCpyZsJqElIn9MpDeOgQhi93zHd7ticZB+2fNg=",
+=======
+  "Hash": "HWBWQebOu5fPC6gU9aQByCNA7N+/+4vzVI4oKVladzQ=",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
   "Source": "WebMVC",
   "BasePath": "_content/WebMVC",
   "Mode": "Default",
@@ -122,12 +126,16 @@
       "OriginalItemSpec": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-y5n0p3gw3g.gz",
+=======
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "SourceId": "WebMVC",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebMVC",
-      "RelativePath": "WebMVC#[.{fingerprint=y5n0p3gw3g}]?.styles.css.gz",
+      "RelativePath": "WebMVC#[.{fingerprint=fvptxd6az6}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -136,8 +144,13 @@
       "RelatedAsset": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebMVC.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
+<<<<<<< HEAD
       "Fingerprint": "bm1647a4rm",
       "Integrity": "s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=",
+=======
+      "Fingerprint": "khdk32do2r",
+      "Integrity": "uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebMVC.styles.css"
@@ -1067,12 +1080,16 @@
       "OriginalItemSpec": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-y5n0p3gw3g.gz",
+=======
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "SourceId": "WebMVC",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebMVC",
-      "RelativePath": "WebMVC#[.{fingerprint=y5n0p3gw3g}]!.bundle.scp.css.gz",
+      "RelativePath": "WebMVC#[.{fingerprint=fvptxd6az6}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -1081,8 +1098,13 @@
       "RelatedAsset": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebMVC.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
+<<<<<<< HEAD
       "Fingerprint": "bm1647a4rm",
       "Integrity": "s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=",
+=======
+      "Fingerprint": "khdk32do2r",
+      "Integrity": "uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebMVC.bundle.scp.css"
@@ -1375,8 +1397,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "y5n0p3gw3g",
-      "Integrity": "RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=",
+      "Fingerprint": "fvptxd6az6",
+      "Integrity": "xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebMVC.styles.css"
@@ -1396,8 +1418,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "y5n0p3gw3g",
-      "Integrity": "RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=",
+      "Fingerprint": "fvptxd6az6",
+      "Integrity": "xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebMVC.bundle.scp.css"
@@ -21287,12 +21309,16 @@
     },
     {
       "Route": "WebMVC.bundle.scp.css",
+<<<<<<< HEAD
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-y5n0p3gw3g.gz",
+=======
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001845018450"
+          "Quality": "0.001841620626"
         }
       ],
       "ResponseHeaders": [
@@ -21302,15 +21328,23 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "542"
         },
         {
           "Name": "ETag",
+<<<<<<< HEAD
           "Value": "\"s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=\""
         },
         {
           "Name": "Last-Modified",
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21330,13 +21364,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=\""
+          "Value": "W/\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk="
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
         }
       ]
     },
@@ -21351,7 +21385,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1124"
+          "Value": "1128"
         },
         {
           "Name": "Content-Type",
@@ -21359,11 +21393,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=\""
+          "Value": "\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21373,13 +21411,17 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk="
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
         }
       ]
     },
     {
       "Route": "WebMVC.bundle.scp.css.gz",
+<<<<<<< HEAD
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-y5n0p3gw3g.gz",
+=======
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21388,7 +21430,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "542"
         },
         {
           "Name": "Content-Type",
@@ -21396,11 +21438,19 @@
         },
         {
           "Name": "ETag",
+<<<<<<< HEAD
           "Value": "\"s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=\""
         },
         {
           "Name": "Last-Modified",
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21418,18 +21468,27 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
+<<<<<<< HEAD
           "Value": "sha256-s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM="
+=======
+          "Value": "sha256-uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U="
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Route": "WebMVC.styles.css",
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-y5n0p3gw3g.gz",
+=======
+      "Route": "WebMVC.fvptxd6az6.bundle.scp.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001845018450"
+          "Quality": "0.001841620626"
         }
       ],
       "ResponseHeaders": [
@@ -21439,10 +21498,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "542"
         },
         {
           "Name": "ETag",
+<<<<<<< HEAD
           "Value": "\"s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=\""
         },
         {
@@ -21585,6 +21645,13 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21604,13 +21671,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=\""
+          "Value": "W/\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y5n0p3gw3g"
+          "Value": "fvptxd6az6"
         },
         {
           "Name": "label",
@@ -21618,13 +21685,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk="
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Route": "WebMVC.y5n0p3gw3g.bundle.scp.css",
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebMVC.bundle.scp.css",
+=======
+      "Route": "WebMVC.fvptxd6az6.bundle.scp.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebMVC.bundle.scp.css",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21633,7 +21705,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1124"
+          "Value": "1128"
         },
         {
           "Name": "Content-Type",
@@ -21641,11 +21713,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=\""
+          "Value": "\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21655,7 +21731,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y5n0p3gw3g"
+          "Value": "fvptxd6az6"
         },
         {
           "Name": "label",
@@ -21663,13 +21739,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk="
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Route": "WebMVC.y5n0p3gw3g.bundle.scp.css.gz",
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-y5n0p3gw3g.gz",
+=======
+      "Route": "WebMVC.fvptxd6az6.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21678,7 +21759,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "542"
         },
         {
           "Name": "Content-Type",
@@ -21686,11 +21767,19 @@
         },
         {
           "Name": "ETag",
+<<<<<<< HEAD
           "Value": "\"s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=\""
         },
         {
           "Name": "Last-Modified",
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21708,7 +21797,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y5n0p3gw3g"
+          "Value": "fvptxd6az6"
         },
         {
           "Name": "label",
@@ -21716,18 +21805,27 @@
         },
         {
           "Name": "integrity",
+<<<<<<< HEAD
           "Value": "sha256-s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM="
+=======
+          "Value": "sha256-uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U="
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Route": "WebMVC.y5n0p3gw3g.styles.css",
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-y5n0p3gw3g.gz",
+=======
+      "Route": "WebMVC.fvptxd6az6.styles.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001845018450"
+          "Quality": "0.001841620626"
         }
       ],
       "ResponseHeaders": [
@@ -21737,15 +21835,23 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "542"
         },
         {
           "Name": "ETag",
+<<<<<<< HEAD
           "Value": "\"s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=\""
         },
         {
           "Name": "Last-Modified",
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21765,13 +21871,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=\""
+          "Value": "W/\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y5n0p3gw3g"
+          "Value": "fvptxd6az6"
         },
         {
           "Name": "label",
@@ -21779,13 +21885,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk="
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Route": "WebMVC.y5n0p3gw3g.styles.css",
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebMVC.styles.css",
+=======
+      "Route": "WebMVC.fvptxd6az6.styles.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebMVC.styles.css",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21794,7 +21905,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1124"
+          "Value": "1128"
         },
         {
           "Name": "Content-Type",
@@ -21802,11 +21913,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk=\""
+          "Value": "\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
         },
         {
           "Name": "Last-Modified",
+<<<<<<< HEAD
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21816,7 +21931,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y5n0p3gw3g"
+          "Value": "fvptxd6az6"
         },
         {
           "Name": "label",
@@ -21824,13 +21939,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RhodLAd/BoQlEtnUjIfQXoUNFsEnrz1//YdeYLg0nTk="
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Route": "WebMVC.y5n0p3gw3g.styles.css.gz",
       "AssetFile": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-y5n0p3gw3g.gz",
+=======
+      "Route": "WebMVC.fvptxd6az6.styles.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-fvptxd6az6.gz",
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21839,7 +21959,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "542"
         },
         {
           "Name": "Content-Type",
@@ -21847,11 +21967,19 @@
         },
         {
           "Name": "ETag",
+<<<<<<< HEAD
           "Value": "\"s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM=\""
         },
         {
           "Name": "Last-Modified",
           "Value": "Mon, 10 Feb 2025 17:26:55 GMT"
+=======
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         },
         {
           "Name": "Cache-Control",
@@ -21869,7 +21997,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y5n0p3gw3g"
+          "Value": "fvptxd6az6"
         },
         {
           "Name": "label",
@@ -21877,7 +22005,148 @@
         },
         {
           "Name": "integrity",
+<<<<<<< HEAD
           "Value": "sha256-s+23RJc520QWzkptwOFWQ8aerHP06WE1QVPqRx6WWSM="
+=======
+          "Value": "sha256-uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U="
+        }
+      ]
+    },
+    {
+      "Route": "WebMVC.styles.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-fvptxd6az6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001841620626"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "542"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
+        }
+      ]
+    },
+    {
+      "Route": "WebMVC.styles.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebMVC.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xeKeyssLBTCLNF5fHKeyjuwH8nTn8cqCQF1sNnEM6LU="
+        }
+      ]
+    },
+    {
+      "Route": "WebMVC.styles.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\1nuhgwjc9d-fvptxd6az6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:11:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uINXhnJP/9W/1op+Fi/fAjVbWtjVSQWHB9TVccs0v+U="
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
         }
       ]
     }

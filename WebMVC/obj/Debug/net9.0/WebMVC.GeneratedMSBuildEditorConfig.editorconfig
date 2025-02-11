@@ -56,7 +56,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/Frasag/Desktop/marcelo/Pokemon_CRUD/WebMVC/Views/Treinador/Index.cshtml]
+=======
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Index.cshtml]
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

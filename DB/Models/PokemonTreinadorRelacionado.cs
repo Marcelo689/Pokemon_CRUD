@@ -6,6 +6,8 @@
         public int TreinadorId { get; set; }
         public Treinador Treinador { get; set; }
         public Pokemon PokemonApiId { get; set; }
+        public int PokemonIndex { get; set; }
+        public string? PokemonNature { get; set; }
         public string Name { get; set; }
         public PokemonType? Type { get; set; }
         public int TypeId { get; set; }
