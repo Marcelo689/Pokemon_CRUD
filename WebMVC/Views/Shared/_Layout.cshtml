@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +9,83 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebMVC.styles.css" asp-append-version="true" />
+    <style>
+        :root {
+            --text: #4335A7;
+            --vblue: #80C4E9;
+            --vorange: #FF7F3E;
+
+
+        }
+
+        .search input{
+            padding: 0.7rem 2rem; border-radius: 20px 10px; border: 2px solid #4335A7;
+            color: #4335A7;
+            font-weight: 600;
+        }
+        .search input:focus{
+            outline-color: #FF7F3E;
+        }
+        .search button{
+            color: #4335A7;
+            transition: all 0.2s ease;
+            background-color: white;
+        }
+        .search button:hover{
+            background-color: #4335A7;
+            color: white;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            /* padding: 0; */
+            background-color: #FFF6E9;
+            color: #4335A7;
+        }
+
+        .navLinks li {
+            position: relative;
+            color: #4335A7;
+            list-style: none;
+            cursor: pointer;
+
+           
+          
+        }
+
+        .navLinks li:hover {
+            color: #FF7F3E;
+        }
+
+        .navLinks li::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            background-color: #4335A7;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.2s ease-in-out;
+        }
+
+        .navLinks li:hover::after {
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
+<<<<<<< HEAD
+    <header style=" height: 10vh; display: flex; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100%; background-color: #FFF6E9;">
+        <nav style="">
+           
+                    <ul class="navLinks"
+                        style="display: flex; justify-content: center; gap: 10vmin; list-style: none; font-weight: 600;"
+                        class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="" asp-area="" asp-controller="PokemonApi"
+                                asp-action="Index">Pokemons</a>
+=======
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -20,24 +96,24 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" style=";"asp-area="" asp-controller="PokemonApi" asp-action="Index">Pokemons</a>
+                            <a class="nav-link text-dark" "asp-area="" asp-controller="PokemonApi" asp-action="Index">Pokemons</a>
+>>>>>>> 368a57d5a0b06236aba9ea35c0fca1ae0518d428
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Treinador" asp-action="Index">Treinador</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Treinador"
+                                asp-action="Index">Treinador</a>
                         </li>
                     </ul>
-                </div>
-            </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container" style="margin-top: 10vh;">
+        <main role="main" class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0px 20vmin; color: #4335A7;">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer style="text-align: center; background-color: #80C4E9; border-top: 1px solid #4335A7;">
+        <div class="container" style="padding: 2vmin;">
             &copy; 2025 - WebMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
@@ -46,4 +122,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
