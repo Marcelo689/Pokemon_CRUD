@@ -9,17 +9,21 @@
     var totalPages = ViewBag.TotalPages ?? 1;
     var maxPagesToShow = 3;
     var searchQuery = ViewBag.SearchQuery as string ?? "";
+
+
 }
 
-<h2>Lista de Pokémon</h2>
 
-<!-- Barra de Busca -->
-<form method="get" action="@Url.Action("Index")" class="mb-3">
-    <div class="input-group">
-        <input type="text" class="form-control" name="search" placeholder="Buscar Pokémon..." value="@searchQuery">
+
+    <h2 style="font-size: 2rem; color:#4335A7;">Lista de Pokémon</h2>
+    
+    <!-- Barra de Busca -->
+    <form style="margin-bottom: 8vmin;" method="get" action="@Url.Action("Index")" class="mb-3">
+        <div class="search" style="">
+            <input style="" type="text" class="form-control" name="search" placeholder="Buscar Pokémon..." value="@searchQuery">
         <input type="hidden" name="page" value="1"> <!-- Reseta para a primeira página -->
         <input type="hidden" name="pageSize" value="@pageSize">
-        <button type="submit" class="btn btn-primary">Buscar</button>
+        <button  style="padding: 0.7rem 2rem; border-radius: 20px 10px; border: 2px solid #4335A7;  font-weight: 700; " type="submit" >Buscar</button>
     </div>
 </form>
 
@@ -27,15 +31,13 @@
 <div class="row">
     @foreach (var pokemon in Model)
     {
-        <div class="col-md-3">
-            <div class="card mb-3">
+        <div class="col-md-3"  >
+            <div class="card mb-3" style="border: 2px solid rgb(227, 227, 227); width: fit-content; border-radius: 20px;">
                 <!-- Link para os detalhes do Pokémon -->
                 <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
-                    <img src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
+                    <img style="height: 200px; width: auto; border-radius: 20px 20px 0 0; border-bottom: 2px solid rgb(227, 227, 227);" src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
                 </a>
-                <div class="card-body text-center">
-                    <h5 class="card-title">@pokemon.Name.ToUpper()</h5>
-                </div>
+                    <h5 style="font-weight: 700; text-align: center; color: #FF7F3E; margin: 1rem 0 1rem 0; font-size: 1.2rem;" class="card-title">@pokemon.Name.ToUpper()</h5>
             </div>
         </div>
     }
@@ -46,7 +48,7 @@
 {
     <nav aria-label="Navegação de página">
         <ul class="pagination justify-content-center flex-wrap">
-
+            
             <!-- Botão "Anterior" -->
             <li class="page-item @(currentPage <= 1 ? "disabled" : "")">
                 <a class="page-link" href="@Url.Action("Index", new { page = currentPage - 1, pageSize, search = searchQuery })">Anterior</a>
@@ -62,7 +64,7 @@
                     <span class="page-link">...</span>
                 </li>
             }
-
+            
             <!-- Números Vizinhos da Página Atual -->
             @for (var i = Math.Max(1, currentPage - maxPagesToShow); i <= Math.Min(totalPages, currentPage + maxPagesToShow); i++)
             {
@@ -70,7 +72,7 @@
                     <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize, search = searchQuery })">@i</a>
                 </li>
             }
-
+            
             <!-- Exibir Última Página e Reticências -->
             @if (currentPage < totalPages - maxPagesToShow)
             {

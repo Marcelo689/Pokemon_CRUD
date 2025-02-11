@@ -10,3 +10,15 @@ C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\Mode
 C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\refint\ModelsResponse.dll
 C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.pdb
 C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ref\ModelsResponse.dll
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\bin\Debug\net9.0\ModelsResponse.deps.json
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\bin\Debug\net9.0\ModelsResponse.dll
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\bin\Debug\net9.0\ModelsResponse.pdb
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.AssemblyInfoInputs.cache
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.AssemblyInfo.cs
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.csproj.CoreCompileInputs.cache
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.sourcelink.json
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.dll
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\refint\ModelsResponse.dll
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.pdb
+C:\Users\Frasag\Desktop\marcelo\Pokemon_CRUD\ApiModelsResponse\obj\Debug\net9.0\ref\ModelsResponse.dll

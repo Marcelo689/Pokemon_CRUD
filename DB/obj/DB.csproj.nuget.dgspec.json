@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj": {}
+    "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\DB\\DB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj": {
+    "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\ApiModelsResponse\\ModelsResponse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj",
+        "projectUniqueName": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\ApiModelsResponse\\ModelsResponse.csproj",
         "projectName": "ModelsResponse",
-        "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj",
-        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\obj\\",
+        "projectPath": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\ApiModelsResponse\\ModelsResponse.csproj",
+        "packagesPath": "C:\\Users\\Frasag\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\ApiModelsResponse\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Frasag\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,37 +63,30 @@
         }
       }
     },
-    "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj": {
+    "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\DB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj",
+        "projectUniqueName": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\DB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj",
-        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\obj\\",
+        "projectPath": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\DB\\DB.csproj",
+        "packagesPath": "C:\\Users\\Frasag\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\DB\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Frasag\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj": {
-                "projectPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ModelsResponse.csproj"
+              "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\ApiModelsResponse\\ModelsResponse.csproj": {
+                "projectPath": "C:\\Users\\Frasag\\Desktop\\marcelo\\Pokemon_CRUD\\ApiModelsResponse\\ModelsResponse.csproj"
               }
             }
           }
