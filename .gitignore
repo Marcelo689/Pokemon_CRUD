@@ -1,0 +1,6 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/WebMVC/obj/Debug/net9.0/compressed
+/.vs/PokemonWorld/FileContentIndex
