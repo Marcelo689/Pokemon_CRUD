@@ -3,227 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\pokemonapi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\pokemonapi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\treinador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\treinador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\controllers\\treinadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\controllers\\treinadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\service\\service\\treinadorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|solutionrelative:service\\service\\treinadorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\treinadorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\treinadorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250211172448_natureCanBeNull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebMVC\\Migrations\\20250211172448_natureCanBeNull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\pokemontreinadorrelacionado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\pokemontreinadorrelacionado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\treinador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\treinador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250211164651_pokemonIndex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebMVC\\Migrations\\20250211164651_pokemonIndex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\treinador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\treinador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\aspnet core web api\\controllers\\pokemonrestapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|solutionrelative:aspnet core web api\\controllers\\pokemonrestapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\pokemonapi\\abilitydetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\pokemonapi\\abilitydetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\pokemonapi\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\pokemonapi\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\treinador\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\treinador\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\controllers\\pokemonapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\controllers\\pokemonapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|solutionrelative:service\\service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\data\\pokemoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\data\\pokemoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\pokemonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\pokemonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\aspnet core web api\\controllers\\pokemonrestapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|solutionrelative:aspnet core web api\\controllers\\pokemonrestapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\pokemontreinadorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\pokemontreinadorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\pokemondetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\pokemondetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\apiresponse\\pokemondetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\apiresponse\\pokemondetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\service\\service\\pokeapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|solutionrelative:service\\service\\pokeapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\db.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marce\\AppData\\Local\\SourceServer\\f420992b63200ab7331017d28d50171ba23ef9a5532311f67ec1a6bf4fdf5e54\\Service\\Service\\Convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\apiresponse\\pokemonviewmodelresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\apiresponse\\pokemonviewmodelresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\apiresponse\\typelistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\apiresponse\\typelistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\apiresponse\\movedetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\apiresponse\\movedetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\apiresponse\\abilitylistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\apiresponse\\abilitylistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\apiresponse\\abilitydetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\apiresponse\\abilitydetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\pokemonlistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\pokemonlistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\pokemondetailsprites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\pokemondetailsprites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\apimodels\\pokemonlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\apimodels\\pokemonlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\moveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\moveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\pokemonability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\pokemonability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\pokemondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\pokemondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\aspnet core web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|solutionrelative:aspnet core web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\aspnet core web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|solutionrelative:aspnet core web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\aspnet core web api\\aspnet core web api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|solutionrelative:aspnet core web api\\aspnet core web api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250208210746_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebMVC\\Migrations\\20250208210746_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\pokemonmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\pokemonmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\aspnet core web api\\pokemonapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2EE5C4B2-1DDF-4D81-B7A7-CEB5E0E31574}|Aspnet core web api\\PokemonApi.csproj|solutionrelative:aspnet core web api\\pokemonapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\models\\pokemontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\models\\pokemontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\shared\\editortemplates\\type.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\shared\\editortemplates\\type.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\db\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9FE7AC04-8F6F-4A0C-9960-893796CBA46F}|DB\\DB.csproj|solutionrelative:db\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\service\\service\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FEDAFDA-8BE9-4FD6-9084-9F56EA2F8460}|Service\\Service.csproj|solutionrelative:service\\service\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\webmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\webmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\apimodelsresponse\\viewmodels\\abilitydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06ABFA50-FACB-4AE0-AD69-18D76074EE5A}|ApiModelsResponse\\ModelsResponse.csproj|solutionrelative:apimodelsresponse\\viewmodels\\abilitydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\migrations\\20250210113259_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\migrations\\20250210113259_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|c:\\users\\marce\\source\\repos\\pokemonworld\\webmvc\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{37CE5F98-422C-4946-AB39-C83749996C93}|WebMVC\\WebMVC.csproj|solutionrelative:webmvc\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -233,696 +37,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TreinadorController.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Controllers\\TreinadorController.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Controllers\\TreinadorController.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Controllers\\TreinadorController.cs",
-              "RelativeToolTip": "WebMVC\\Controllers\\TreinadorController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T14:05:50.323Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:25:37.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Details.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\PokemonApi\\Details.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Details.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:25:36.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AbilityDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\AbilityDetails.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\PokemonApi\\AbilityDetails.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\AbilityDetails.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\AbilityDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:25:50.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:27:35.566Z",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAFMCAAAAAAAAAAAuwGUCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-02-11T21:37:32.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TreinadorService.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service\\TreinadorService.cs",
-              "RelativeDocumentMoniker": "Service\\Service\\TreinadorService.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service\\TreinadorService.cs",
-              "RelativeToolTip": "Service\\Service\\TreinadorService.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAIwNUAAAAJAAAAAAAAAA==",
+              "Title": "PokemonRestApiController.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
+              "RelativeDocumentMoniker": "Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
+              "RelativeToolTip": "Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:07:17.414Z",
+              "WhenOpened": "2025-02-11T21:37:08.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PokemonTreinadorRelacionado.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonTreinadorRelacionado.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\PokemonTreinadorRelacionado.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonTreinadorRelacionado.cs",
-              "RelativeToolTip": "DB\\Models\\PokemonTreinadorRelacionado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:21:05.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TreinadorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\TreinadorViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\TreinadorViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\TreinadorViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\TreinadorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:18:07.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20250211172448_natureCanBeNull.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250211172448_natureCanBeNull.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Migrations\\20250211172448_natureCanBeNull.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250211172448_natureCanBeNull.cs",
-              "RelativeToolTip": "WebMVC\\Migrations\\20250211172448_natureCanBeNull.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:24:48.857Z",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAE0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T19:43:16.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\Treinador\\Index.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Index.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\Treinador\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwC4AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebMVC\\Views\\PokemonApi\\Index.cshtml",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Index.cshtml",
+              "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:27:29.13Z",
+              "WhenOpened": "2025-02-11T19:58:11.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20250211164651_pokemonIndex.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250211164651_pokemonIndex.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Migrations\\20250211164651_pokemonIndex.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250211164651_pokemonIndex.cs",
-              "RelativeToolTip": "WebMVC\\Migrations\\20250211164651_pokemonIndex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T16:46:51.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Treinador.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\Treinador.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\Treinador.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\Treinador.cs",
-              "RelativeToolTip": "DB\\Models\\Treinador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:21:18.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Service.csproj",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service.csproj",
-              "RelativeDocumentMoniker": "Service\\Service.csproj",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service.csproj",
-              "RelativeToolTip": "Service\\Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-08T15:07:03.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\Treinador\\Create.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Create.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\Treinador\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T14:16:57.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PokemonRestApiController.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
-              "RelativeDocumentMoniker": "Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
-              "RelativeToolTip": "Aspnet core web api\\Controllers\\PokemonRestApiController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:40:58.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Edit.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\Treinador\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Edit.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\Treinador\\Edit.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAFEAAACmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T17:18:28.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "PokemonContext.cs",
               "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Data\\PokemonContext.cs",
               "RelativeDocumentMoniker": "DB\\Data\\PokemonContext.cs",
               "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Data\\PokemonContext.cs",
               "RelativeToolTip": "DB\\Data\\PokemonContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAWwBkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:47:45.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PokemonApiController.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Controllers\\PokemonApiController.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Controllers\\PokemonApiController.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Controllers\\PokemonApiController.cs",
-              "RelativeToolTip": "WebMVC\\Controllers\\PokemonApiController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:27:53.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PokemonViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\PokemonViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\PokemonViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\PokemonViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\PokemonViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:11:51.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Data\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "WebMVC\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAArwFEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:59:38.382Z",
+              "WhenOpened": "2025-02-11T21:36:53.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PokemonDetailsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonDetailsResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonDetailsResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonDetailsResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonDetailsResponse.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAjwEIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:15:36.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AbilityDetailsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityDetailsResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityDetailsResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityDetailsResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityDetailsResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:57.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TypeListResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\TypeListResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\ApiResponse\\TypeListResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\TypeListResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\ApiResponse\\TypeListResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:56.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PokemonDetailsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\PokemonDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\PokemonDetailsViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\PokemonDetailsViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\PokemonDetailsViewModel.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T13:59:37.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MoveDetailsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\MoveDetailsResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\ApiResponse\\MoveDetailsResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\MoveDetailsResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\ApiResponse\\MoveDetailsResponse.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAjwC4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:55.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PokeApiService.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service\\PokeApiService.cs",
-              "RelativeDocumentMoniker": "Service\\Service\\PokeApiService.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service\\PokeApiService.cs",
-              "RelativeToolTip": "Service\\Service\\PokeApiService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAArwEgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:07:16.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AbilityListResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityListResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityListResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityListResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\ApiResponse\\AbilityListResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAArwAsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:15:21.37Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PokemonTreinadorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\PokemonTreinadorViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\PokemonTreinadorViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\PokemonTreinadorViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\PokemonTreinadorViewModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:11:44.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "PokemonViewModelResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonViewModelResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonViewModelResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonViewModelResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\ApiResponse\\PokemonViewModelResponse.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:55.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DB.csproj",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj",
-              "RelativeDocumentMoniker": "DB\\DB.csproj",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\DB.csproj",
-              "RelativeToolTip": "DB\\DB.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-08T14:47:28.445Z",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "WebMVC\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "WebMVC\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-11T19:45:09.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Convert.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\AppData\\Local\\SourceServer\\f420992b63200ab7331017d28d50171ba23ef9a5532311f67ec1a6bf4fdf5e54\\Service\\Service\\Convert.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\f420992b63200ab7331017d28d50171ba23ef9a5532311f67ec1a6bf4fdf5e54\\Service\\Service\\Convert.cs",
-              "ToolTip": "C:\\Users\\marce\\AppData\\Local\\SourceServer\\f420992b63200ab7331017d28d50171ba23ef9a5532311f67ec1a6bf4fdf5e54\\Service\\Service\\Convert.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\f420992b63200ab7331017d28d50171ba23ef9a5532311f67ec1a6bf4fdf5e54\\Service\\Service\\Convert.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T12:43:20.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PokemonListResponse.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\PokemonListResponse.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\PokemonListResponse.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\PokemonListResponse.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\PokemonListResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:51.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PokemonDetailSprites.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\PokemonDetailSprites.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\PokemonDetailSprites.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\PokemonDetailSprites.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\PokemonDetailSprites.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:53.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PokemonListItem.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\PokemonListItem.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ApiModels\\PokemonListItem.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ApiModels\\PokemonListItem.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ApiModels\\PokemonListItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:06:52.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "MoveViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\MoveViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\MoveViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\MoveViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\MoveViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T20:54:23.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "PokemonAbility.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonAbility.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\PokemonAbility.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonAbility.cs",
-              "RelativeToolTip": "DB\\Models\\PokemonAbility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:20:56.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "PokemonDetails.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonDetails.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\PokemonDetails.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonDetails.cs",
-              "RelativeToolTip": "DB\\Models\\PokemonDetails.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA9wAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:21:00.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Program.cs",
-              "RelativeDocumentMoniker": "Aspnet core web api\\Program.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Program.cs",
-              "RelativeToolTip": "Aspnet core web api\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:07:50.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "20250210113259_first.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250210113259_first.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Migrations\\20250210113259_first.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250210113259_first.cs",
-              "RelativeToolTip": "WebMVC\\Migrations\\20250210113259_first.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T11:32:59.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\appsettings.json",
-              "RelativeDocumentMoniker": "Aspnet core web api\\appsettings.json",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\appsettings.json",
-              "RelativeToolTip": "Aspnet core web api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-08T19:49:21.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Program.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Program.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Program.cs",
-              "RelativeToolTip": "WebMVC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T17:01:01.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Aspnet core web api.http",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Aspnet core web api.http",
-              "RelativeDocumentMoniker": "Aspnet core web api\\Aspnet core web api.http",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\Aspnet core web api.http",
-              "RelativeToolTip": "Aspnet core web api\\Aspnet core web api.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-09T14:57:12.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\appsettings.json",
-              "RelativeDocumentMoniker": "WebMVC\\appsettings.json",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\appsettings.json",
-              "RelativeToolTip": "WebMVC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-08T21:13:02.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "20250208210746_first.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250208210746_first.cs",
-              "RelativeDocumentMoniker": "WebMVC\\Migrations\\20250208210746_first.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Migrations\\20250208210746_first.cs",
-              "RelativeToolTip": "WebMVC\\Migrations\\20250208210746_first.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T21:07:46.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "PokemonApi.csproj",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\PokemonApi.csproj",
-              "RelativeDocumentMoniker": "Aspnet core web api\\PokemonApi.csproj",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Aspnet core web api\\PokemonApi.csproj",
-              "RelativeToolTip": "Aspnet core web api\\PokemonApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-08T14:47:30.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "PokemonMove.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonMove.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\PokemonMove.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonMove.cs",
-              "RelativeToolTip": "DB\\Models\\PokemonMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T20:24:00.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "PokemonType.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonType.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\PokemonType.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\PokemonType.cs",
-              "RelativeToolTip": "DB\\Models\\PokemonType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:21:11.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Pokemon.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\Pokemon.cs",
-              "RelativeDocumentMoniker": "DB\\Models\\Pokemon.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\Models\\Pokemon.cs",
-              "RelativeToolTip": "DB\\Models\\Pokemon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:20:45.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\ErrorViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T17:26:52.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebMVC\\Views\\Treinador\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Treinador\\Edit.cshtml",
+              "RelativeToolTip": "WebMVC\\Views\\Treinador\\Edit.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAawJAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:26:01.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Type.cshtml",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\EditorTemplates\\Type.cshtml",
-              "RelativeDocumentMoniker": "WebMVC\\Views\\Shared\\EditorTemplates\\Type.cshtml",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\Shared\\EditorTemplates\\Type.cshtml",
-              "RelativeToolTip": "WebMVC\\Views\\Shared\\EditorTemplates\\Type.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T17:27:55.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\appsettings.json",
-              "RelativeDocumentMoniker": "DB\\appsettings.json",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\appsettings.json",
-              "RelativeToolTip": "DB\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-08T14:47:30.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "DB\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\DB\\appsettings.Development.json",
-              "RelativeToolTip": "DB\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-08T15:00:45.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Convert.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service\\Convert.cs",
-              "RelativeDocumentMoniker": "Service\\Service\\Convert.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\Service\\Service\\Convert.cs",
-              "RelativeToolTip": "Service\\Service\\Convert.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:07:45.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "AbilityDetailsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\AbilityDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "ApiModelsResponse\\ViewModels\\AbilityDetailsViewModel.cs",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\ApiModelsResponse\\ViewModels\\AbilityDetailsViewModel.cs",
-              "RelativeToolTip": "ApiModelsResponse\\ViewModels\\AbilityDetailsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T15:10:37.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "WebMVC.csproj",
-              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\WebMVC.csproj",
-              "RelativeDocumentMoniker": "WebMVC\\WebMVC.csproj",
-              "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\WebMVC.csproj",
-              "RelativeToolTip": "WebMVC\\WebMVC.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-08T14:51:12.671Z",
+              "WhenOpened": "2025-02-11T21:41:50.287Z",
               "EditorCaption": ""
             }
           ]
