@@ -12,10 +12,24 @@
     <style>
         :root {
             --text: #4335A7;
-            --vblue: #80C4E9;
-            --vorange: #FF7F3E;
+            --vblue: black;
+            --vorange: white;
         }
-
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            /* padding: 0; */
+            background-color: darkslateblue;
+            color: var(--text);
+        }
+        .search{
+            filter: opacity(50%);
+            /* transition: all 0.2s ease; */
+            margin-top:5vh;
+        }
+.search:hover{ 
+     filter: opacity(100%);
+ }
         .search input {
             padding: 0.7rem 2rem;
             border-radius: 20px 10px;
@@ -39,12 +53,9 @@
                 color: white;
             }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            /* padding: 0; */
-            background-color: #FFF6E9;
-            color: #4335A7;
+        header{
+            background-color: rgba(255, 255, 255, 0.90);
+            
         }
 
         .navLinks li {
@@ -52,6 +63,7 @@
             color: #4335A7;
             list-style: none;
             cursor: pointer;
+            font-size:1.5rem;
         }
 
             .navLinks li:hover {
@@ -72,21 +84,38 @@
             .navLinks li:hover::after {
                 width: 100%;
             }
+            .card{
+                transition: all 0.2s ease;
+                padding:3rem;
+                background-color: var(--vblue);
+            }
+            .card img{
+                filter: drop-shadow(0px 30px 15px #b0b0b0)
+            }
+            .card:hover {
+                background-color: white;
+                scale: 1.08;
+                transform:translateY(-5px);
+                border:3px solid gray !important;
+            } 
+
+            footer{
+                content:"";
+                background-color: #FF7F3E;
+            }
+           /* ksdk when u are in the page without hovering the search bar, make it transparent, when  */
     </style>
 </head>
 <body>
-    <header>
-        <nav >
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navLinks"
-                        style="display: flex; justify-content: center; gap: 10vmin; list-style: none; font-weight: 600;" >
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" style=";"asp-area="" asp-controller="PokemonApi" asp-action="Index">Pokemons</a>
+    <header style=" height: 10vh; display: flex; align-items: center; justify-content: center; position: fixed; top: 0; left: 0;z-index:100; width: 100%; ">
+        <nav style="">
+
+            <ul class="navLinks"
+                style="display: flex; justify-content: center; gap: 10vmin; list-style: none; font-weight: 600;"
+                class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" style="" asp-area="" asp-controller="PokemonApi"
+                       asp-action="Index">Pokemons</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Treinador" asp-action="Index">Treinador</a>
@@ -96,17 +125,18 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    
+    <div class="container" style="margin-top: 10vh; min-height:90vh; max-height:auto;">
+        <main role="main" class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0px 20vmin; color: #4335A7;">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - WebMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer style="text-align: center; background-color: white; border-top: 1px solid #4335A7;">
+        <div class="container" style="padding: 2vmin;">
+            <a asp-area="" asp-controller="PokemonApi" style="text-decoration:none  " asp-action="Index">Marcelo Jaeger</a>
         </div>
     </footer>
+   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

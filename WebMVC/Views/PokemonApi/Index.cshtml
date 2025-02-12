@@ -9,31 +9,24 @@
     var totalPages = ViewBag.TotalPages ?? 1;
     var maxPagesToShow = 3;
     var searchQuery = ViewBag.SearchQuery as string ?? "";
-
-
 }
 
 
 
-<h2 style="font-size: 2rem; color:#4335A7;">Lista de Pokémon</h2>
-
-<!-- Barra de Busca -->
-<form style="margin-bottom: 8vmin;" method="get" action="@Url.Action("Index")" class="mb-3">
-    <div class="search" style="">
-        <input style="" type="text" class="form-control" name="search" placeholder="Buscar Pokémon..." value="@searchQuery">
+<form style="margin-bottom: 4vmin !important; display:flex; justify-content:end;" method="get" action="@Url.Action("Index")" class="mb-3">
+    <div class="search" style="display:flex; width :30%;  ">
+        <input style="border-radius:20px 0px 0px 10px; width:40vw" type="text" class="form-control" name="search" placeholder="Buscar Pokémon..." value="@searchQuery">
         <input type="hidden" name="page" value="1"> <!-- Reseta para a primeira página -->
         <input type="hidden" name="pageSize" value="@pageSize">
-        <button style="padding: 0.7rem 2rem; border-radius: 20px 10px; border: 2px solid #4335A7;  font-weight: 700; " type="submit">Buscar</button>
+        <button style="padding: 0.7rem 2rem; border-radius: 0px 10px 20px 0px; border: 2px solid #4335A7;border-left: 0px; font-weight: 700; " type="submit">Buscar</button>
     </div>
 </form>
 
-<!-- Lista de Pokémon -->
 <div class="row">
     @foreach (var pokemon in Model)
     {
         <div class="col-md-3">
             <div class="card mb-3" style="border: 2px solid rgb(227, 227, 227); width: fit-content; border-radius: 20px;">
-                <!-- Link para os detalhes do Pokémon -->
                 <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
                     <img style="height: 200px; width: auto; border-radius: 20px 20px 0 0; border-bottom: 2px solid rgb(227, 227, 227);" src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
                 </a>
@@ -43,18 +36,13 @@
     }
 </div>
 
-<!-- Paginação -->
 @if (totalPages > 1)
 {
     <nav aria-label="Navegação de página">
         <ul class="pagination justify-content-center flex-wrap">
-
-            <!-- Botão "Anterior" -->
             <li class="page-item @(currentPage <= 1 ? "disabled" : "")">
                 <a class="page-link" href="@Url.Action("Index", new { page = currentPage - 1, pageSize, search = searchQuery })">Anterior</a>
             </li>
-
-            <!-- Exibir Primeira Página e Reticências -->
             @if (currentPage > maxPagesToShow + 1)
             {
                 <li class="page-item">
@@ -64,16 +52,12 @@
                     <span class="page-link">...</span>
                 </li>
             }
-
-            <!-- Números Vizinhos da Página Atual -->
             @for (var i = Math.Max(1, currentPage - maxPagesToShow); i <= Math.Min(totalPages, currentPage + maxPagesToShow); i++)
             {
                 <li class="page-item @(i == currentPage ? "active" : "")">
                     <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize, search = searchQuery })">@i</a>
                 </li>
             }
-
-            <!-- Exibir Última Página e Reticências -->
             @if (currentPage < totalPages - maxPagesToShow)
             {
                 <li class="page-item disabled">
@@ -83,11 +67,11 @@
                     <a class="page-link" href="@Url.Action("Index", new { page = totalPages, pageSize, search = searchQuery })">@totalPages</a>
                 </li>
             }
-
-            <!-- Botão "Próximo" -->
             <li class="page-item @(currentPage >= totalPages ? "disabled" : "")">
                 <a class="page-link" href="@Url.Action("Index", new { page = currentPage + 1, pageSize, search = searchQuery })">Próximo</a>
             </li>
         </ul>
     </nav>
 }
+
+                
