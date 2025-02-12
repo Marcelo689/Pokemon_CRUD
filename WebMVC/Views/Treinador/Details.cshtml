@@ -1,0 +1,112 @@
+﻿@model ApiModelsResponse.ViewModels.TreinadorViewModel
+
+@{
+    Layout = "_Layout";  // Caso você tenha um layout comum
+}
+
+<div class="trainer-details">
+    <h1>@Model.Name</h1>
+    <img src="@Model.ImagePath" alt="Trainer Image" class="trainer-image" />
+
+    <p><strong>Location:</strong> @Model.Location</p>
+
+    <div class="pokemons">
+        <h2>Pokémon Team</h2>
+
+        @for (int i = 1; i <= 6; i++)
+        {
+            var pokemonName = (string)Model.GetType()
+            .GetProperty($"Pokemon{i}Name").GetValue(Model);
+            var pokemonAbility = (string) Model.GetType()
+            .GetProperty($"Pokemon{i}Ability").GetValue(Model);
+            var pokemonType1 = (string)Model.GetType()
+            .GetProperty($"Pokemon{i}PokemonTypeName1").GetValue(Model);
+            var pokemonType2 = (string)Model.GetType()
+            .GetProperty($"Pokemon{i}PokemonTypeName2").GetValue(Model);
+            var pokemonLevel = (int)Model.GetType()
+            .GetProperty($"Pokemon{i}Level").GetValue(Model);
+            var pokemonId = (int)Model.GetType()
+            .GetProperty($"Pokemon{i}Id").GetValue(Model);
+            var pokemonImage = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemonId}.png"; // Imagem do Pokémon da API
+
+            if (string.IsNullOrEmpty(pokemonName)) continue;  // Caso não exista Pokémon, ignorar
+
+            <div class="pokemon">
+                <h3>@pokemonName (Level @pokemonLevel)</h3>
+                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemonName })">
+                    <img src="@pokemonImage" alt="@pokemonName" class="pokemon-image" />
+                </a>
+                <p><strong>Ability:</strong>
+
+                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = pokemonAbility})">
+                        @pokemonAbility
+                    </a></p>
+                <p><strong>Types:</strong> @pokemonType1 @if (pokemonType2 != null)
+                    {
+                        <text>/ @pokemonType2</text>
+                    }</p>
+
+                <div class="moves">
+                    <strong>Moves:</strong>
+                    <ul>
+                        @for (int j = 1; j <= 4; j++)
+                        {
+                            var move = (string)Model.GetType()
+                            .GetProperty($"Pokemon{i}Move{j}").GetValue(Model);
+                            if (!string.IsNullOrEmpty(move))
+                            {
+                                <li>
+                                    <a href="@Url.Action("MoveDetails", "PokemonApi", new { moveName = move })">
+                                        @move
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .trainer-details {
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .trainer-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .pokemons {
+        margin-top: 30px;
+    }
+
+    .pokemon {
+        margin-bottom: 20px;
+        display: inline-block;
+        text-align: left;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-right: 20px;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .pokemon-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .moves ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .moves li {
+        margin-bottom: 5px;
+    }
+</style>

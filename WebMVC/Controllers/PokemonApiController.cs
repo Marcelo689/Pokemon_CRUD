@@ -1,6 +1,8 @@
 ﻿using ApiModelsResponse.ViewModels;
 using DB.Models;
 using Microsoft.AspNetCore.Mvc;
+using ModelsResponse.ViewModels;
+using Newtonsoft.Json;
 using WebMVC.Service;
 
 namespace WebMVC.Controllers
@@ -36,11 +38,12 @@ namespace WebMVC.Controllers
             var pagedResults = pokemonApiList
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
-                .Select( e => new PokemonViewModel { 
+                .Select(e => new PokemonViewModel
+                {
                     Name = e.Name,
                     Url = e.Url
                 })
-                .ToList(); 
+                .ToList();
 
             return View(pagedResults);
         }
@@ -87,9 +90,26 @@ namespace WebMVC.Controllers
 
             var pokemonDetails = _pokeApiService.GetPokemonDetailsByName(pokemonName);
             var pokemonDetailsViewModel = Convert(pokemonDetails);
-            pokemonDetailsViewModel =  _pokeApiService.AddClassesToPokemonDetailsViewModel(pokemonDetailsViewModel);
+            pokemonDetailsViewModel = _pokeApiService.AddClassesToPokemonDetailsViewModel(pokemonDetailsViewModel);
 
             return View(pokemonDetailsViewModel);
         }
+        public async Task<IActionResult> MoveDetails(string moveName)
+        {
+            if (string.IsNullOrEmpty(moveName))
+            {
+                return NotFound("Movimento não encontrado.");
+            }
+            else
+            {
+                MoveDetailsViewModel moveViewModel = _pokeApiService.GetMoveFromName(moveName);
+                if(moveViewModel is null)
+                    return NotFound("Movimento não encontrado.");
+                return View(moveViewModel);
+            }
+
+        }
+
+
     }
 }

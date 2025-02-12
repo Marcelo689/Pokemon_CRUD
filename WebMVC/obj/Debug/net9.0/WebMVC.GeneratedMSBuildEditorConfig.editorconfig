@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbkFwaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonApi/MoveDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbkFwaVxNb3ZlRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Shared/EditorTemplates/Type.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xUeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Treinador/Edit.cshtml]

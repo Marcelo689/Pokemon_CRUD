@@ -130,6 +130,27 @@ namespace WebMVC.Service
                 ShortDescription = e.ShortDescription,
             }).ToList();
         }
+
+        public MoveDetailsViewModel GetMoveFromName(string moveName)
+        {
+            var move = _context.Move.FirstOrDefault(e => e.Name == moveName);
+
+            if (move is null)
+                return null;
+            return new MoveDetailsViewModel
+            {
+                Id = move.Id,
+                Name = move.Name,
+                Power = move.Power,
+                Accuracy = move.Accuracy,
+                IsSpecial = move.isSpecial,
+                IsPhysical = move.isPhysical,
+                IsStatus = move.isStatus,
+                Description = move.Description,
+                ShorDescription = move.ShortDescription,
+                PP = move.PP,
+            };
+        }
     }
 
 }

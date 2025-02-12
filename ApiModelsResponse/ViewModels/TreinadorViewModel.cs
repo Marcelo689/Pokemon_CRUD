@@ -10,6 +10,7 @@
 
         // Pokémon 1
         public string Pokemon1Name { get; set; }
+        public int Pokemon1Id { get; set; }
         public string Pokemon1Ability { get; set; }
         public string Pokemon1PokemonTypeName1 { get; set; }
         public string? Pokemon1PokemonTypeName2 { get; set; }
@@ -21,6 +22,7 @@
 
         // Pokémon 2
         public string Pokemon2Name { get; set; }
+        public int Pokemon2Id { get; set; }
         public string Pokemon2Ability { get; set; }
         public string Pokemon2PokemonTypeName1 { get; set; }
         public string? Pokemon2PokemonTypeName2 { get; set; }
@@ -32,6 +34,7 @@
 
         // Pokémon 3
         public string Pokemon3Name { get; set; }
+        public int Pokemon3Id { get; set; }
         public string Pokemon3Ability { get; set; }
         public string Pokemon3PokemonTypeName1 { get; set; }
         public string? Pokemon3PokemonTypeName2 { get; set; }
@@ -43,6 +46,7 @@
 
         // Pokémon 4
         public string Pokemon4Name { get; set; }
+        public int Pokemon4Id { get; set; }
         public string Pokemon4Ability { get; set; }
         public string Pokemon4PokemonTypeName1 { get; set; }
         public string? Pokemon4PokemonTypeName2 { get; set; }
@@ -54,6 +58,7 @@
 
         // Pokémon 5
         public string Pokemon5Name { get; set; }
+        public int Pokemon5Id { get; set; }
         public string Pokemon5Ability { get; set; }
         public string Pokemon5PokemonTypeName1 { get; set; }
         public string? Pokemon5PokemonTypeName2 { get; set; }
@@ -65,6 +70,7 @@
 
         // Pokémon 6
         public string Pokemon6Name { get; set; }
+        public int Pokemon6Id { get; set; }
         public string Pokemon6Ability { get; set; }
         public string Pokemon6PokemonTypeName1 { get; set; }
         public string? Pokemon6PokemonTypeName2 { get; set; }

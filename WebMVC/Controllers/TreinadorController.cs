@@ -148,5 +148,16 @@ namespace WebMVC.Controllers
             return View(treinador);
         }
 
+        public IActionResult Details(int treinadorId)
+        {
+            TreinadorViewModel treinadorViewModel = _treinadorService.GetTreinadorViewModelData(treinadorId);
+            return View(treinadorViewModel);
+        }
+        public IActionResult Delete(int treinadorId)
+        {
+            _treinadorService.DeleteTreinador(treinadorId);
+            return Redirect("Index");
+        }
+
     }
 }

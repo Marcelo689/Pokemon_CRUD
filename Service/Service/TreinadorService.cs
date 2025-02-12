@@ -357,5 +357,137 @@ namespace WebMVC.Service
 
         }
 
+        public TreinadorViewModel GetTreinadorViewModelData(int treinadorId)
+        {
+            var treinador = _context.Treinador.First(e => e.Id == treinadorId);
+            var listaTipos = _context.PokemonType.ToList();
+            var listaAbilidades = _context.PokemonAbility.ToList();
+            List<PokemonTreinadorRelacionado> listaPokemonTreinador = _context.PokemonTreinador.Include(e => e.PokemonApiId).Where(e => e.TreinadorId == treinadorId).ToList();
+            var treinadorViewModel = new TreinadorViewModel
+            {
+                Id = treinadorId,
+                Name = treinador.Name,
+                ImagePath = treinador.ImagePath,
+                Location = treinador.Location,
+                Pokemons = new List<PokemonDetailsViewModel>()
+            };
+
+            foreach (var pokemon in listaPokemonTreinador)
+            {
+                if (pokemon.PokemonIndex < 1 || pokemon.PokemonIndex > 6)
+                    continue; // Ignora índices inválidos
+
+                switch (pokemon.PokemonIndex)
+                {
+                    case 1:
+                        treinadorViewModel.Pokemon1Name = pokemon.PokemonName;
+                        treinadorViewModel.Pokemon1Id = pokemon.PokemonApiId.Id;
+                        treinadorViewModel.Pokemon1Ability = listaAbilidades.FirstOrDefault(e => e.Id == pokemon.AbilityId)?.Name ?? null;
+                        treinadorViewModel.Pokemon1PokemonTypeName1 = listaTipos.First( e => e.Id == pokemon.TypeId)?.Name ?? null;
+                        if (pokemon.SecondTypeId != 0)
+                            treinadorViewModel.Pokemon1PokemonTypeName2 = listaTipos.First( e => e.Id == pokemon.SecondTypeId)?.Name ?? null;
+                        treinadorViewModel.Pokemon1Move1 = GetMoveName(pokemon.Move1Id);
+                        treinadorViewModel.Pokemon1Move2 = GetMoveName(pokemon.Move2Id);
+                        treinadorViewModel.Pokemon1Move3 = GetMoveName(pokemon.Move3Id);
+                        treinadorViewModel.Pokemon1Move4 = GetMoveName(pokemon.Move4Id);
+                        treinadorViewModel.Pokemon1Level = pokemon.Level;
+                        break;
+
+                    case 2:
+                        treinadorViewModel.Pokemon2Name = pokemon.PokemonName;
+                        treinadorViewModel.Pokemon2Id = pokemon.PokemonApiId.Id;
+                        treinadorViewModel.Pokemon2Ability = listaAbilidades.FirstOrDefault(e => e.Id == pokemon.AbilityId)?.Name ?? null;
+                        treinadorViewModel.Pokemon2PokemonTypeName1 = listaTipos.First( e => e.Id == pokemon.TypeId)?.Name ?? null;
+                        if(pokemon.SecondTypeId != 0)
+                            treinadorViewModel.Pokemon2PokemonTypeName2 = listaTipos.First( e => e.Id == pokemon.SecondTypeId)?.Name ?? null;
+                        treinadorViewModel.Pokemon2Move1 = GetMoveName(pokemon.Move1Id);
+                        treinadorViewModel.Pokemon2Move2 = GetMoveName(pokemon.Move2Id);
+                        treinadorViewModel.Pokemon2Move3 = GetMoveName(pokemon.Move3Id);
+                        treinadorViewModel.Pokemon2Move4 = GetMoveName(pokemon.Move4Id);
+                        treinadorViewModel.Pokemon2Level = pokemon.Level;
+                        break;
+
+                    case 3:
+                        treinadorViewModel.Pokemon3Name = pokemon.PokemonName;
+                        treinadorViewModel.Pokemon3Id = pokemon.PokemonApiId.Id;
+                        treinadorViewModel.Pokemon3Ability = listaAbilidades.FirstOrDefault(e => e.Id == pokemon.AbilityId)?.Name ?? null;
+                        treinadorViewModel.Pokemon3PokemonTypeName1 = listaTipos.First( e => e.Id == pokemon.TypeId)?.Name ?? null;
+                        if (pokemon.SecondTypeId != 0)
+                            treinadorViewModel.Pokemon3PokemonTypeName2 = listaTipos.First( e => e.Id == pokemon.SecondTypeId)?.Name ?? null;
+                        treinadorViewModel.Pokemon3Move1 = GetMoveName(pokemon.Move1Id);
+                        treinadorViewModel.Pokemon3Move2 = GetMoveName(pokemon.Move2Id);
+                        treinadorViewModel.Pokemon3Move3 = GetMoveName(pokemon.Move3Id);
+                        treinadorViewModel.Pokemon3Move4 = GetMoveName(pokemon.Move4Id);
+                        treinadorViewModel.Pokemon3Level = pokemon.Level;
+                        break;
+
+                    case 4:
+                        treinadorViewModel.Pokemon4Name = pokemon.PokemonName;
+                        treinadorViewModel.Pokemon4Id = pokemon.PokemonApiId.Id;
+                        treinadorViewModel.Pokemon4Ability = listaAbilidades.FirstOrDefault(e => e.Id == pokemon.AbilityId)?.Name ?? null;
+                        treinadorViewModel.Pokemon4PokemonTypeName1 = listaTipos.First( e => e.Id == pokemon.TypeId)?.Name ?? null;
+                        if (pokemon.SecondTypeId != 0)
+                            treinadorViewModel.Pokemon4PokemonTypeName2 = listaTipos.First( e => e.Id == pokemon.SecondTypeId)?.Name ?? null;
+                        treinadorViewModel.Pokemon4Move1 = GetMoveName(pokemon.Move1Id);
+                        treinadorViewModel.Pokemon4Move2 = GetMoveName(pokemon.Move2Id);
+                        treinadorViewModel.Pokemon4Move3 = GetMoveName(pokemon.Move3Id);
+                        treinadorViewModel.Pokemon4Move4 = GetMoveName(pokemon.Move4Id);
+                        treinadorViewModel.Pokemon4Level = pokemon.Level;
+                        break;
+
+                    case 5:
+                        treinadorViewModel.Pokemon5Name = pokemon.PokemonName;
+                        treinadorViewModel.Pokemon5Id = pokemon.PokemonApiId.Id;
+                        treinadorViewModel.Pokemon5Ability = listaAbilidades.FirstOrDefault(e => e.Id == pokemon.AbilityId)?.Name ?? null;
+                        treinadorViewModel.Pokemon5PokemonTypeName1 = listaTipos.First( e => e.Id == pokemon.TypeId)?.Name ?? null;
+                        if (pokemon.SecondTypeId != 0)
+                            treinadorViewModel.Pokemon5PokemonTypeName2 = listaTipos.First( e => e.Id == pokemon.SecondTypeId)?.Name ?? null;
+                        treinadorViewModel.Pokemon5Move1 = GetMoveName(pokemon.Move1Id);
+                        treinadorViewModel.Pokemon5Move2 = GetMoveName(pokemon.Move2Id);
+                        treinadorViewModel.Pokemon5Move3 = GetMoveName(pokemon.Move3Id);
+                        treinadorViewModel.Pokemon5Move4 = GetMoveName(pokemon.Move4Id);
+                        treinadorViewModel.Pokemon5Level = pokemon.Level;
+                        break;
+
+                    case 6:
+                        treinadorViewModel.Pokemon6Name = pokemon.PokemonName;
+                        treinadorViewModel.Pokemon6Id = pokemon.PokemonApiId.Id;
+                        treinadorViewModel.Pokemon6Ability = listaAbilidades.FirstOrDefault(e => e.Id == pokemon.AbilityId)?.Name ?? null;
+                        treinadorViewModel.Pokemon6PokemonTypeName1 = listaTipos.First( e => e.Id == pokemon.TypeId)?.Name ?? null;
+                        if (pokemon.SecondTypeId != 0)
+                            treinadorViewModel.Pokemon6PokemonTypeName2 = listaTipos.First( e => e.Id == pokemon.SecondTypeId)?.Name ?? null;
+                        treinadorViewModel.Pokemon6Move1 = GetMoveName(pokemon.Move1Id);
+                        treinadorViewModel.Pokemon6Move2 = GetMoveName(pokemon.Move2Id);
+                        treinadorViewModel.Pokemon6Move3 = GetMoveName(pokemon.Move3Id);
+                        treinadorViewModel.Pokemon6Move4 = GetMoveName(pokemon.Move4Id);
+                        treinadorViewModel.Pokemon6Level = pokemon.Level;
+                        break;
+                }
+            }
+
+            return treinadorViewModel;
+            // Função auxiliar para buscar o nome do movimento pelo ID (pode ser otimizada via cache)
+            string GetMoveName(int? moveId)
+            {
+                if (!moveId.HasValue) return null;
+                var move = _context.Move.FirstOrDefault(m => m.Id == moveId);
+                return move?.Name ?? "Unknown Move";
+            }
+        }
+
+        public void DeleteTreinador(int treinadorId)
+        {
+            var treinador = _context.Treinador.First(e => e.Id == treinadorId);
+
+            var listaTreinadorPokemon = _context.PokemonTreinador
+                .Where(e => e.Treinador == treinador)
+                .ToList(); // Converte para lista para evitar problemas na remoção
+
+            _context.RemoveRange(listaTreinadorPokemon); // Remove todos os registros relacionados ao treinador
+            _context.Remove(treinador); // Remove o treinador
+
+            _context.SaveChanges();
+        }
+
     }
 }
