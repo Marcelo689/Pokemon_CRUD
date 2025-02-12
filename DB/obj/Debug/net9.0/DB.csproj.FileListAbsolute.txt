@@ -1,6 +1,7 @@
 C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\appsettings.json
 C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\DB.deps.json
+C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\DB.runtimeconfig.json
 C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\DB.dll
 C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\DB.pdb
 C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\ModelsResponse.dll
@@ -15,6 +16,5 @@ C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\DB.csproj.Up2Date
 C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\DB.dll
 C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\refint\DB.dll
 C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\DB.pdb
-C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\ref\DB.dll
-C:\Users\marce\source\repos\PokemonWorld\DB\bin\Debug\net9.0\DB.runtimeconfig.json
 C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\DB.genruntimeconfig.cache
+C:\Users\marce\source\repos\PokemonWorld\DB\obj\Debug\net9.0\ref\DB.dll

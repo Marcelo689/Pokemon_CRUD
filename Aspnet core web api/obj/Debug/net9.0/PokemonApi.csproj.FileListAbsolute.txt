@@ -15,6 +15,8 @@ C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Mi
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.Identity.Client.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
@@ -50,7 +52,9 @@ C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\ru
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\DB.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\ModelsResponse.dll
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\DB.pdb
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.pdb
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\ModelsResponse.pdb
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.csproj.AssemblyReference.cache
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.GeneratedMSBuildEditorConfig.editorconfig
@@ -70,14 +74,10 @@ C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\st
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.PokemonApi.props
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.PokemonApi.props
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.csproj.Up2Date
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\refint\PokemonApi.dll
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.pdb
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\PokemonApi.genruntimeconfig.cache
 C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\ref\PokemonApi.dll
-C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.dll
-C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\bin\Debug\net9.0\Service.pdb
-C:\Users\marce\source\repos\PokemonWorld\Aspnet core web api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -8,10 +8,11 @@
         public Pokemon PokemonApiId { get; set; }
         public int PokemonIndex { get; set; }
         public string? PokemonNature { get; set; }
-        public string Name { get; set; }
+        public string PokemonName { get; set; }
+        public string TreinadorName { get; set; }
         public PokemonType? Type { get; set; }
         public int TypeId { get; set; }
-        public int SecondTypeId { get; set; }
+        public int? SecondTypeId { get; set; }
         public PokemonAbility? Ability { get; set; }
         public int AbilityId {  get; set; }    
         public int Level { get; set; }
