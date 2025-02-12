@@ -1,0 +1,26 @@
+﻿@using ApiModelsResponse.ViewModels
+@model AbilityDetailsViewModel
+
+@{
+    Layout = "_Layout"; // Ensure this page uses the layout you already have
+}
+
+<div class="container">
+    <div  class="ability-details">
+        <h2 style="color:red"  class="ability-name">@Model.Name.ToUpper()</h2>
+
+        <div class="ability-effect">
+            <h3>Effect</h3>
+            <p>@Model.EffectEntries</p>
+        </div>
+        <div>
+            <h1>Pokemons who has the ability</h1>
+            @foreach (var pokemon in Model.Pokemon)
+            {
+                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon})">
+                    <h4>@pokemon</h4>
+                </a>
+            }
+        </div>
+    </div>
+</div>

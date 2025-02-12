@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebMVC</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebMVC.styles.css" asp-append-version="true" />
+    <style>
+        :root {
+            --text: #4335A7;
+            --vblue: #80C4E9;
+            --vorange: #FF7F3E;
+        }
+
+        .search input {
+            padding: 0.7rem 2rem;
+            border-radius: 20px 10px;
+            border: 2px solid #4335A7;
+            color: #4335A7;
+            font-weight: 600;
+        }
+
+            .search input:focus {
+                outline-color: #FF7F3E;
+            }
+
+        .search button {
+            color: #4335A7;
+            transition: all 0.2s ease;
+            background-color: white;
+        }
+
+            .search button:hover {
+                background-color: #4335A7;
+                color: white;
+            }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            /* padding: 0; */
+            background-color: #FFF6E9;
+            color: #4335A7;
+        }
+
+        .navLinks li {
+            position: relative;
+            color: #4335A7;
+            list-style: none;
+            cursor: pointer;
+        }
+
+            .navLinks li:hover {
+                color: #FF7F3E;
+            }
+
+            .navLinks li::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 0;
+                background-color: #4335A7;
+                bottom: -5px;
+                left: 0;
+                transition: width 0.2s ease-in-out;
+            }
+
+            .navLinks li:hover::after {
+                width: 100%;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navLinks"
+                    style="display: flex; justify-content: center; gap: 10vmin; list-style: none; font-weight: 600;">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" "asp-area=" " asp-controller="PokemonApi" asp-action="Index">Pokemons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Treinador"
+                           asp-action="Index">Treinador</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="margin-top: 10vh;">
+        <main role="main" class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0px 20vmin; color: #4335A7;">
+                        @RenderBody()
+        </main>
+    </div>
+
+    <footer style="text-align: center; background-color: #80C4E9; border-top: 1px solid #4335A7;">
+        <div class="container" style="padding: 2vmin;">
+            &copy; 2025 - WebMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+                            @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

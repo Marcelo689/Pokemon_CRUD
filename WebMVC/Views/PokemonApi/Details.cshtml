@@ -1,0 +1,120 @@
+﻿@using ApiModelsResponse.ViewModels
+@model PokemonDetailsViewModel
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
+    </div>
+    <div class="col-md-8">
+        <h4>Informações Gerais</h4>
+        <p><strong>ID:</strong> @Model.Id</p>
+
+        <h5>Tipos:</h5>
+        <ul>
+            <li>@Model.PokemonType1.Name</li>
+            @if (Model.PokemonType2 != null)
+            {
+                <li>@Model.PokemonType2.Name</li>
+            }
+        </ul>
+
+        <h5>Habilidades:</h5>
+        <ul>
+            <li>
+                <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability1.Name})">
+                    @Model.Ability1.Name
+                </a>
+            </li>
+            @if (Model.Ability2 != null)
+            {
+                <li>
+                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability2.Name})">
+                        @Model.Ability2.Name
+                    </a>
+                </li>
+            }
+            @if (Model.Ability3 != null)
+            {
+                <li>
+                    <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability3.Name})">
+                        @Model.Ability3.Name
+                    </a>
+                </li>
+            }
+        </ul>
+
+        <h5>Estatísticas:</h5>
+        <div class="mb-2">
+            <span><strong>HP</strong> @Model.HP</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.HP / 2)%;"
+                     aria-valuenow="@Model.HP"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>ATTACK</strong> @Model.ATTACK</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.ATTACK / 2)%;"
+                     aria-valuenow="@Model.ATTACK"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>DEFENSE</strong> @Model.DEFENSE</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.DEFENSE / 2)%;"
+                     aria-valuenow="@Model.DEFENSE"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>SPECIAL ATTACK</strong> @Model.SP_ATTACK</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.SP_ATTACK / 2)%;"
+                     aria-valuenow="@Model.SP_ATTACK"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>SPECIAL DEFENSE</strong> @Model.SP_DEFENSE</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.SP_DEFENSE / 2)%;"
+                     aria-valuenow="@Model.SP_DEFENSE"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <span><strong>SPEED</strong> @Model.SPEED</span>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     style="width: @(Model.SPEED / 2)%;"
+                     aria-valuenow="@Model.SPEED"
+                     aria-valuemin="0"
+                     aria-valuemax="200">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

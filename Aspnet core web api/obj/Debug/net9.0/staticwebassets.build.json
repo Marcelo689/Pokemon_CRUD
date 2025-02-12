@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "EsAB5vYsUR25qvvINmQKxAtvfuz/Dd+qCMbPqlzNvvI=",
+  "Source": "PokemonApi",
+  "BasePath": "_content/PokemonApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

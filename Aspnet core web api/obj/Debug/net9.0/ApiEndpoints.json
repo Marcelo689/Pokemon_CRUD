@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "DB.Controllers.PokemonRestApiController",
+    "Method": "GetMovimentos",
+    "RelativePath": "api/PokemonRestApi/moves/{pokemonName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pokemonName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

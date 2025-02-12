@@ -1,0 +1,12 @@
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\bin\Debug\net9.0\ModelsResponse.deps.json
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\bin\Debug\net9.0\ModelsResponse.dll
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\bin\Debug\net9.0\ModelsResponse.pdb
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.AssemblyInfoInputs.cache
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.AssemblyInfo.cs
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.csproj.CoreCompileInputs.cache
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.sourcelink.json
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.dll
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\refint\ModelsResponse.dll
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ModelsResponse.pdb
+C:\Users\marce\source\repos\PokemonWorld\ApiModelsResponse\obj\Debug\net9.0\ref\ModelsResponse.dll

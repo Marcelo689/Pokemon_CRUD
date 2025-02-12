@@ -1,0 +1,46 @@
+﻿@using ApiModelsResponse.ViewModels
+@model List<TreinadorViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Treinadores";
+}
+
+<h2>Lista de Treinadores</h2>
+<style>
+    .trainer-image {
+        width: 100px; /* Ajuste conforme necessário */
+        height: 100px; /* Ajuste conforme necessário */
+    }
+</style>
+<a asp-action="Create" class="btn btn-success mb-3">Adicionar Novo Treinador</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var treinador in Model)
+        {
+            <tr>
+                <td><img src="@treinador.ImagePath" class="trainer-image"/></td>
+                <td>@treinador.Name</td>
+                <td>@treinador.Location</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@treinador.Id" class="btn btn-info btn-sm">Detalhes</a>
+                    <a asp-action="Edit"
+                       asp-route-Id="@treinador.Id"
+                       asp-route-Name="@treinador.Name"
+                       asp-route-Location="@treinador.Location"
+                       asp-route-ImagePath="@treinador.ImagePath"
+                       class="btn btn-danger btn-sm">Edit</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
