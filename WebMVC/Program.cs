@@ -32,18 +32,6 @@ var app = builder.Build();
 app.UseCors("AllowAllOrigins");
 
 // Middleware para lidar com OPTIONS
-app.Use(async (context, next) =>
-{
-    if (context.Request.Method == "OPTIONS")
-    {
-        context.Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:7246");
-        context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
-        context.Response.StatusCode = 204; // No Content
-        return;
-    }
-    await next();
-});
 DbInitializer.CreateDbIfNotExists(app);
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

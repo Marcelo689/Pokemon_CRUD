@@ -40,7 +40,7 @@
                         <option value="">Selecione um Pokémon</option>
                         @foreach (var pokemon in Model.Pokemons)
                         {
-                            var pokemonName = Model.GetType().GetProperty($"Pokemon{i}Name")?.GetValue(Model);
+                            var pokemonName = Model.GetType().GetProperty($"Pokemon{i}Name")?.GetValue(Model)?.ToString();
                             if (pokemonName == pokemon.Name)
                             {
                                 <option 
@@ -262,6 +262,7 @@
 
             var pokemonName = event.target.value;
 
+            console.log(pokemonName);
             try {
                 var moves = await getPokemonMoves(pokemonName);
                     var selectPokemonMoves = [
@@ -363,7 +364,6 @@
         });
     });
         document.addEventListener("DOMContentLoaded", function() {
-            
         document.querySelectorAll('.pokemon-select').forEach( (select, contador) => {
 
             if(contador == 0 && "@Html.Raw(Model.Pokemon1Name)" != ""){
@@ -407,7 +407,7 @@
                 selectMove4.value = retornaMove1NameFromIndex(contador+1);
             }
             if(contador == 2  && "@Html.Raw(Model.Pokemon3Name)" != ""){
-                select.value = "@Html.Raw(@Model.Pokemon2Name)";
+                select.value = "@Html.Raw(@Model.Pokemon3Name)";
 
                 var selectMove1 = document.querySelectorAll("select[name=Pokemon3Move1]")[0];
                 selectMove1.disabled = false;
@@ -426,7 +426,7 @@
                 selectMove4.value = retornaMove1NameFromIndex(contador+1);
             }
             if(contador == 3  && "@Html.Raw(Model.Pokemon4Name)" != ""){
-                select.value = "@Html.Raw(@Model.Pokemon2Name)";
+                select.value = "@Html.Raw(@Model.Pokemon4Name)";
 
                 var selectMove1 = document.querySelectorAll("select[name=Pokemon4Move1]")[0];
                 selectMove1.disabled = false;
@@ -445,7 +445,7 @@
                 selectMove4.value = retornaMove1NameFromIndex(contador+1);
             }
             if(contador == 4  && "@Html.Raw(Model.Pokemon5Name)" != ""){
-                select.value = "@Html.Raw(@Model.Pokemon2Name)";
+                select.value = "@Html.Raw(@Model.Pokemon5Name)";
 
                 var selectMove1 = document.querySelectorAll("select[name=Pokemon5Move1]")[0];
                 selectMove1.disabled = false;
@@ -464,7 +464,7 @@
                 selectMove4.value = retornaMove1NameFromIndex(contador+1);
             }
             if(contador == 5  && "@Html.Raw(Model.Pokemon6Name)" != ""){
-                select.value = "@Html.Raw(@Model.Pokemon2Name)";
+                select.value = "@Html.Raw(@Model.Pokemon6Name)";
 
                 var selectMove1 = document.querySelectorAll("select[name=Pokemon6Move1]")[0];
                 selectMove1.disabled = false;

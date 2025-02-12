@@ -3,6 +3,7 @@ using DB.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebMVC.Migrations
 {
     [DbContext(typeof(PokemonContext))]
-    partial class PokemonContextModelSnapshot : ModelSnapshot
+    [Migration("20250212015333_pokemonAndTreinadorNames")]
+    partial class pokemonAndTreinadorNames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -248,7 +251,7 @@ namespace WebMVC.Migrations
                     b.Property<string>("PokemonNature")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("SecondTypeId")
+                    b.Property<int>("SecondTypeId")
                         .HasColumnType("int");
 
                     b.Property<int>("TreinadorId")
