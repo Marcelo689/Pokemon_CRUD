@@ -11,8 +11,6 @@
     var searchQuery = ViewBag.SearchQuery as string ?? "";
 }
 
-
-
 <form style="margin-bottom: 4vmin !important; display:flex; justify-content:end;" method="get" action="@Url.Action("Index")" class="mb-3">
     <div class="search" style="display:flex; width :30%;  ">
         <input style="border-radius:20px 0px 0px 10px; width:40vw" type="text" class="form-control" name="search" placeholder="Buscar Pokémon..." value="@searchQuery">
@@ -26,12 +24,12 @@
     @foreach (var pokemon in Model)
     {
         <div class="col-md-3">
-            <div class="card hover-sound mb-3" style="border: 2px solid rgb(227, 227, 227); width: fit-content; border-radius: 20px;">
-                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
-                    <img style="height: 200px; width: auto; border-radius: 20px 20px 0 0; border-bottom: 2px solid rgb(227, 227, 227);" src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
-                </a>
-                <h5 style="font-weight: 700; text-align: center; color: #FF7F3E; margin: 1rem 0 1rem 0; font-size: 1.2rem;" class="card-title">@pokemon.Name.ToUpper()</h5>
-            </div>
+            <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
+                <div class="card hover-sound mb-3" style="border: 2px solid rgb(227, 227, 227); width: fit-content; border-radius: 20px;">
+                        <img style="height: 200px; width: auto; border-radius: 20px 20px 0 0; border-bottom: 2px solid rgb(227, 227, 227);" src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
+                    <h5 style="font-weight: 700; text-align: center; color: #FF7F3E; margin: 1rem 0 1rem 0; font-size: 1.2rem;" class="card-title">@pokemon.Name.ToUpper()</h5>
+                </div>
+            </a>
         </div>
     }
 </div>
@@ -82,6 +80,7 @@
         const cards = document.querySelectorAll(".hover-sound");
         const pcAudio = document.getElementById("pcAudio");
         audio.volume = 0.3;
+        pcAudio.volume = 0.3;
         pcAudio.play();
         cards.forEach(card => {
             card.addEventListener("mouseenter", function () {

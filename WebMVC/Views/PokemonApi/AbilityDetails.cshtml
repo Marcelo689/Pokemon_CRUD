@@ -4,10 +4,23 @@
 @{
     Layout = "_Layout"; // Ensure this page uses the layout you already have
 }
+<style>
+    .pokemonWithAbility{
+        transition: all 0.2s ease;
+    }
+
+    .pokemonWithAbility:hover {
+        scale: 2;
+    }
+
+    .pokemonWithAbility:hover h4 {
+        font-size: 0.5rem;
+    }
+</style>
 
 <div class="container">
     <div  class="ability-details">
-        <h2 style="color:red"  class="ability-name">@Model.Name.ToUpper()</h2>
+        <h2 style="color:dodgerblue"  class="ability-name">@Model.Name.ToUpper()</h2>
 
         <div class="ability-effect">
             <h3>Effect</h3>
@@ -15,12 +28,36 @@
         </div>
         <div>
             <h1>Pokemons who has the ability</h1>
-            @foreach (var pokemon in Model.Pokemon)
-            {
-                <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon})">
-                    <h4>@pokemon</h4>
-                </a>
-            }
+
+            <div style="display:flex; flex-wrap:wrap; width:100%">
+                @foreach (var pokemon in Model.Pokemon)
+                {
+                    <a  style="padding:0 25px" class="pokemonWithAbility hoverElement" href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name})">
+                            <img style="height:100px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/@(pokemon.Id).png" />
+                            <h4>@pokemon.Name.ToUpper()</h4>
+                        </a>
+                }
+            </div>
         </div>
     </div>
 </div>
+
+<audio id="hover-audio" src="assets/sounds/hover.wav" preload="auto"></audio>
+<audio id="hoverSound" src="assets/sounds/pc-on.mp3" preload="auto"></audio>
+
+@* </script> *@
+
+<script>
+    var hoverElements = document.querySelectorAll(".hoverElement"); // Select all elements with the class
+    var hoverSound = document.getElementById("hover-audio");
+
+    hoverElements.forEach(element => {
+        element.addEventListener("mouseenter", () => {
+            var audio = new Audio('../assets/sounds/hover.wav');
+            audio.volume = 0.3;
+            audio.play();
+        });
+    });
+   
+</script>
+

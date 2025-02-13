@@ -1,25 +1,140 @@
 ﻿@using ApiModelsResponse.ViewModels
 @model PokemonDetailsViewModel
+@{
+    Dictionary<string, string> _pokemonTypeColors = new Dictionary<string, string>
+    {
+        { "fire", "#f42" },
+        { "water", "#39f" },
+        { "grass", "#7c5" },
+        { "electric", "#fc3" },
+        { "bug", "#ab2" },
+        { "flying", "#89f" },
+        { "fairy", "#e9e" },
+        { "ghost", "#66b" },
+        { "poison", "#a59" },
+        { "normal", "#aa9" },
+        { "fighting", "#b54" },
+        { "rock", "#ba6" },
+        { "steel", "#aab" },
+        { "psychic", "#f59" },
+        { "ice", "#6cf" },
+        { "dark", "#754" },
+        { "dragon", "#76e" },
+    };
+}
 
-<div class="row">
-    <div class="col-md-4">
-        <img src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
+<style>
+    .tealBar{
+        background: #00c2b8 !important;
+    }
+
+    .blueBar {
+        background: #23cd5e !important;
+    }
+    .greenBar{
+        background: lime !important;
+    }
+
+    .yellowBar {
+        background: #ffdd57 !important;
+    }
+
+    .orangeBar {
+        background: #ff7f0f !important;
+    }
+
+    .redBar {
+        background: crimson !important;
+    }
+    ul{
+        display:flex;
+    }
+    h5{
+        margin-top:2rem;
+        font-size:1.5rem;
+    }
+    .pokemonType{
+        padding:1rem 2.5rem;
+        
+        border-radius:2px;
+        text-decoration:none;
+        list-style:none;
+        color:white;
+        margin:2px;
+        border-radius:10px;
+        /* border:1px solid lightgrey; */
+        box-shadow:0px 0px 10px grey;
+        font-size:1.2rem;
+        font-weight:600;
+    }
+
+    .abilities-ul{
+        display:flex;
+        gap: 2rem;
+        list-style:none;
+
+    }
+    .abilities-ul li a{
+        font-weight:600;
+        text-decoration: none;
+    }
+
+    .progress {
+        width: 100%;
+        height: 20px;
+        background-color: beige; /* Light gray background */
+        border-radius: 10px;
+    }
+
+        /* Change the color of the progress (the filled part) */
+        .progress::-webkit-progress-value {
+            background-color: #4caf50; /* Green color for progress */
+            border-radius: 10px;
+        }
+
+        /* Change the color of the track (background behind progress) */
+        .progress::-webkit-progress-bar {
+            background-color: beige; /* Light background for the track */
+            border-radius: 10px;
+        }
+
+    #DetailImg {
+        position: relative;
+    }
+
+        #DetailImg div {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #242424;
+            height: 100px;
+            width: 80%;
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(25px)
+        }
+</style>
+
+<div class="row" style="display:grid; grid-template-columns:1fr 1fr; align-items:center; min-height:100vh">
+    <div id="DetailImg" style="width:50vmin" class="col-md-4">
+        <img  style="box-shadow:none !important; " src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
+        <div></div>
     </div>
     <div class="col-md-8">
-        <h4>Informações Gerais</h4>
-        <p><strong>ID:</strong> @Model.Id</p>
+        <h5><strong>ID:</strong> @Model.Id</h5>
 
         <h5>Tipos:</h5>
         <ul>
-            <li>@Model.PokemonType1.Name</li>
+            <li class="pokemonType" style='background-color: @_pokemonTypeColors[Model.PokemonType1.Name] !important '>@Model.PokemonType1.Name.ToUpper()</li>
             @if (Model.PokemonType2 != null)
             {
-                <li>@Model.PokemonType2.Name</li>
+                <li class="pokemonType" style='background-color: @_pokemonTypeColors[Model.PokemonType2.Name] !important '>@Model.PokemonType2.Name.ToUpper()</li>
             }
         </ul>
 
         <h5>Habilidades:</h5>
-        <ul>
+        <ul class="abilities-ul">
             <li>
                 <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability1.Name})">
                     @Model.Ability1.Name
@@ -48,11 +163,12 @@
             <span><strong>HP</strong> @Model.HP</span>
             <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar"
-                     style="width: @(Model.HP / 2)%;"
+                     style="width: @(Model.HP / 2)%;" 
                      aria-valuenow="@Model.HP"
                      aria-valuemin="0"
                      aria-valuemax="200">
                 </div>
+              
             </div>
         </div>
 
@@ -115,6 +231,20 @@
                 </div>
             </div>
         </div>
+        <script>
+            var list = document.getElementsByClassName("progress-bar");
 
+            function returnColorStat(width){
+                return  (width< 20 ? "redBar" : width < 50 ? "orangeBar" : width < 75 ? "yellowBar" : width < 100 ? "greenBar" : width < 120 ? "blueBar" : "tealBar");
+            }
+
+            for(var i=0; i < list.length; i++){
+                var progressBar = list[i];
+                var width = progressBar.getAttribute("aria-valuenow");
+                progressBar.classList.add(returnColorStat(width));
+            }
+
+            "pokemonType"
+        </script>
     </div>
 </div>
