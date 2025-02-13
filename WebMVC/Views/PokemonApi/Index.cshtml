@@ -26,7 +26,7 @@
     @foreach (var pokemon in Model)
     {
         <div class="col-md-3">
-            <div class="card mb-3" style="border: 2px solid rgb(227, 227, 227); width: fit-content; border-radius: 20px;">
+            <div class="card hover-sound mb-3" style="border: 2px solid rgb(227, 227, 227); width: fit-content; border-radius: 20px;">
                 <a href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name })">
                     <img style="height: 200px; width: auto; border-radius: 20px 20px 0 0; border-bottom: 2px solid rgb(227, 227, 227);" src="@pokemon.Url" class="card-img-top" alt="@pokemon.Name">
                 </a>
@@ -74,4 +74,20 @@
     </nav>
 }
 
-                
+<audio id="hover-audio" src="assets/sounds/hover.wav" preload="auto"></audio>
+<audio id="pcAudio" src="assets/sounds/pc-on.mp3" preload="auto"></audio>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("hover-audio");
+        const cards = document.querySelectorAll(".hover-sound");
+        const pcAudio = document.getElementById("pcAudio");
+        audio.volume = 0.3;
+        pcAudio.play();
+        cards.forEach(card => {
+            card.addEventListener("mouseenter", function () {
+                audio.currentTime = 0; // Reset to start
+                audio.play().catch(error => console.log("Playback failed:", error));
+            });
+        });
+    });
+</script>
