@@ -6,3 +6,12 @@
 /.vs/PokemonWorld/FileContentIndex
 /.vs/PokemonWorld/v17/.suo
 /PokemonWorld.sln
+**/*.dll
+**/*.exe
+**/obj
+**/bin
+# Ignore Visual Studio files
+.vs/
+
+# Ignore project evaluation files
+ProjectEvaluation/

@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "WebMVC\\Views\\PokemonApi\\Details.cshtml",
               "ToolTip": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\Views\\PokemonApi\\Details.cshtml",
               "RelativeToolTip": "WebMVC\\Views\\PokemonApi\\Details.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAswHsAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAswI4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-14T16:00:18.122Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "WebMVC\\Controllers\\TreinadorController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwBwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T15:57:58.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T15:57:58.405Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "WebMVC\\Views\\Treinador\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-14T15:50:48.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T15:50:48.084Z"
             }
           ]
         }
