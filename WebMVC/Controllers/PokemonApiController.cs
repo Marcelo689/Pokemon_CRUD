@@ -2,7 +2,6 @@
 using DB.Models;
 using Microsoft.AspNetCore.Mvc;
 using ModelsResponse.ViewModels;
-using Newtonsoft.Json;
 using WebMVC.Service;
 
 namespace WebMVC.Controllers
@@ -109,7 +108,6 @@ namespace WebMVC.Controllers
             }
 
         }
-
 
     }
 }

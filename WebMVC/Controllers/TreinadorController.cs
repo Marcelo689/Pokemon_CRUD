@@ -90,12 +90,12 @@ namespace WebMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(TreinadorViewModel treinador, IFormFile imagePath, IFormFile imageUpload)
+        public IActionResult Create(TreinadorViewModel treinador, IFormFile imageFile)
         {
             if (treinador.IsValid())
             {
-                if (imagePath is not null && imagePath.Length > 0)
-                    AdicionaImagem(treinador, imagePath);
+                if (imageFile is not null && imageFile.Length > 0)
+                    AdicionaImagem(treinador, imageFile);
                 else
                     treinador.ImagePath = "/images/default.png";
                 SalvaTreinadorAndPokemons(treinador);
@@ -104,7 +104,7 @@ namespace WebMVC.Controllers
             return View(treinador);
         }
 
-        private static void AdicionaImagem(TreinadorViewModel treinador, IFormFile image)
+        private async Task AdicionaImagem(TreinadorViewModel treinador, IFormFile image)
         {
             var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
 
@@ -117,12 +117,12 @@ namespace WebMVC.Controllers
             var uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
             var filePath = Path.Combine(uploadFolder, uniqueFileName);
 
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            using (var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
             {
-                image.CopyTo(fileStream);
+                await image.CopyToAsync(fileStream);
             }
 
-            treinador.ImagePath = "/upload/" + uniqueFileName;
+            treinador.ImagePath = "/uploads/" + uniqueFileName;
         }
 
         public IActionResult Edit(TreinadorViewModel treinadorViewModel)
