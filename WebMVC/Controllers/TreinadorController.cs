@@ -36,6 +36,14 @@ namespace WebMVC.Controllers
                 if (isEdit)
                 {//Edit
                     treinadorModel = _treinadorService.GetTreinadorById(treinadorViewModel.Id);
+                    if (treinadorViewModel.ImagePath is not null)
+                        treinadorModel.ImagePath = treinadorViewModel.ImagePath;
+                    
+                    if (treinadorViewModel.Name is not null)
+                        treinadorModel.Name = treinadorViewModel.Name;
+
+                    if (treinadorViewModel.Location is not null)
+                        treinadorModel.Location = treinadorViewModel.Location;
                 }
                 else
                 {//Create
@@ -90,12 +98,12 @@ namespace WebMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(TreinadorViewModel treinador, IFormFile imageFile)
+        public async Task<IActionResult> Create(TreinadorViewModel treinador, IFormFile imageFile)
         {
             if (treinador.IsValid())
             {
                 if (imageFile is not null && imageFile.Length > 0)
-                    AdicionaImagem(treinador, imageFile);
+                    await AdicionaImagem(treinador, imageFile);
                 else
                     treinador.ImagePath = "/images/default.png";
                 SalvaTreinadorAndPokemons(treinador);
@@ -134,12 +142,12 @@ namespace WebMVC.Controllers
 
 
         [HttpPost]
-        public IActionResult Edit(TreinadorViewModel treinador, IFormFile imagePath, IFormFile imageUpload)
+        public async Task<IActionResult> Edit(TreinadorViewModel treinador, IFormFile imageFile)
         {
             if (treinador.IsValid())
             {
-                if (imagePath is not null && imagePath.Length > 0)
-                    AdicionaImagem(treinador, imagePath);
+                if (imageFile is not null && imageFile.Length > 0)
+                    await AdicionaImagem(treinador, imageFile);
                 else
                     treinador.ImagePath = "/images/default.png";
                 SalvaTreinadorAndPokemons(treinador);

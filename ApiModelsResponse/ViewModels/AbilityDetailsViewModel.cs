@@ -7,7 +7,7 @@ namespace ApiModelsResponse.ViewModels
 
         public string EffectEntries { get; set; }
 
-        public List<string> Pokemon { get; set; }
+        public List<PokemonAbilityViewModel> Pokemon { get; set; }
 
         public string Description { get; set; }  // Description of the ability
     }

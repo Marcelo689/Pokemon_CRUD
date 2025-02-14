@@ -105,7 +105,11 @@ namespace WebMVC.Service
             viewModel.Pokemon = new();
             foreach (var pokemon in pokemonsWithSameAbilty)
             {
-                viewModel.Pokemon.Add(pokemon.Name);
+                viewModel.Pokemon.Add(new PokemonAbilityViewModel
+                {
+                    Name = pokemon.Name,
+                    Id = pokemon.Id
+                });
             }
 
             viewModel.Name = ability.Name;
