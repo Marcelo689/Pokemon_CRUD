@@ -15,7 +15,7 @@
 
     <div class="mb-3">
         <label asp-for="ImagePath" class="form-label">Image</label>
-        <input type="file" class="form-control" id="imageUpload" value="@Model.ImagePath" accept="image/*">
+        <input type="file" class="form-control" id="imageUpload" name="imageFile" value="@Model.ImagePath" accept="image/*">
         <input type="hidden" asp-for="ImagePath" value="@Model.ImagePath"  id="imagePath">
     </div>
 

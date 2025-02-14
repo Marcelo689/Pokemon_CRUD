@@ -148,8 +148,6 @@ namespace WebMVC.Controllers
             {
                 if (imageFile is not null && imageFile.Length > 0)
                     await AdicionaImagem(treinador, imageFile);
-                else
-                    treinador.ImagePath = "/images/default.png";
                 SalvaTreinadorAndPokemons(treinador);
                 return RedirectToAction("Index");
             }
