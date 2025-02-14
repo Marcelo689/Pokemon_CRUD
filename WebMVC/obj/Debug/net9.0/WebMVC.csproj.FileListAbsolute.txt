@@ -347,3 +347,4 @@ C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\WebMVC.pdb
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\WebMVC.genruntimeconfig.cache
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\bin\Debug\net9.0\WebMVC.pdb
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\ref\WebMVC.dll
+C:\Users\marce\source\repos\PokemonWorld\WebMVC\obj\Debug\net9.0\compressed\8ogjduw1qg-kj2m5k8eu3.gz

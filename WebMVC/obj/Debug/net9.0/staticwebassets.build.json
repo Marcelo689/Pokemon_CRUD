@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2Zk5QjPbY9DRjslB/ZihCYG5NdmdURpcCixYoAP90ZM=",
+  "Hash": "r5VEdqi+XgbTedky2uWkXoPy87BbsFN/5h9wV7t0v6A=",
   "Source": "WebMVC",
   "BasePath": "_content/WebMVC",
   "Mode": "Default",
@@ -456,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\8ogjduw1qg-kj2m5k8eu3.gz",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "assets/sounds/hover#[.{fingerprint=kj2m5k8eu3}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\hover.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i19fzi6itx",
+      "Integrity": "hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\hover.wav"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\bxi9jng9od-2z0ns9nrw6.gz",
@@ -1401,6 +1422,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\hover.wav",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "assets/sounds/hover#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kj2m5k8eu3",
+      "Integrity": "YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\sounds\\hover.wav"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\pc-on.mp3",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "assets/sounds/pc-on#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mlnnexdzje",
+      "Integrity": "OllYHKOj7p93SC2fVGWh6KsMp6IRCkKHWOgDaDXhDgw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\sounds\\pc-on.mp3"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css",
@@ -2724,9 +2787,557 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afb5g9i4s9",
+      "Integrity": "Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zxlqqbglmz",
+      "Integrity": "l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afb5g9i4s9",
+      "Integrity": "Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afb5g9i4s9",
+      "Integrity": "Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zxlqqbglmz",
+      "Integrity": "l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afb5g9i4s9",
+      "Integrity": "Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afb5g9i4s9",
+      "Integrity": "Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zxlqqbglmz",
+      "Integrity": "l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "assets/sounds/hover.kj2m5k8eu3.wav",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\8ogjduw1qg-kj2m5k8eu3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000006108437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163707"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kj2m5k8eu3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/sounds/hover.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/hover.kj2m5k8eu3.wav",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\hover.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "247230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kj2m5k8eu3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/sounds/hover.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/hover.kj2m5k8eu3.wav.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\8ogjduw1qg-kj2m5k8eu3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163707"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kj2m5k8eu3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/sounds/hover.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/hover.wav",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\8ogjduw1qg-kj2m5k8eu3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000006108437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163707"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/hover.wav",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\hover.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "247230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/hover.wav.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\8ogjduw1qg-kj2m5k8eu3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163707"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hkZXHJ4xls1VfZgINW8ofh1dU0kgKmnpF3indHx4Mno="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/pc-on.mlnnexdzje.mp3",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\pc-on.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OllYHKOj7p93SC2fVGWh6KsMp6IRCkKHWOgDaDXhDgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:43:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mlnnexdzje"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/sounds/pc-on.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OllYHKOj7p93SC2fVGWh6KsMp6IRCkKHWOgDaDXhDgw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sounds/pc-on.mp3",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\pc-on.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OllYHKOj7p93SC2fVGWh6KsMp6IRCkKHWOgDaDXhDgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 23:43:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OllYHKOj7p93SC2fVGWh6KsMp6IRCkKHWOgDaDXhDgw="
+        }
+      ]
+    },
     {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-b9sayid5wm.gz",
@@ -21282,6 +21893,662 @@
         {
           "Name": "integrity",
           "Value": "sha256-1HkjQSVuV0/ji/X/lGeDTHeagBS0BwopMrHDQuwqgtU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.afb5g9i4s9.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:20:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afb5g9i4s9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:20:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:42:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.zxlqqbglmz.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:42:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zxlqqbglmz"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.afb5g9i4s9.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:29:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afb5g9i4s9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:29:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.afb5g9i4s9.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:26:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afb5g9i4s9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:26:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:46:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.zxlqqbglmz.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:46:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zxlqqbglmz"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.afb5g9i4s9.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:35:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afb5g9i4s9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:35:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.afb5g9i4s9.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:18:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afb5g9i4s9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47540"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:18:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:43:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.zxlqqbglmz.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:43:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zxlqqbglmz"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
         }
       ]
     },

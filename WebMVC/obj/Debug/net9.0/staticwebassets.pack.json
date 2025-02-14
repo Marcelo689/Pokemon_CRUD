@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\WebMVC.fvptxd6az6.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\hover.wav",
+      "PackagePath": "staticwebassets\\assets\\sounds\\hover.wav"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\assets\\sounds\\pc-on.mp3",
+      "PackagePath": "staticwebassets\\assets\\sounds\\pc-on.mp3"
+    },
+    {
       "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -255,6 +263,38 @@
     {
       "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png",
+      "PackagePath": "staticwebassets\\uploads\\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png",
+      "PackagePath": "staticwebassets\\uploads\\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png",
+      "PackagePath": "staticwebassets\\uploads\\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg",
+      "PackagePath": "staticwebassets\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
+      "PackagePath": "staticwebassets\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png",
+      "PackagePath": "staticwebassets\\uploads\\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png"
+    },
+    {
+      "Id": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebMVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

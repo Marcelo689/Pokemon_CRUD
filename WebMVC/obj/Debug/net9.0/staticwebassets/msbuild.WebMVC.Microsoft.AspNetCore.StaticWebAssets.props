@@ -1,5 +1,41 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\sounds\hover.wav'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>assets/sounds/hover.wav</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kj2m5k8eu3</Fingerprint>
+      <Integrity>YKtum1Sdouh0pja5GNnhepa/O93OI8aO9IyTaTD7538=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\sounds\hover.wav'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\sounds\pc-on.mp3'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>assets/sounds/pc-on.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mlnnexdzje</Fingerprint>
+      <Integrity>OllYHKOj7p93SC2fVGWh6KsMp6IRCkKHWOgDaDXhDgw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\sounds\pc-on.mp3'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
       <SourceType>Package</SourceType>
       <SourceId>WebMVC</SourceId>
@@ -1133,6 +1169,150 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>afb5g9i4s9</Fingerprint>
+      <Integrity>Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\54dd4895-cfc9-4d8c-9369-f3a29fc70b14_score-4 de fevereiro de 2025.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zxlqqbglmz</Fingerprint>
+      <Integrity>l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>afb5g9i4s9</Fingerprint>
+      <Integrity>Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>afb5g9i4s9</Fingerprint>
+      <Integrity>Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zxlqqbglmz</Fingerprint>
+      <Integrity>l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>afb5g9i4s9</Fingerprint>
+      <Integrity>Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>afb5g9i4s9</Fingerprint>
+      <Integrity>Fr1F3QDp1t9CKmrM7D3csvGqrR3dC5nlYUqw5DYfjVk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebMVC</BasePath>
+      <RelativePath>uploads/e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zxlqqbglmz</Fingerprint>
+      <Integrity>l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WebMVC.fvptxd6az6.bundle.scp.css'))">
       <SourceType>Package</SourceType>
