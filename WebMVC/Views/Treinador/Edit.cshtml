@@ -1,26 +1,25 @@
 ﻿@using ApiModelsResponse.ViewModels
+@using Microsoft.AspNetCore.Mvc.Localization
 @model TreinadorViewModel
-
+@inject IViewLocalizer localizer
 @{
     ViewData["Title"] = "Adicionar Treinador";
 }
 
-<h2>Edit Trainer</h2>
-
-<form asp-action="Edit" method="post" enctype="multipart/form-data">
+<form style="width:80vw;margin:auto;" asp-action="Edit" method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label asp-for="Name" class="form-label">Name</label>
+        <label asp-for="Name" class="form-label">@localizer["name"]</label>
         <input asp-for="Name" class="form-control" value="@Model.Name" required>
     </div>
 
     <div class="mb-3">
-        <label asp-for="ImagePath" class="form-label">Image</label>
+        <label asp-for="ImagePath" class="form-label">@localizer["image"]</label>
         <input type="file" class="form-control" id="imageUpload" name="imageFile" value="@Model.ImagePath" accept="image/*">
         <input type="hidden" asp-for="ImagePath" value="@Model.ImagePath"  id="imagePath">
     </div>
 
     <div class="mb-3">
-        <label asp-for="Location" class="form-label">Local</label>
+        <label asp-for="Location" class="form-label">@localizer["local"]</label>
         <input asp-for="Location" class="form-control" value="@Model.Location" required>
     </div>
 
@@ -31,13 +30,13 @@
             <div class="pokemon-slot border p-3 mb-2">
                 <h5>Pokémon @(i)</h5>
                 <div class="mb-2">
-                    <label class="form-label">Filtrar Pokémon</label>
-                    <input type="text" class="form-control pokemon-filter" data-index="@i" placeholder="Digite para buscar...">
+                    <label class="form-label">@localizer["filterPokemon"]</label>
+                    <input type="text" class="form-control pokemon-filter" data-index="@i" placeholder="@localizer["typeToSearch"]">
                 </div>
                 <div class="mb-2">
-                    <label class="form-label">Selecionar Pokémon</label>
+                    <label class="form-label">@localizer["selectPokemon"]</label>
                     <select name="Pokemon@(i)Name" class="form-control pokemon-select" data-index="@i">
-                        <option value="">Selecione um Pokémon</option>
+                        <option value="">@localizer["selectAnPokemon"]</option>
                         @foreach (var pokemon in Model.Pokemons)
                         {
                             var pokemonName = Model.GetType().GetProperty($"Pokemon{i}Name")?.GetValue(Model)?.ToString();
@@ -64,44 +63,44 @@
                     </select>
                 </div>
                 <div class="mb-2">
-                    <label class="form-label">Tipo Primário</label>
+                    <label class="form-label">@localizer["type1"]</label>
                     <input type="text" name="Pokemon@(i)PokemonTypeName1" value="@Model.GetType().GetProperty($"Pokemon{i}PokemonTypeName1")?.GetValue(Model)" class="form-control" readonly>
                 </div>
                 <div class="mb-2">
-                    <label class="form-label">Tipo Secundário</label>
+                    <label class="form-label">@localizer["type2"]</label>
                     <input type="text" name="Pokemon@(i)PokemonTypeName2" value="@Model.GetType().GetProperty($"Pokemon{i}PokemonTypeName2")?.GetValue(Model)"  class="form-control" readonly>
                 </div>
                 <div class="mb-2">
-                    <label class="form-label">Habilidade</label>
+                    <label class="form-label">@localizer["ability"]</label>
                     <select name="Pokemon@(i)Ability" value="@Model.GetType().GetProperty($"Pokemon{i}Ability")?.GetValue(Model)" class="form-control ability-select">
-                        <option value="">Selecione uma habilidade</option>
+                        <option value="">@localizer["selectAnAbility"]</option>
                     </select>
                 </div>
                 <div class="mb-2">
-                    <label class="form-label">Level</label>
+                    <label class="form-label">@localizer["level"]</label>
                     <input type="number" name="Pokemon@(i)Level" value="@Model.GetType().GetProperty($"Pokemon{i}Level")?.GetValue(Model)" class="form-control" min="0" max="100">
                 </div>
                 <div class="mb-2">
-                    <label class="form-label">Movimentos</label>
+                    <label class="form-label">@localizer["moves"]</label>
                     <select disabled name="Pokemon@(i)Move1" value="@Model.GetType().GetProperty($"Pokemon{i}Move1")?.GetValue(Model)" class="form-control" placeholder="Movimento 1">
-                        <option value="">Selecione um Movimento</option>
+                        <option value="">@localizer["selectMovement"]</option>
                     </select>
                     <select disabled name="Pokemon@(i)Move2" value="@Model.GetType().GetProperty($"Pokemon{i}Move2")?.GetValue(Model)" class="form-control" placeholder="Movimento 2">
-                        <option value="">Selecione um Movimento</option>
+                        <option value="">@localizer["selectMovement"]</option>
                     </select>
                     <select disabled name="Pokemon@(i)Move3" value="@Model.GetType().GetProperty($"Pokemon{i}Move3")?.GetValue(Model)"  class="form-control" placeholder="Movimento 3">
-                        <option value="">Selecione um Movimento</option>
+                        <option value="">@localizer["selectMovement"]</option>
                     </select>
                     <select disabled name="Pokemon@(i)Move4" value="@Model.GetType().GetProperty($"Pokemon{i}Move4")?.GetValue(Model)"  class="form-control" placeholder="Movimento 4">
-                        <option value="">Selecione um Movimento</option>
+                        <option value="">@localizer["selectMovement"]</option>
                     </select>
                 </div>
             </div>
         }
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    <button type="submit" class="btn btn-primary">@localizer["edit"]</button>
+    <a asp-action="Index" class="btn btn-secondary">@localizer["cancel"]</a>
 </form>
 
 <script>

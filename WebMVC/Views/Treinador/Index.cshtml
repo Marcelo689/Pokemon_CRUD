@@ -1,26 +1,28 @@
 ﻿@using ApiModelsResponse.ViewModels
+@using Microsoft.AspNetCore.Mvc.Localization
 @model List<TreinadorViewModel>
+@inject IViewLocalizer localizer
 
 @{
-    ViewData["Title"] = "Lista de Treinadores";
+    ViewData["Title"] = localizer["listOftrainers"];
 }
 
-<h2>Lista de Treinadores</h2>
 <style>
     .trainer-image {
         width: 100px; /* Ajuste conforme necessário */
         height: 100px; /* Ajuste conforme necessário */
+        border-radius:50%;
     }
 </style>
-<a asp-action="Create" class="btn btn-success mb-3">Adicionar Novo Treinador</a>
+<a asp-action="Create" style="margin:20px;" class="btn btn-success mb-3">@localizer["addNewTrainer"]</a>
 
-<table class="table">
+<table class="table table-dark" style="margin:20px;width:80vw;">
     <thead>
         <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Location</th>
-            <th>Ações</th>
+            <th>@localizer["image"]</th>
+            <th>@localizer["name"]</th>
+            <th>@localizer["location"]</th>
+            <th>@localizer["actions"]</th>
         </tr>
     </thead>
     <tbody>
@@ -32,7 +34,7 @@
                 <td>@treinador.Location</td>
                 <td>
                     <a asp-action="Details" asp-route-treinadorId="@treinador.Id" class="btn btn-primary btn-sm">
-                        <i class="fas fa-eye"></i> Detalhes
+                        <i class="fas fa-eye"></i> @localizer["details"]
                     </a>
 
                     <a asp-action="Edit"
@@ -41,14 +43,14 @@
                        asp-route-Location="@treinador.Location"
                        asp-route-ImagePath="@treinador.ImagePath"
                        class="btn btn-warning btn-sm">
-                        <i class="fas fa-edit"></i> Editar
+                        <i class="fas fa-edit"></i> @localizer["edit"]
                     </a>
 
                     <a asp-action="Delete"
                        asp-route-treinadorId="@treinador.Id"
                        class="btn btn-danger btn-sm"
                        onclick="return confirm('Tem certeza que deseja excluir o treinador @treinador.Name? Esta ação não pode ser desfeita!');">
-                        <i class="fas fa-trash-alt"></i> Deletar
+                        <i class="fas fa-trash-alt"></i> @localizer["delete"]
                     </a>
                 </td>
 
