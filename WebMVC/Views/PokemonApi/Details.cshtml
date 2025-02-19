@@ -1,5 +1,7 @@
 ﻿@using ApiModelsResponse.ViewModels
+@using Microsoft.AspNetCore.Mvc.Localization
 @model PokemonDetailsViewModel
+@inject IViewLocalizer localizer;
 @{
     Dictionary<string, string> _pokemonTypeColors = new Dictionary<string, string>
     {
@@ -125,7 +127,7 @@
     <div class="col-md-8">
         <h5><strong>ID:</strong> @Model.Id</h5>
 
-        <h5>Tipos:</h5>
+        <h5>@localizer["types"]:</h5>
         <ul>
             <li class="pokemonType" style='background-color: @_pokemonTypeColors[Model.PokemonType1.Name] !important '>@Model.PokemonType1.Name.ToUpper()</li>
             @if (Model.PokemonType2 != null)
@@ -134,7 +136,7 @@
             }
         </ul>
 
-        <h5>Habilidades:</h5>
+        <h5>@localizer["abilities"]:</h5>
         <ul class="abilities-ul">
             <li>
                 <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability1.Name})">
@@ -159,7 +161,7 @@
             }
         </ul>
 
-        <h5>Estatísticas:</h5>
+        <h5>@localizer["statistics"]:</h5>
         <div class="mb-2">
             <span><strong>HP</strong> @Model.HP</span>
             <div class="progress">

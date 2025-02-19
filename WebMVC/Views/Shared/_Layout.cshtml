@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer LayoutLocalizer
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,9 +13,6 @@
     <link rel="stylesheet" href="~/WebMVC.styles.css" asp-append-version="true" />
 
     <style>
-        *{
-            /* color:black; */
-        }
         :root {
             --text: #4335A7;
             --vblue: black;
@@ -26,15 +26,14 @@
         }
         .search{
             filter: opacity(50%);
-            /* transition: all 0.2s ease; */
             margin-top:5vh;
         }
         a{
             text-decoration: none;
         }
-.search:hover{ 
-     filter: opacity(100%);
- }
+        .search:hover{ 
+             filter: opacity(100%);
+         }
         .search input {
             padding: 0.7rem 2rem;
             border-radius: 20px 10px;
@@ -43,9 +42,9 @@
             font-weight: 600;
         }
 
-            .search input:focus {
-                outline-color: #FF7F3E;
-            }
+        .search input:focus {
+            outline-color: #FF7F3E;
+        }
 
         .search button {
             color: #4335A7;
@@ -53,10 +52,10 @@
             background-color: white;
         }
 
-            .search button:hover {
-                background-color: #4335A7;
-                color: white;
-            }
+        .search button:hover {
+            background-color: #4335A7;
+            color: white;
+        }
 
         header{
             background-color: rgba(255, 255, 255, 0.90);
@@ -71,44 +70,53 @@
             font-size:1.5rem;
         }
 
-            .navLinks li:hover {
-                color: #FF7F3E;
-            }
+        .navLinks li:hover {
+            color: #FF7F3E;
+        }
 
-            .navLinks li::after {
-                content: "";
-                position: absolute;
-                height: 2px;
-                width: 0;
-                background-color: #4335A7;
-                bottom: -5px;
-                left: 0;
-                transition: width 0.2s ease-in-out;
-            }
+        .navLinks li::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            background-color: #4335A7;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.2s ease-in-out;
+        }
 
-            .navLinks li:hover::after {
-                width: 100%;
-            }
-            .card{
-                transition: all 0.2s ease;
-                padding:3rem;
-                background-color: var(--vblue);
-            }
-            .card img{
-                filter: drop-shadow(0px 30px 15px #b0b0b0)
-            }
-            .card:hover {
-                background-color: white;
-                scale: 1.08;
-                transform:translateY(-5px);
-                border:3px solid gray !important;
-            } 
+        .navLinks li:hover::after {
+            width: 100%;
+        }
 
-            footer{
-                content:"";
-                background-color: #FF7F3E;
-            }
-           /* ksdk when u are in the page without hovering the search bar, make it transparent, when  */
+        .row{
+            display:flex!important; 
+            justify-content:center; 
+            align-items:center; 
+            padding:0; 
+            margin:0; 
+            gap:0; 
+        } 
+
+        .card{
+            transition: all 0.2s ease;
+            padding:3rem;
+            background-color: var(--vblue);
+        }
+        .card img{
+            filter: drop-shadow(0px 30px 15px #b0b0b0)
+        }
+        .card:hover {
+            background-color: white;
+            scale: 1.08;
+            transform:translateY(-5px);
+            border:3px solid gray !important;
+        } 
+
+        footer{
+            content:"";
+            background-color: #FF7F3E;
+        }
     </style>
 </head>
 <body>
@@ -116,22 +124,23 @@
         <nav style="">
 
             <ul class="navLinks"
-                style="display: flex; justify-content: center; gap: 10vmin; list-style: none; font-weight: 600;"
-                class="navbar-nav flex-grow-1">
+                style="display: flex; justify-content: center; gap: 10vmin; list-style: none; font-weight: 600;">
                 <li class="nav-item">
                     <a class="nav-link text-dark" style="" asp-area="" asp-controller="PokemonApi"
-                       asp-action="Index">Pokemons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Treinador" asp-action="Index">Treinador</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                       asp-action="Index">@LayoutLocalizer["pokemonNav"]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Treinador" asp-action="Index">@LayoutLocalizer["trainer"]</a>
+                </li>
+            </ul>
         </nav>
+        <button id="toggleSound" style="background: none; border: none; cursor: pointer; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:1rem !important;
+                font-size: 1.5rem; color: #4335A7;top:0;left:0;position:absolute;margin-left:2rem;margin-top:3rem;">
+            🔊 @LayoutLocalizer["enableDisableSound"]
+        </button>
     </header>
     
-    <div class="container" style="margin-top: 10vh; min-height:90vh; max-height:auto;">
+    <div class="" style="margin-top: 10vh; min-height:90vh; max-height:auto;">
         <main role="main" class="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0px 20vmin; color: #4335A7;">
             @RenderBody()
         </main>
@@ -141,7 +150,31 @@
             <a asp-area="" asp-controller="PokemonApi" style="text-decoration:none  " asp-action="Index">Marcelo Jaeger</a>
         </div>
     </footer>
-   
+
+
+    <script>
+        // Recupera o estado do som do localStorage (padrão: ligado)
+        let soundOn = localStorage.getItem("soundOn") !== "false";
+
+        // Atualiza o botão e os áudios ao carregar a página
+        function updateAudioInputs() {
+            const audioInputs = document.querySelectorAll("audio, video"); // Adapte para outros elementos se necessário
+            audioInputs.forEach(input => input.muted = !soundOn);
+
+            // Atualiza o ícone do botão 🔊🔇
+            document.getElementById("toggleSound").textContent = soundOn ? "🔊 " + '@LayoutLocalizer["disableSound"]' : "🔇 " + '@LayoutLocalizer["enableSound"]';
+        }
+
+        // Evento para alternar o som ao clicar no botão
+        document.getElementById("toggleSound").addEventListener("click", function () {
+            soundOn = !soundOn; // Alterna entre true/false
+            localStorage.setItem("soundOn", soundOn); // Salva no localStorage
+            updateAudioInputs(); // Aplica a mudança
+        });
+
+        // Aplica a configuração ao carregar a página
+        updateAudioInputs();
+    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -43,9 +43,6 @@
 </div>
 
 <audio id="hover-audio" src="assets/sounds/hover.wav" preload="auto"></audio>
-<audio id="hoverSound" src="assets/sounds/pc-on.mp3" preload="auto"></audio>
-
-@* </script> *@
 
 <script>
     var hoverElements = document.querySelectorAll(".hoverElement"); // Select all elements with the class
@@ -55,7 +52,8 @@
         element.addEventListener("mouseenter", () => {
             var audio = new Audio('../assets/sounds/hover.wav');
             audio.volume = 0.3;
-            audio.play();
+                if(soundOn)
+                    audio.play();
         });
     });
    
