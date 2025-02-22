@@ -46,7 +46,7 @@ var localizationOptions = new RequestLocalizationOptions
     SupportedUICultures = new List<CultureInfo> { testCulture }
 };
 
-app.UseRequestLocalization(localizationOptions);
+app.UseRequestLocalization();
 
 app.UseCors("AllowAllOrigins");
 DbInitializer.CreateDbIfNotExists(app);

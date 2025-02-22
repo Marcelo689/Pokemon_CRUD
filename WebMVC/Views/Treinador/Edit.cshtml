@@ -8,7 +8,14 @@
     ViewData["Title"] = "Adicionar Treinador";
 }
 
-<form class="trainer-form" asp-action="Edit" method="post" enctype="multipart/form-data">
+<style>
+    main{
+        display:flex;
+        justify-content:center;
+    }
+</style>
+
+<form class="trainer-form" style="padding:20px;margin:30px;width:60vw;" asp-action="Edit" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label asp-for="Name" class="form-label">@localizer["name"]</label>
         <input asp-for="Name" class="form-input" value="@Model.Name" required>
