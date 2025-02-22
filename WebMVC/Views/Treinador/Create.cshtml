@@ -3,94 +3,99 @@
 @model TreinadorViewModel
 @inject IViewLocalizer localizer
 
+<link rel="stylesheet" href="~/css/Trainers/index.css" />
+
 @{
     ViewData["Title"] = "Adicionar Treinador";
 }
 
-<h2>Adicionar Treinador</h2>
+<div class="trainer-form-container">
+    <h2 class="form-title">Adicionar Treinador</h2>
 
-<form asp-action="Create" method="post" enctype="multipart/form-data">
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label">@localizer["name"]</label>
-        <input asp-for="Name" class="form-control" required>
-    </div>
+    <form asp-action="Create" method="post" enctype="multipart/form-data" class="trainer-form">
+        <div class="form-group">
+            <label asp-for="Name" class="form-label">@localizer["name"]</label>
+            <input asp-for="Name" class="form-input" required>
+        </div>
 
-    <div class="mb-3">
-        <label asp-for="ImagePath" class="form-label">@localizer["image"]</label>
-        <input type="file" class="form-control" id="imageUpload" name="imageFile" accept="image/*">
-    </div>
+        <div class="form-group">
+            <label asp-for="ImagePath" class="form-label">@localizer["image"]</label>
+            <input type="file" class="form-input file-input" id="imageUpload" name="imageFile" accept="image/*">
+        </div>
 
+        <div class="form-group">
+            <label asp-for="Location" class="form-label">@localizer["local"]</label>
+            <input asp-for="Location" class="form-input" required>
+        </div>
 
-    <div class="mb-3">
-        <label asp-for="Location" class="form-label">@localizer["local"]</label>
-        <input asp-for="Location" class="form-control" required>
-    </div>
+        <h4 class="section-title">Pokémons</h4>
+        <div id="pokemonContainer" class="pokemon-container">
+            @for (int i = 1; i <= 6; i++)
+            {
+                <div class="pokemon-slot">
+                    <h5 class="pokemon-title">Pokémon @(i)</h5>
+                    <div class="form-group">
+                        <label class="form-label">@localizer["filterPokemon"]</label>
+                        <input type="text" class="form-input pokemon-filter" data-index="@i" placeholder="@localizer["typeToSearch"]">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Selecionar Pokémon</label>
+                        <select name="Pokemon@(i)Name" class="form-select pokemon-select" data-index="@i">
+                            <option value="">Selecione um Pokémon</option>
+                            @foreach (var pokemon in Model.Pokemons)
+                            {
+                                <option value="@pokemon.Name"
+                                        type1="@pokemon.PokemonType1?.Name"
+                                        type2="@pokemon.PokemonType2?.Name"
+                                        ability1="@pokemon.Ability1?.Name"
+                                        ability2="@pokemon.Ability2?.Name"
+                                        ability3="@pokemon.Ability3?.Name">@pokemon.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">@localizer["type1"]</label>
+                        <input type="text" name="Pokemon@(i)PokemonTypeName1" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">@localizer["type2"]</label>
+                        <input type="text" name="Pokemon@(i)PokemonTypeName2" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">@localizer["ability"]</label>
+                        <select name="Pokemon@(i)Ability" class="form-select ability-select">
+                            <option value="">@localizer["selectAnAbility"]</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">@localizer["level"]</label>
+                        <input type="number" name="Pokemon@(i)Level" class="form-input" min="1" max="100">
+                    </div>
+                    <div class="form-group moves-container">
+                        <label class="form-label">@localizer["moves"]</label>
+                        <select disabled name="Pokemon@(i)Move1" class="form-select move-select" placeholder="Movimento 1">
+                            <option value="">@localizer["selectMovement"]</option>
+                        </select>
+                        <select disabled name="Pokemon@(i)Move2" class="form-select move-select" placeholder="Movimento 2">
+                            <option value="">@localizer["selectMovement"]</option>
+                        </select>
+                        <select disabled name="Pokemon@(i)Move3" class="form-select move-select" placeholder="Movimento 3">
+                            <option value="">@localizer["selectMovement"]</option>
+                        </select>
+                        <select disabled name="Pokemon@(i)Move4" class="form-select move-select" placeholder="Movimento 4">
+                            <option value="">@localizer["selectMovement"]</option>
+                        </select>
+                    </div>
+                </div>
+            }
+        </div>
 
-    <h4>Pokémons</h4>
-    <div id="pokemonContainer">
-        @for (int i = 1; i <= 6; i++)
-        {
-            <div class="pokemon-slot border p-3 mb-2">
-                <h5>Pokémon @(i)</h5>
-                <div class="mb-2">
-                    <label class="form-label">@localizer["filterPokemon"]</label>
-                    <input type="text" class="form-control pokemon-filter" data-index="@i" placeholder="@localizer["typeToSearch"]">
-                </div>
-                <div class="mb-2">
-                    <label class="form-label">Selecionar Pokémon</label>
-                    <select name="Pokemon@(i)Name" class="form-control pokemon-select" data-index="@i">
-                        <option value="">Selecione um Pokémon</option>
-                        @foreach (var pokemon in Model.Pokemons)
-                        {
-                            <option value="@pokemon.Name"
-                                    type1="@pokemon.PokemonType1?.Name"
-                                    type2="@pokemon.PokemonType2?.Name"
-                                    ability1="@pokemon.Ability1?.Name"
-                                    ability2="@pokemon.Ability2?.Name"
-                                    ability3="@pokemon.Ability3?.Name">@pokemon.Name</option>
-                        }
-                    </select>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label">@localizer["type1"]</label>
-                    <input type="text" name="Pokemon@(i)PokemonTypeName1" class="form-control" readonly>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label">@localizer["type2"]</label>
-                    <input type="text" name="Pokemon@(i)PokemonTypeName2" class="form-control" readonly>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label">@localizer["ability"]</label>
-                    <select name="Pokemon@(i)Ability" class="form-control ability-select">
-                        <option value="">@localizer["selectAnAbility"]</option>
-                    </select>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label">@localizer["level"]</label>
-                    <input type="number" name="Pokemon@(i)Level" class="form-control" min="1" max="100">
-                </div>
-                <div class="mb-2">
-                    <label class="form-label">@localizer["moves"]</label>
-                    <select disabled name="Pokemon@(i)Move1" class="form-control" placeholder="Movimento 1">
-                        <option value="">@localizer["selectMovement"]</option>
-                    </select>
-                    <select disabled name="Pokemon@(i)Move2" class="form-control" placeholder="Movimento 2">
-                        <option value="">@localizer["selectMovement"]</option>
-                    </select>
-                    <select disabled name="Pokemon@(i)Move3" class="form-control" placeholder="Movimento 3">
-                        <option value="">@localizer["selectMovement"]</option>
-                    </select>
-                    <select disabled name="Pokemon@(i)Move4" class="form-control" placeholder="Movimento 4">
-                        <option value="">@localizer["selectMovement"]</option>
-                    </select>
-                </div>
-            </div>
-        }
-    </div>
-
-    <button type="submit" class="btn btn-primary">@localizer["save"]</button>
-    <a asp-action="Index" class="btn btn-secondary">@localizer["cancel"]</a>
-</form>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">@localizer["save"]</button>
+            <a asp-action="Index" class="btn btn-secondary">@localizer["cancel"]</a>
+        </div>
+    </form>
+</div>
 
 <script>
     document.getElementById('imageUpload').addEventListener('change', function(event) {
@@ -119,7 +124,8 @@
             });
         });
     });
-        async function getPokemonMoves(pokemonName) {
+
+    async function getPokemonMoves(pokemonName) {
         try {
             const response = await fetch(`https://localhost:7199/api/pokemonrestapi/moves/${pokemonName}`, {
                 method: 'GET',
@@ -134,7 +140,7 @@
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
 
-            const text = await response.text(); // Lê o conteúdo como texto
+            const text = await response.text();
             const data = JSON.parse(text);
 
             return data;
@@ -143,51 +149,49 @@
             throw error;
         }
     }
-        document.querySelectorAll('.pokemon-select').forEach(async (select) => {
+
+    document.querySelectorAll('.pokemon-select').forEach(async (select) => {
         select.addEventListener('change', async function(event) {
             const index = this.getAttribute('data-index');
-            const selectedOption = this.selectedOptions[0]; // Get the selected option
+            const selectedOption = this.selectedOptions[0];
 
             var pokemonName = event.target.value;
 
             try {
                 var moves = await getPokemonMoves(pokemonName);
-                    var selectPokemonMoves = [
-                      document.getElementsByName("Pokemon" + index + "Move1")[0],
-                      document.getElementsByName("Pokemon" + index + "Move2")[0],
-                      document.getElementsByName("Pokemon" + index + "Move3")[0],
-                      document.getElementsByName("Pokemon" + index + "Move4")[0]
-                    ];
+                var selectPokemonMoves = [
+                    document.getElementsByName("Pokemon" + index + "Move1")[0],
+                    document.getElementsByName("Pokemon" + index + "Move2")[0],
+                    document.getElementsByName("Pokemon" + index + "Move3")[0],
+                    document.getElementsByName("Pokemon" + index + "Move4")[0]
+                ];
 
-                    // Adiciona os movimentos como opções para cada select
-                    selectPokemonMoves.forEach(select => {
-                        select.innerHTML = "";
-                        select.disabled = false;
+                selectPokemonMoves.forEach(select => {
+                    select.innerHTML = "";
+                    select.disabled = false;
 
+                    var option = document.createElement("option");
+                    option.value = "";
+                    option.textContent = "Selecione um movimento";
+                    select.appendChild(option);
+                    moves.forEach(move => {
                         var option = document.createElement("option");
-                        option.value = "";  // valor do movimento
-                        option.textContent = "Selecione um movimento";  // texto exibido
-                        select.appendChild(option);  // adiciona a opção
-                      moves.forEach(move => {
-                        var option = document.createElement("option");
-                        option.value = move.name;  // valor do movimento
-                        option.textContent = move.name;  // texto exibido
-                        select.appendChild(option);  // adiciona a opção no select
-                      });
+                        option.value = move.name;
+                        option.textContent = move.name;
+                        select.appendChild(option);
                     });
+                });
 
             } catch (error) {
                 console.error("Error fetching Pokémon moves:", error);
             }
 
-            // Get attributes from the selected option
             const type1 = selectedOption.getAttribute('type1') || "";
             const type2 = selectedOption.getAttribute('type2') || "";
             const ability1 = selectedOption.getAttribute('ability1') || "";
             const ability2 = selectedOption.getAttribute('ability2') || "";
             const ability3 = selectedOption.getAttribute('ability3') || "";
 
-            // Fill in types if elements exist
             const typeInput = document.querySelector(`[name='Pokemon${index}PokemonTypeName1']`);
             if (typeInput) {
                 typeInput.value = type1;
@@ -198,13 +202,10 @@
                 secondTypeInput.value = type2;
             }
 
-                /// Update abilities dropdown if element exists
             const abilitySelect = document.querySelector(`[name='Pokemon${index}Ability']`);
             if (abilitySelect) {
-                // Limpar as opções existentes
                 abilitySelect.innerHTML = "<option value=''>Selecione uma habilidade</option>";
 
-                // Adicionando as habilidades se existirem
                 if (ability1) {
                     const option1 = document.createElement("option");
                     option1.value = ability1;
@@ -224,8 +225,6 @@
                     abilitySelect.appendChild(option3);
                 }
             }
-
         });
     });
-
 </script>

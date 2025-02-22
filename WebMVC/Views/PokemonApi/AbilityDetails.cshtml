@@ -2,25 +2,12 @@
 @model AbilityDetailsViewModel
 
 @{
-    Layout = "_Layout"; // Ensure this page uses the layout you already have
+    Layout = "_Layout";
 }
-<style>
-    .pokemonWithAbility{
-        transition: all 0.2s ease;
-    }
-
-    .pokemonWithAbility:hover {
-        scale: 2;
-    }
-
-    .pokemonWithAbility:hover h4 {
-        font-size: 0.5rem;
-    }
-</style>
 
 <div class="container">
-    <div  class="ability-details">
-        <h2 style="color:dodgerblue"  class="ability-name">@Model.Name.ToUpper()</h2>
+    <div class="ability-details">
+        <h2 class="ability-name">@Model.Name.ToUpper()</h2>
 
         <div class="ability-effect">
             <h3>Effect</h3>
@@ -29,13 +16,13 @@
         <div>
             <h1>Pokemons who has the ability</h1>
 
-            <div style="display:flex; flex-wrap:wrap; width:100%">
+            <div class="pokemon-grid">
                 @foreach (var pokemon in Model.Pokemon)
                 {
-                    <a  style="padding:0 25px" class="pokemonWithAbility hoverElement" href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name})">
-                            <img style="height:100px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/@(pokemon.Id).png" />
-                            <h4>@pokemon.Name.ToUpper()</h4>
-                        </a>
+                    <a class="pokemon-card hoverElement" href="@Url.Action("Details", "PokemonApi", new { pokemonName = pokemon.Name})">
+                        <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/@(pokemon.Id).png" />
+                        <h4>@pokemon.Name.ToUpper()</h4>
+                    </a>
                 }
             </div>
         </div>
@@ -45,7 +32,7 @@
 <audio id="hover-audio" src="assets/sounds/hover.wav" preload="auto"></audio>
 
 <script>
-    var hoverElements = document.querySelectorAll(".hoverElement"); // Select all elements with the class
+    var hoverElements = document.querySelectorAll(".hoverElement");
     var hoverSound = document.getElementById("hover-audio");
 
     hoverElements.forEach(element => {
@@ -56,6 +43,4 @@
                     audio.play();
         });
     });
-   
 </script>
-

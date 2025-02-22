@@ -26,118 +26,25 @@
     };
 }
 
-<style>
-    .tealBar{
-        background: #00c2b8 !important;
-    }
-
-    .blueBar {
-        background: #23cd5e !important;
-    }
-    .greenBar{
-        background: lime !important;
-    }
-
-    .yellowBar {
-        background: #ffdd57 !important;
-    }
-
-    .orangeBar {
-        background: #ff7f0f !important;
-    }
-
-    .redBar {
-        background: crimson !important;
-    }
-    ul{
-        display:flex;
-    }
-    h5{
-        margin-top:2rem;
-        font-size:1.5rem;
-    }
-    .pokemonType{
-        padding:1rem 2.5rem;
-        
-        border-radius:2px;
-        text-decoration:none;
-        list-style:none;
-        color:white;
-        margin:2px;
-        border-radius:10px;
-        /* border:1px solid lightgrey; */
-        box-shadow:0px 0px 10px grey;
-        font-size:1.2rem;
-        font-weight:600;
-    }
-
-    .abilities-ul{
-        display:flex;
-        gap: 2rem;
-        list-style:none;
-
-    }
-    .abilities-ul li a{
-        font-weight:600;
-        text-decoration: none;
-    }
-
-    .progress {
-        width: 100%;
-        height: 20px;
-        background-color: beige; /* Light gray background */
-        border-radius: 10px;
-    }
-
-        /* Change the color of the progress (the filled part) */
-        .progress::-webkit-progress-value {
-            background-color: #4caf50; /* Green color for progress */
-            border-radius: 10px;
-        }
-
-        /* Change the color of the track (background behind progress) */
-        .progress::-webkit-progress-bar {
-            background-color: beige; /* Light background for the track */
-            border-radius: 10px;
-        }
-
-    #DetailImg {
-        position: relative;
-    }
-
-        #DetailImg div {
-            position: absolute;
-            bottom: 15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #242424;
-            height: 100px;
-            width: 80%;
-            border-radius: 50%;
-            z-index: -1;
-            filter: blur(25px)
-        }
-</style>
-
-<div class="row" style="display:grid; grid-template-columns:1fr 1fr; align-items:center; min-height:100vh">
-    <div id="DetailImg" style="width:50vmin" class="col-md-4">
-        <img  style="box-shadow:none !important; " src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
-        <div></div>
+<div class="pokemon-details-container">
+    <div id="DetailImg" class="pokemon-image-container">
+        <img src="@Model.ImageUrl" class="pokemon-image" alt="@Model.Name">
+        <div class="image-shadow"></div>
     </div>
-    <div class="col-md-8">
-        <h5><strong>ID:</strong> @Model.Id</h5>
+    <div class="pokemon-info-container">
+        <h5 class="pokemon-id"><strong>ID:</strong> @Model.Id</h5>
 
-        <h5>@localizer["types"]:</h5>
-        <ul>
-            <li class="pokemonType" style='background-color: @_pokemonTypeColors[Model.PokemonType1.Name] !important '>@Model.PokemonType1.Name.ToUpper()</li>
+        <h5 class="section-title">@localizer["types"]:</h5>
+        <ul class="types-list">
+            <li class="pokemon-type" style='background-color: @_pokemonTypeColors[Model.PokemonType1.Name]'>@Model.PokemonType1.Name.ToUpper()</li>
             @if (Model.PokemonType2 != null)
             {
-                <li class="pokemonType" style='background-color: @_pokemonTypeColors[Model.PokemonType2.Name] !important '>@Model.PokemonType2.Name.ToUpper()</li>
+                <li class="pokemon-type" style='background-color: @_pokemonTypeColors[Model.PokemonType2.Name]'>@Model.PokemonType2.Name.ToUpper()</li>
             }
         </ul>
 
-        <h5>@localizer["abilities"]:</h5>
-        <ul class="abilities-ul">
+        <h5 class="section-title">@localizer["abilities"]:</h5>
+        <ul class="abilities-list">
             <li>
                 <a href="@Url.Action("AbilityDetails", "PokemonApi", new { abilityName = Model.Ability1.Name})">
                     @Model.Ability1.Name
@@ -161,24 +68,23 @@
             }
         </ul>
 
-        <h5>@localizer["statistics"]:</h5>
-        <div class="mb-2">
-            <span><strong>HP</strong> @Model.HP</span>
+        <h5 class="section-title">@localizer["statistics"]:</h5>
+        <div class="stat-container">
+            <span class="stat-label"><strong>HP</strong> @Model.HP</span>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar"
-                     style="width: @(Model.HP / 2)%;" 
+                <div class="progress-bar" role="progressbar"
+                     style="width: @(Model.HP / 2)%;"
                      aria-valuenow="@Model.HP"
                      aria-valuemin="0"
                      aria-valuemax="200">
                 </div>
-              
             </div>
         </div>
 
-        <div class="mb-2">
-            <span><strong>ATTACK</strong> @Model.ATTACK</span>
+        <div class="stat-container">
+            <span class="stat-label"><strong>ATTACK</strong> @Model.ATTACK</span>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar"
+                <div class="progress-bar" role="progressbar"
                      style="width: @(Model.ATTACK / 2)%;"
                      aria-valuenow="@Model.ATTACK"
                      aria-valuemin="0"
@@ -187,10 +93,10 @@
             </div>
         </div>
 
-        <div class="mb-2">
-            <span><strong>DEFENSE</strong> @Model.DEFENSE</span>
+        <div class="stat-container">
+            <span class="stat-label"><strong>DEFENSE</strong> @Model.DEFENSE</span>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar"
+                <div class="progress-bar" role="progressbar"
                      style="width: @(Model.DEFENSE / 2)%;"
                      aria-valuenow="@Model.DEFENSE"
                      aria-valuemin="0"
@@ -199,10 +105,10 @@
             </div>
         </div>
 
-        <div class="mb-2">
-            <span><strong>SPECIAL ATTACK</strong> @Model.SP_ATTACK</span>
+        <div class="stat-container">
+            <span class="stat-label"><strong>SPECIAL ATTACK</strong> @Model.SP_ATTACK</span>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar"
+                <div class="progress-bar" role="progressbar"
                      style="width: @(Model.SP_ATTACK / 2)%;"
                      aria-valuenow="@Model.SP_ATTACK"
                      aria-valuemin="0"
@@ -211,10 +117,10 @@
             </div>
         </div>
 
-        <div class="mb-2">
-            <span><strong>SPECIAL DEFENSE</strong> @Model.SP_DEFENSE</span>
+        <div class="stat-container">
+            <span class="stat-label"><strong>SPECIAL DEFENSE</strong> @Model.SP_DEFENSE</span>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar"
+                <div class="progress-bar" role="progressbar"
                      style="width: @(Model.SP_DEFENSE / 2)%;"
                      aria-valuenow="@Model.SP_DEFENSE"
                      aria-valuemin="0"
@@ -223,10 +129,10 @@
             </div>
         </div>
 
-        <div class="mb-2">
-            <span><strong>SPEED</strong> @Model.SPEED</span>
+        <div class="stat-container">
+            <span class="stat-label"><strong>SPEED</strong> @Model.SPEED</span>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar"
+                <div class="progress-bar" role="progressbar"
                      style="width: @(Model.SPEED / 2)%;"
                      aria-valuenow="@Model.SPEED"
                      aria-valuemin="0"
@@ -246,8 +152,6 @@
                 var width = progressBar.getAttribute("aria-valuenow");
                 progressBar.classList.add(returnColorStat(width));
             }
-
-            "pokemonType"
         </script>
     </div>
 </div>

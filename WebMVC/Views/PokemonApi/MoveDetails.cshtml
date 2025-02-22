@@ -5,7 +5,7 @@
 }
 
 <div class="move-details">
-    <h1>@Model.Name</h1>
+    <h1 class="move-title">@Model.Name</h1>
 
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png" alt="Move Icon" class="move-icon" />
 
@@ -49,71 +49,3 @@
         </tr>
     </table>
 </div>
-
-<style>
-    .move-details {
-        text-align: center;
-        font-family: Arial, sans-serif;
-        margin-top: 20px;
-    }
-
-    .move-icon {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-    }
-
-    .move-table {
-        margin: 20px auto;
-        border-collapse: collapse;
-        width: 60%;
-        max-width: 600px;
-    }
-
-        .move-table th, .move-table td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        .move-table th {
-            background-color: #f4f4f4;
-            width: 30%;
-        }
-
-    .badge {
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-weight: bold;
-        display: inline-block;
-    }
-
-    .special {
-        background-color: #ff6600;
-        color: white;
-    }
-
-    .physical {
-        background-color: #ff0000;
-        color: white;
-    }
-
-    .status {
-        background-color: #3399ff;
-        color: white;
-    }
-
-    .back-button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 15px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
-        .back-button:hover {
-            background-color: #0056b3;
-        }
-</style>
