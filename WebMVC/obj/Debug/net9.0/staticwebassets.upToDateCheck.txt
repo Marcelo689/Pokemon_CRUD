@@ -6,6 +6,7 @@ C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\bootstrap\dist\css\b
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\css\Trainers\index.css
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
 C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
@@ -64,6 +65,7 @@ C:\Users\marce\source\repos\PokemonWorld\WebMVC\wwwroot\lib\jquery-validation\di
 wwwroot\assets\sounds\hover.wav
 wwwroot\assets\sounds\pc-on.mp3
 wwwroot\css\site.css
+wwwroot\css\Trainers\index.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -131,6 +133,8 @@ wwwroot\uploads\6103b51e-ee26-456e-b1c7-214ab7d35e09_foto perfil 2025 jan.jpg
 wwwroot\uploads\65b54f18-c005-4acd-87bf-aaa27b271a73_score-4 de fevereiro de 2025.png
 wwwroot\uploads\69d8010d-d31c-409b-9f4f-282d1d0e6b69_score-4 de fevereiro de 2025.png
 wwwroot\uploads\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg
+wwwroot\uploads\7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg
 wwwroot\uploads\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png
 wwwroot\uploads\d8e05d57-64d9-419b-ba73-22846fb72662_score-4 de fevereiro de 2025.png
 wwwroot\uploads\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg
+wwwroot\uploads\f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png

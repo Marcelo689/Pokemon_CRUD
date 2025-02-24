@@ -258,8 +258,10 @@ namespace WebMVC.Service
             switch (pokemonTreinador.PokemonIndex)
             {
                 case 1:
-                    pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon1Ability);
-                    pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon1PokemonTypeName1);
+                    if(treinadorViewModel.Pokemon1Ability != null)
+                        pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon1Ability);
+                    if(treinadorViewModel.Pokemon1PokemonTypeName1 != null)
+                        pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon1PokemonTypeName1);
                     pokemonTreinador.Level = treinadorViewModel.Pokemon1Level;
                     if (!string.IsNullOrEmpty(treinadorViewModel.Pokemon1PokemonTypeName2))
                         pokemonTreinador.SecondTypeId = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon1PokemonTypeName2).Id;
@@ -273,8 +275,10 @@ namespace WebMVC.Service
                         pokemonTreinador.Move4Id = _context.Move.First(e => e.Name == treinadorViewModel.Pokemon1Move4).Id;
                     break;
                 case 2:
-                    pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon2Ability);
-                    pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon2PokemonTypeName1);
+                    if (treinadorViewModel.Pokemon2Ability != null)
+                        pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon2Ability);
+                    if (treinadorViewModel.Pokemon2PokemonTypeName1 != null)
+                        pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon2PokemonTypeName1);
                     pokemonTreinador.Level = treinadorViewModel.Pokemon2Level;
                     if (!string.IsNullOrEmpty(treinadorViewModel.Pokemon2PokemonTypeName2))
                         pokemonTreinador.SecondTypeId = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon2PokemonTypeName2).Id;
@@ -288,8 +292,10 @@ namespace WebMVC.Service
                         pokemonTreinador.Move4Id = _context.Move.First(e => e.Name == treinadorViewModel.Pokemon2Move4).Id;
                     break;
                 case 3:
-                    pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon3Ability);
-                    pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon3PokemonTypeName1);
+                    if (treinadorViewModel.Pokemon3Ability != null)
+                        pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon3Ability);
+                    if (treinadorViewModel.Pokemon3PokemonTypeName1 != null)
+                        pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon3PokemonTypeName1);
                     pokemonTreinador.Level = treinadorViewModel.Pokemon3Level;
                     if (!string.IsNullOrEmpty(treinadorViewModel.Pokemon3PokemonTypeName2))
                         pokemonTreinador.SecondTypeId = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon3PokemonTypeName2).Id;
@@ -303,8 +309,10 @@ namespace WebMVC.Service
                         pokemonTreinador.Move4Id = _context.Move.First(e => e.Name == treinadorViewModel.Pokemon3Move4).Id;
                     break;
                 case 4:
-                    pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon4Ability);
-                    pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon4PokemonTypeName1);
+                    if (treinadorViewModel.Pokemon4Ability != null)
+                        pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon4Ability);
+                    if (treinadorViewModel.Pokemon4PokemonTypeName1 != null)
+                        pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon4PokemonTypeName1);
                     pokemonTreinador.Level = treinadorViewModel.Pokemon4Level;
                     if (!string.IsNullOrEmpty(treinadorViewModel.Pokemon4PokemonTypeName2))
                         pokemonTreinador.SecondTypeId = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon4PokemonTypeName2).Id;
@@ -318,8 +326,10 @@ namespace WebMVC.Service
                         pokemonTreinador.Move4Id = _context.Move.First(e => e.Name == treinadorViewModel.Pokemon4Move4).Id;
                     break;
                 case 5:
-                    pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon5Ability);
-                    pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon5PokemonTypeName1);
+                    if (treinadorViewModel.Pokemon5Ability != null)
+                        pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon5Ability);
+                    if (treinadorViewModel.Pokemon5PokemonTypeName1 != null)
+                        pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon5PokemonTypeName1);
                     pokemonTreinador.Level = treinadorViewModel.Pokemon5Level;
                     if (!string.IsNullOrEmpty(treinadorViewModel.Pokemon5PokemonTypeName2))
                         pokemonTreinador.SecondTypeId = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon5PokemonTypeName2).Id;
@@ -333,8 +343,10 @@ namespace WebMVC.Service
                         pokemonTreinador.Move4Id = _context.Move.First(e => e.Name == treinadorViewModel.Pokemon5Move4).Id;
                     break;
                 case 6:
-                    pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon6Ability);
-                    pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon6PokemonTypeName1);
+                    if (treinadorViewModel.Pokemon6Ability != null)
+                        pokemonTreinador.Ability = _context.PokemonAbility.First(e => e.Name == treinadorViewModel.Pokemon6Ability);
+                    if (treinadorViewModel.Pokemon6PokemonTypeName1 != null)
+                        pokemonTreinador.Type = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon6PokemonTypeName1);
                     pokemonTreinador.Level = treinadorViewModel.Pokemon6Level;
                     if (!string.IsNullOrEmpty(treinadorViewModel.Pokemon6PokemonTypeName2))
                         pokemonTreinador.SecondTypeId = _context.PokemonType.First(e => e.Name == treinadorViewModel.Pokemon6PokemonTypeName2).Id;

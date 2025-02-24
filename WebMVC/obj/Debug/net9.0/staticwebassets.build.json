@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r5VEdqi+XgbTedky2uWkXoPy87BbsFN/5h9wV7t0v6A=",
+  "Hash": "mQA6HrPQ/CEWRQ4HQRGAFmQke/+KJjRiPexaPcJiUlE=",
   "Source": "WebMVC",
   "BasePath": "_content/WebMVC",
   "Mode": "Default",
@@ -206,6 +206,27 @@
       "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\3uymi6twao-owg8t1p3uq.gz",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "css/Trainers/index#[.{fingerprint=owg8t1p3uq}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\Trainers\\index.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qelvlnfa5w",
+      "Integrity": "It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\Trainers\\index.css"
+    },
+    {
       "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\457kb7ci7j-jj8uyg4cgr.gz",
       "SourceId": "WebMVC",
       "SourceType": "Discovered",
@@ -374,12 +395,12 @@
       "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-ggvs7g64x6.gz",
       "SourceId": "WebMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebMVC",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=ggvs7g64x6}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -388,8 +409,8 @@
       "RelatedAsset": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wf4wcyqcqt",
-      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
+      "Fingerprint": "7m3pu618jh",
+      "Integrity": "j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css"
@@ -1480,11 +1501,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "ggvs7g64x6",
+      "Integrity": "wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\Trainers\\index.css",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "css/Trainers/index#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "owg8t1p3uq",
+      "Integrity": "mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Trainers\\index.css"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\favicon.ico",
@@ -2894,6 +2936,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\747bb575-82dd-49ee-8c0e-27ee743444f5_foto perfil 2025 jan.jpg"
     },
     {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zxlqqbglmz",
+      "Integrity": "l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg"
+    },
+    {
       "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
       "SourceId": "WebMVC",
       "SourceType": "Discovered",
@@ -2955,6 +3018,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\e4944185-1c4b-433c-87ce-fb1e46b79c31_foto perfil 2025 jan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png",
+      "SourceId": "WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\",
+      "BasePath": "_content/WebMVC",
+      "RelativePath": "uploads/f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6qyxt4fk1d",
+      "Integrity": "8hSSS4nFhLfe5HZW/wo/O6SZx9X/ZlS7rRA5qP8AzEA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png"
     }
   ],
   "Endpoints": [
@@ -3339,13 +3423,13 @@
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-b9sayid5wm.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-ggvs7g64x6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.000377928949"
         }
       ],
       "ResponseHeaders": [
@@ -3355,19 +3439,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "2645"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 20:27:19 GMT"
+          "Value": "Fri, 21 Feb 2025 21:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3383,26 +3467,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3412,7 +3488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "11278"
         },
         {
           "Name": "Content-Type",
@@ -3420,11 +3496,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 20:27:19 GMT"
+          "Value": "Fri, 21 Feb 2025 21:42:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-ggvs7g64x6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 21:42:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ggvs7g64x6.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-ggvs7g64x6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000377928949"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2645"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 21:42:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ggvs7g64x6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ggvs7g64x6.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Feb 2025 21:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3434,7 +3655,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ggvs7g64x6"
         },
         {
           "Name": "label",
@@ -3442,13 +3663,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-wGqR6WkyGdm7OIewUpr9FwRPP311VV5W6OmaytLHhTo="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-b9sayid5wm.gz",
+      "Route": "css/site.ggvs7g64x6.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-ggvs7g64x6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3457,7 +3678,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "2645"
         },
         {
           "Name": "Content-Type",
@@ -3465,11 +3686,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 20:27:19 GMT"
+          "Value": "Fri, 21 Feb 2025 21:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3487,7 +3708,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ggvs7g64x6"
         },
         {
           "Name": "label",
@@ -3495,18 +3716,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-j6TKwwGpQ1gu1zATSjP30NiO0FnwXwBZeLiW1B1ECiM="
         }
       ]
     },
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-b9sayid5wm.gz",
+      "Route": "css/Trainers/index.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\3uymi6twao-owg8t1p3uq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.000748502994"
         }
       ],
       "ResponseHeaders": [
@@ -3516,15 +3737,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "1335"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 20:27:19 GMT"
+          "Value": "Sat, 22 Feb 2025 16:06:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3544,19 +3765,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8="
         }
       ]
     },
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\site.css",
+      "Route": "css/Trainers/index.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\Trainers\\index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3565,7 +3786,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "5987"
         },
         {
           "Name": "Content-Type",
@@ -3573,11 +3794,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 20:27:19 GMT"
+          "Value": "Sat, 22 Feb 2025 16:06:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3587,13 +3808,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8="
         }
       ]
     },
     {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\78o311t4lw-b9sayid5wm.gz",
+      "Route": "css/Trainers/index.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\3uymi6twao-owg8t1p3uq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3602,7 +3823,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "1335"
         },
         {
           "Name": "Content-Type",
@@ -3610,11 +3831,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 20:27:19 GMT"
+          "Value": "Sat, 22 Feb 2025 16:06:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3632,7 +3853,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Trainers/index.owg8t1p3uq.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\3uymi6twao-owg8t1p3uq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000748502994"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1335"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 16:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "owg8t1p3uq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Trainers/index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Trainers/index.owg8t1p3uq.css",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\css\\Trainers\\index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5987"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 16:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "owg8t1p3uq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Trainers/index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mDgBRArEBfNVJ4BcqG2itkTgM0pgou6LyQ/9tzjSfY8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Trainers/index.owg8t1p3uq.css.gz",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\3uymi6twao-owg8t1p3uq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 16:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "owg8t1p3uq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Trainers/index.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-It+KxlwLLA8zKdJD1+yc+9zK5P+JkqeyEbiKt5dDMi8="
         }
       ]
     },
@@ -22307,6 +22689,88 @@
       ]
     },
     {
+      "Route": "uploads/7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:59:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.zxlqqbglmz.jpg",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:59:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zxlqqbglmz"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/7e426db6-de4e-435b-bff5-0373e43c9ee9_foto perfil 2025 jan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5cg8qb0/mpv1Xp86XBLbX+I7tXrSfWRZcusfstqEoM="
+        }
+      ]
+    },
+    {
       "Route": "uploads/8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.afb5g9i4s9.png",
       "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\8b31d218-60f4-41ec-a47a-49353694c6fa_score-4 de fevereiro de 2025.png",
       "Selectors": [],
@@ -22553,6 +23017,88 @@
       ]
     },
     {
+      "Route": "uploads/f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.6qyxt4fk1d.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "770064"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8hSSS4nFhLfe5HZW/wo/O6SZx9X/ZlS7rRA5qP8AzEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 16:04:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6qyxt4fk1d"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8hSSS4nFhLfe5HZW/wo/O6SZx9X/ZlS7rRA5qP8AzEA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png",
+      "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\wwwroot\\uploads\\f6f71b5c-b679-425a-8312-93b1a6d8c5f6_59406e56758ba1857d70bee2d06d3aec.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "770064"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8hSSS4nFhLfe5HZW/wo/O6SZx9X/ZlS7rRA5qP8AzEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 16:04:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8hSSS4nFhLfe5HZW/wo/O6SZx9X/ZlS7rRA5qP8AzEA="
+        }
+      ]
+    },
+    {
       "Route": "WebMVC.bundle.scp.css",
       "AssetFile": "C:\\Users\\marce\\source\\repos\\PokemonWorld\\WebMVC\\obj\\Debug\\net9.0\\compressed\\o12tr017x6-fvptxd6az6.gz",
       "Selectors": [
@@ -22577,7 +23123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22630,7 +23176,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22667,7 +23213,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22714,7 +23260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22775,7 +23321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22820,7 +23366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22875,7 +23421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22936,7 +23482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22981,7 +23527,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23036,7 +23582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23089,7 +23635,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23126,7 +23672,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:57:06 GMT"
+          "Value": "Fri, 21 Feb 2025 20:09:10 GMT"
         },
         {
           "Name": "Cache-Control",
