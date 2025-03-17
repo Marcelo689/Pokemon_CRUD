@@ -2,6 +2,7 @@ using DB.Data;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using Service.Service;
 using System.Globalization;
 using WebMVC.Data;
 using WebMVC.Service;
@@ -19,9 +20,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PokemonContext>(options =>
     options.UseSqlServer(
         connectionString,
-            b => b.MigrationsAssembly("WebMVC")
+            b => b.MigrationsAssembly("WebMVC").EnableRetryOnFailure()
     ));
 builder.Services.AddScoped<PokeApiService>();
+builder.Services.AddScoped<BatalhaService>();
 builder.Services.AddScoped<TreinadorService>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddHttpClient<PokeApiService>();

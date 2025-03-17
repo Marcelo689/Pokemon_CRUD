@@ -37,5 +37,24 @@ namespace DB.Controllers
             }
         }
 
+        [HttpGet("move/{moveId}")]
+        public IActionResult GetMovimento(int moveId)
+        {
+            try
+            {
+                var listaMoves = _pokeApiService.GetMovesFromId(moveId);
+                if (listaMoves == null)
+                {
+                    return Ok(new MoveViewModel()); // Retorna uma lista vazia como JSON
+                }
+
+                return Ok(listaMoves);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message }); // Retorna erro em formato JSON
+            }
+        }
+
     }
 }

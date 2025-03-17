@@ -1,0 +1,245 @@
+﻿@using ModelsResponse.ViewModels
+@model BatalhaViewModel
+
+<div>
+    <div id="pokemonCampo1">Pokemon campo</div>
+    <div id="barraVida1"></div>
+    <div>Lutar</div>
+    <div style="
+    display: flex;
+    justify-content: space-between;">
+        Movimentos
+        <div id="move1"></div>
+        <div id="move2"></div>
+        <div id="move3"></div>
+        <div id="move4"></div>
+    </div>
+    <div>Trocar</div>
+    <div style="
+             display: flex;
+             justify-content: space-between;">
+        @foreach (var pokemon in Model.PokemonsTrainer1)
+        {
+            <div onclick="selecionarPokemon1('@pokemon.Name', @pokemon.Level, '@pokemon.PokemonType1.Name', '@pokemon.PokemonType2.Name', @pokemon.Vida, '@pokemon.ImageUrl',
+            @pokemon.Move1, @pokemon.Move2, @pokemon.Move3, @pokemon.Move4)">
+                <p>@pokemon.Name</p>
+                <p>@pokemon.Level</p>
+                <p>@pokemon.HP</p>
+            </div>
+        }
+    </div>
+</div>
+
+<div>
+    <div id="pokemonCampo2">Pokemon campo</div>
+    <div id="barraVida2"></div>
+    <div>Lutar</div>
+    <div style="
+         display: flex;
+         justify-content: space-between;">
+        Movimentos
+        <div id="move5"></div>
+        <div id="move6"></div>
+        <div id="move7"></div>
+        <div id="move8"></div>
+    </div>
+    <div>Trocar
+        <div style="
+             display: flex;
+             justify-content: space-between;">
+            @foreach (var pokemon in Model.PokemonsTrainer2)
+            {
+                <div onclick="selecionarPokemon2('@pokemon.Name', @pokemon.Level,'@pokemon.PokemonType1.Name', '@pokemon.PokemonType2.Name', @pokemon.Vida, '@pokemon.ImageUrl',
+                @pokemon.Move1, @pokemon.Move2, @pokemon.Move3, @pokemon.Move4)">
+                    <p>@pokemon.Name</p>
+                    <p>@pokemon.Level</p>
+                    <p>@pokemon.HP</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    var pokemonCampoObj1 = {};
+    var pokemonCampoObj2 = {};
+    async function atualizarMove(elementId, moveId) {
+        let moveElement = document.getElementById(elementId);
+
+        try {
+            let response = await fetch(`https://localhost:7199/api/pokemonrestapi/move/${moveId}`);
+            if (!response.ok) {
+                throw new Error(`Erro ao buscar o movimento: ${response.status}`);
+            }
+            let data = await response.json();
+            moveElement.innerHTML = `<p>${data.name || "Movimento desconhecido"}</p>`; // Ajuste conforme a estrutura do JSON
+            var p = document.createElement("p");
+            p.className = "power";
+            p.innerText = data.power;
+
+            moveElement.appendChild(p);
+
+            moveElement.addEventListener('click' , function (evento ){
+                minhaJogada(data.power, data.tipo);
+                jogadaIA(data.power, data.tipo);
+            });
+        } catch (error) {
+            console.error("Erro ao buscar o movimento:", error);
+            moveElement.innerHTML = `<p>Erro ao carregar o movimento</p>`;
+        }
+    }
+    async function selecionarPokemon1(pokemonNome, level,pokemonTipo1, pokemonTipo2, pokemonVida, pokemonImage, move1, move2,move3, move4) {
+
+        pokemonCampoObj1.tipos = [pokemonTipo1,pokemonTipo2];
+        pokemonCampoObj1.level = level;
+
+        let campoPokemon = document.getElementById("pokemonCampo1");
+        let barraVida = document.getElementById("barraVida1");
+
+        // Atualiza o nome do Pokémon
+        campoPokemon.innerHTML = `<p>${pokemonNome}</p>`;
+
+        // Adiciona a imagem corretamente
+        let imagem = document.createElement("img");
+        imagem.src = pokemonImage;
+        imagem.width = 100;
+        imagem.height = 100;
+
+        // Remove imagens antigas antes de adicionar uma nova
+        let imagensExistentes = campoPokemon.getElementsByTagName("img");
+        if (imagensExistentes.length > 0) {
+            campoPokemon.removeChild(imagensExistentes[0]);
+        }
+        campoPokemon.appendChild(imagem);
+
+        // Atualiza a barra de vida
+        barraVida.innerHTML = `Vida: ${pokemonVida}`;
+
+        // Atualiza os movimentos
+        await atualizarMove("move1", move1);
+        await atualizarMove("move2", move2);
+        await atualizarMove("move3", move3);
+        await atualizarMove("move4", move4);
+    }
+      function calcularDano(atacante, defensor, move) {
+        const nivel = pokemonCampoObj2.level;
+        const poder = move.power;
+        const ataque = atacante.attack;
+        const defesa = defensor.defense;
+
+        let multiplicador = calcularEficacia(move.type, defensor.types);
+
+        if (atacante.types.includes(move.type)) {
+            multiplicador *= 1.5;
+        }
+
+        if (Math.random() < 0.0625) {
+            multiplicador *= 1.5;
+            console.log("Ataque Crítico!");
+        }
+
+        let dano = (((2 * nivel / 5 + 2) * poder * (ataque / defesa)) / 50 + 2) * multiplicador;
+        return Math.floor(dano);
+    }
+
+    async function selecionarPokemon2(pokemonNome, level,pokemonTipo1, pokemonTipo2, pokemonVida, pokemonImage, move5, move6,move7, move8) {
+       // Seleciona os elementos do DOM
+       pokemonCampoObj2.tipos = [pokemonTipo1, pokemonTipo2];
+       pokemonCampoObj2.level = level;
+        let campoPokemon = document.getElementById("pokemonCampo2");
+        let barraVida = document.getElementById("barraVida2");
+
+        // Atualiza o nome do Pokémon
+        campoPokemon.innerHTML = `<p>${pokemonNome}</p>`;
+
+        // Adiciona a imagem corretamente
+        let imagem = document.createElement("img");
+        imagem.src = pokemonImage;
+        imagem.width = 100;
+        imagem.height = 100;
+
+        // Remove imagens antigas antes de adicionar uma nova
+        let imagensExistentes = campoPokemon.getElementsByTagName("img");
+        if (imagensExistentes.length > 0) {
+            campoPokemon.removeChild(imagensExistentes[0]);
+        }
+        campoPokemon.appendChild(imagem);
+
+        // Atualiza a barra de vida
+        barraVida.innerHTML = `Vida: ${pokemonVida}`;
+
+        // Atualiza os movimentos
+        await atualizarMove("move5", move5);
+        await atualizarMove("move6", move6);
+        await atualizarMove("move7", move7);
+        await atualizarMove("move8", move8);
+    }
+
+    function calcularEficacia(tipoAtaque, tiposDefensor) {
+        const tabelaEficacia = {
+            "Fire": { "Grass": 2, "Water": 0.5, "Fire": 0.5 },
+            "Water": { "Fire": 2, "Grass": 0.5, "Water": 0.5 },
+            "Grass": { "Water": 2, "Fire": 0.5, "Grass": 0.5 },
+            "Electric": { "Water": 2, "Ground": 0, "Electric": 0.5 },
+            "Ground": { "Electric": 2, "Water": 0.5, "Fire": 2 }
+        };
+
+        let multiplicador = 1;
+        tiposDefensor.forEach(tipo => {
+            if (tabelaEficacia[tipoAtaque] && tabelaEficacia[tipoAtaque][tipo] !== undefined) {
+                multiplicador *= tabelaEficacia[tipoAtaque][tipo];
+            }
+        });
+
+        return multiplicador;
+    }
+
+    async function jogadaIA(movePower, moveTipo) {
+        let movimentos = ["move5", "move6", "move7", "move8"];
+        let movimentoEscolhido = movimentos[Math.floor(Math.random() * movimentos.length)];
+        let moveElement = document.getElementById(movimentoEscolhido);
+
+        if (!moveElement.innerText) {
+            console.log("A IA não tem um movimento válido");
+            return;
+        }
+
+        let atacante = { attack: 50, types: pokemonCampoObj2.tipos };
+        let defensor = { defense: 40, types: pokemonCampoObj1.tipos };
+        let move = { power: moveElement.getElementsByClassName("power")[0].innerText, type: moveTipo };
+
+        let dano = calcularDano(atacante, defensor, move);
+        let barraVidaJogador = document.getElementById("barraVida1");
+        let vidaAtual = parseInt(barraVidaJogador.innerText.replace("Vida: ", "")) || 100;
+        vidaAtual = Math.max(vidaAtual - dano, 0);
+        if(vidaAtual == 0){
+            barraVidaJogador.style.color = "red";
+        }else{
+            barraVidaJogador.style.color = "black";
+        }
+        barraVidaJogador.innerText = `Vida: ${vidaAtual}`;
+
+        console.log(`IA usou ${moveElement.innerText} e causou ${dano} de dano!`);
+    }
+
+    async function minhaJogada(movePower, moveTipo) {
+        let moveElement = document.getElementById(movimentoEscolhido);
+
+        let atacante = { attack: 50, types: pokemonCampoObj2.tipos };
+        let defensor = { defense: 40, types: pokemonCampoObj1.tipos };
+        let move = { power: movePower, type: moveTipo };
+
+        let dano = calcularDano(atacante, defensor, move);
+        let barraVidaJogador = document.getElementById("barraVida2");
+        let vidaAtual = parseInt(barraVidaJogador.innerText.replace("Vida: ", "")) || 100;
+        vidaAtual = Math.max(vidaAtual - dano, 0);
+        if(vidaAtual == 0){
+            barraVidaJogador.style.color = "red";
+        }else{
+            barraVidaJogador.style.color = "black";
+        }
+        barraVidaJogador.innerText = `Vida: ${vidaAtual}`;
+
+        console.log(`IA usou ${moveElement.innerText} e causou ${dano} de dano!`);
+    }
+</script>

@@ -50,6 +50,9 @@ namespace WebMVC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("isPhysical")
                         .HasColumnType("bit");
 
@@ -202,6 +205,9 @@ namespace WebMVC.Migrations
 
                     b.Property<string>("ShortDescription")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -155,6 +155,23 @@ namespace WebMVC.Service
                 PP = move.PP,
             };
         }
+
+        public MoveViewModel GetMovesFromId(int moveId)
+        {
+            var move = _context.Move.First(e => e.Id == moveId);
+            return new MoveViewModel
+            {
+                Id = move.Id,
+                Accuracy = move.Accuracy,
+                IsPhysical = move.isPhysical,
+                IsSpecial = move.isPhysical,
+                IsStatus = move.isStatus,
+                Name = move.Name,
+                Power = move.Power,
+                PP = move.PP,
+                ShortDescription = move.ShortDescription
+            };
+        }
     }
 
 }

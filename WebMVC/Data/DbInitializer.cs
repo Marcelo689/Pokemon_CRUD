@@ -180,6 +180,7 @@ namespace WebMVC.Data
                         isPhysical = moveDetails.DamageClass.Name == Physical,
                         isSpecial = moveDetails.DamageClass.Name == Special,
                         isStatus = moveDetails.DamageClass.Name == Status,
+                        Type = moveDetails.Type?.Name ?? "null"
                     };
 
                     foreach (var pokemon in moveDetails.LearnedByPokemonList)
@@ -189,6 +190,7 @@ namespace WebMVC.Data
                             PokemonName = pokemon.Name,
                             MoveName = move.Name,
                             MoveId = moveDetails.Id,
+                            Type = moveDetails.Type?.Name ?? "null",
                             Power = moveDetails.Power,
                             Accuracy = moveDetails.Accuracy,
                             PP = moveDetails.PP,

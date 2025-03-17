@@ -11,7 +11,7 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
         public int? Accuracy { get; set; }
 
         [JsonPropertyName("type")]
-        public MoveTypeResponse Type { get; set; }
+        public MoveTypeResponse? Type { get; set; }
 
         [JsonPropertyName("power")]
         public int? Power { get; set; }
@@ -30,6 +30,7 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
 
         [JsonPropertyName("effect_entries")]
         public List<EffectEntriesResponse> EffectEntryList { get; set; } = new();
+
     }
     public class DamageClassResponse
     {
@@ -56,8 +57,8 @@ namespace ApiModelsResponse.ApiModels.ApiResponse
     public class MoveTypeResponse
     {
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [JsonPropertyName("url")]
-        public string Url { get; set; }
+        public string? Url { get; set; }
     }
 }

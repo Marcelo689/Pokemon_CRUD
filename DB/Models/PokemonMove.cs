@@ -13,5 +13,6 @@
         public int? PP { get; set; }
         public bool IsSpecial { get; set; }
         public string ShortDescription { get; set; }
+        public string? Type { get; set; }
     }
 }

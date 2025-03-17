@@ -1,4 +1,6 @@
-﻿namespace ApiModelsResponse.ViewModels
+﻿
+
+namespace ApiModelsResponse.ViewModels
 {
     public class PokemonTreinadorViewModel
     {
@@ -28,5 +30,6 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
     }
 }

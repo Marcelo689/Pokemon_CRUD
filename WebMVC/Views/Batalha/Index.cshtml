@@ -1,0 +1,33 @@
+﻿@using ModelsResponse.ViewModels
+
+@model BatalhaViewModel
+
+
+@using (Html.BeginForm("Battle", "Batalha", FormMethod.Post))
+{
+    <div>
+        <h1>Player 1</h1>
+
+        <select name="trainer1">
+            @foreach (var trainer in Model.TreinadoresViewModel)
+            {
+                <option value="@trainer.Id">@trainer.Name</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <h1>Player 2</h1>
+
+        <select name="trainer2">
+            @foreach (var trainer in Model.TreinadoresViewModel)
+            {
+                <option value="@trainer.Id">@trainer.Name</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit">
+        Iniciar Batalha
+    </button>
+}

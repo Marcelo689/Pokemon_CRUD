@@ -28,6 +28,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Batalha/Battle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF0YWxoYVxCYXR0bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/Batalha/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF0YWxoYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/marce/source/repos/PokemonWorld/WebMVC/Views/PokemonApi/AbilityDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vbkFwaVxBYmlsaXR5RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

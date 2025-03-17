@@ -34,5 +34,6 @@
         public string Description { get; set; }
         public int? Accuracy { get; set; }
         public int? PP { get; set; }
+        public string? Type { get; set; }
     }
 }
